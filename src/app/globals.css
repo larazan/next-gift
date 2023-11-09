@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,9 +14,12 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 body {
+  font-family: 'Inter', sans-serif;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +27,70 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.input-select {
+  border-width: 1px;
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+}
+
+.input-select {
+  --tw-bg-opacity: 1;
+  --tw-shadow: 3px 3px 0 #002f3c;
+  --tw-shadow-colored: 3px 3px 0 var(--tw-shadow-color);
+  -webkit-appearance: none;
+  background-color: rgb(255 255 255/var(--tw-bg-opacity));
+  background-image: url('/public/chev-down.svg');
+  background-position: 96% 50%;
+  background-repeat: no-repeat;
+  border-radius: 0;
+  display: block;
+  padding: 0.5rem;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+  position: relative;
+  z-index: 10;
+}
+menu, ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination .active .page-link {
+  --tw-bg-opacity: 1;
+  --tw-shadow: 0 3px 1px #faf77d;
+  --tw-shadow-colored: 0 3px 1px var(--tw-shadow-color);
+  background-color: rgb(250 247 125/var(--tw-bg-opacity));
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+}
+.pagination .page-link {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255/var(--tw-bg-opacity));
+  border-width: 1px;
+  border: 1px solid #000;
+  display: block;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.pagination .page-item a:hover {
+  background-color: #b8fff3;
+}
+
+.markdown {
+  --tw-text-opacity: 1;
+  background-color: transparent;
+  color: rgb(25 26 27/var(--tw-text-opacity));
+  line-height: 1.625;
 }
