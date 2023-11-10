@@ -3,34 +3,45 @@ import React from 'react'
  const Filter = () => {
   return (
     <>
-        <div className="h-max flex flex-col mt-2">
+        <div className="h-max flex flex-col mt-0">
         <div className="flex items-center">
-          <div className="bg-mint border w-full shadow-bleed-teal-sm  p-4 font-mono flex flex-wrap md:flex-nowrap items-center md:space-x-6">
+          <div className="bg-[#ff74be] border w-full shadow-bleed-teal-sm  p-4 font-mono flex flex-wrap md:flex-nowrap items-center md:space-x-6">
             <select
               name="version"
               className="input-select text-sm z-1 border border-gray-800 text-gray-900 text-md font-mabrybold"
             >
-              <option value="all">Platform</option>
-              <option value="all">All</option>
-              <option value="blog">Android (10)</option>
-              <option value="boilerplate">PC (9)</option>
+              <option>Recipients</option>
+              <option value="mom">Mom</option>
+              <option value="dad">Dad</option>
+              <option value="friends">Friends</option>
+              <option value="couples">Couples</option>
+              <option value="kids">Kids</option>
+              <option value="teens">Teens</option>
             </select>
             <select
               name="sort"
               className="input-select text-sm z-1 border border-gray-800 text-gray-900 text-md font-mabrybold"
             >
-              <option value="most-popular">Sort by Most Popular</option>{" "}
-              <option value="name">Sort by Name</option>{" "}
-              <option value="newest">Sort by Newest</option>
+              <option >Occasions</option>{" "}
+              <option value="birthday">Birthday</option>{" "}
+              <option value="wedding">Wedding</option>
+              <option value="anniversary">Anniversary</option>
+              <option value="graduation">Graduation</option>
+              <option value="housewarming">Housewarming</option>
+              <option value="retirement">Retirement</option>
             </select>{" "}
             <select
               name="layout"
               className="input-select text-sm z-1 border border-gray-800 text-gray-900 text-md font-mabrybold"
             >
-              <option>Genre</option> <option value="arcade">Arcade</option>
-              <option value="arcade">RPG</option>
-              <option value="arcade">Adventure</option>
-              <option value="arcade">Sport</option>
+              <option>Interests</option> 
+              <option value="food-drink">Food + Drink</option>
+              <option value="outdoor-sports">Outdoor + Sports</option>
+              <option value="animal-lovers">Animal Lovers</option>
+              <option value="travel">Travel</option>
+              <option value="selfcare">Selfcare</option>
+              <option value="gift-baskets">Gift Baskets</option>
+              <option value="lifestyle">Lifestyle</option>
             </select>
           </div>
         </div>

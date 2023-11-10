@@ -4,7 +4,7 @@ import Link from 'next/link'
  const Pagination = () => {
   return (
     <>
-      <div className=" h-max flex pb-6 pt-10 flex-col space-y-10 px-8 justify-center2 items-center2 ">
+      <div className=" h-max flex pb-6 pt-10 mx-auto w-full md:w-11/12  flex-col space-y-10  justify-center2 items-center2 ">
         <nav>
           <ul className="pagination">
             <li
