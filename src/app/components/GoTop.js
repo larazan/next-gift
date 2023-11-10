@@ -28,7 +28,7 @@ import React, { useEffect, useState } from "react";
 
   return (
     <>
-      <div className="fixed bg-pink bottom-3 right-3  cursor-pointer">
+      <div className="fixed bg-pink bottom-3 right-3  cursor-pointer z-20">
         {isVisible && (
           <div
             onClick={scrollToTop}
