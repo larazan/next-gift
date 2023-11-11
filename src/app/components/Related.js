@@ -76,12 +76,12 @@ const Related = () => {
             Related Gift List
           </p>
         </div>
-        <div className="flex flex-col w-full">
+        <div className=" w-full grid grid-cols-3 gap-3">
           {gifts.map((data, index) => {
             return (
-              <Link className="text-tundora no-underline" href="/" key={index}>
-              <div className="my-[1em] mx-[0em] flex items-center w-full bg-white leading-[1.25em]">
-                <figure className="m-0 mr-2 md:mr-5 flex aspect-[10/9] md:aspect-[16/10] h-fit flex-1 items-center justify-center">
+              <Link className="text-tundora no-underline " href="/" key={index}>
+              <div className=" mx-[0em] flex flex-col items-center w-full bg-white leading-[1.25em]">
+                <figure className="m-0 flex aspect-[10/9] md:aspect-[16/10] h-fit flex-1 items-center justify-center">
                   <Image
                     alt=""
                     src={data.image}
@@ -89,19 +89,14 @@ const Related = () => {
                     style={{ color: "transparent" }}
                   />
                 </figure>
-                <div className="flex w-2/3 md:max-w-[55%] flex-1 flex-col space-y-1 md:space-y-2">
-                  <span className="my-[0.25em] mx-[0em] overflow-hidden break-words text-md md:text-lg leading-tight md:leading-tight font-semibold">
+                <div className="flex w-11/12  flex-1">
+                  <span className="my-[0.05em] mx-[0em] overflow-hidden break-words text-sm leading-tight md:leading-tight font-semibold">
                     {data.title}
                   </span>
-                  <span className="text-sm md:text-lg leading-tight md:leading-tight tracking-tight break-words text-justify">
-                    Welcome to your go-to resource for exceptional self-care gift
-                    basket ideas! Whether you’re planning a revitalizing DIY spa
-                    experience for yourself or looking to lavish a loved one with
-                    well-deserved indulgence
-                  </span>
+                  
                 </div>
               </div>
-              <div className="h-px bg-mercury"></div>
+              {/* <div className="h-px bg-mercury"></div> */}
             </Link>
             )
           })}

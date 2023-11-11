@@ -16,8 +16,7 @@ import React, { useEffect, useState } from "react";
         <div className="flex z-20 rounded justify-between space-x-5 px-2 md:px-3 py-2 bg-[#dee6e5]">
           <div className="flex space-x-5 items-center">
             <p className="flex text-sm font-semibold tracking-tight text-[#1d494e]">
-              Glitch is now part of Fastly, and we are very excited about what
-              this means for the community!
+            We independently review everything we recommend. When you buy through our links, we may earn a commission.
             </p>
           </div>
           <div className="flex items-center space-x-5">

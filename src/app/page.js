@@ -7,6 +7,8 @@ import Hero from './components/Hero'
 import Notice from './components/Notice'
 import AdsModal from './components/AdsModal'
 import GoTop from './components/GoTop';
+import GiftHome from './components/GiftHome';
+import SubscribeForm from './components/SubscribeForm';
 
 
 export default function Home() {
@@ -23,6 +25,8 @@ export default function Home() {
     <AdsModal />
     <Notice />
     <Hero />
+    <GiftHome />
+    <SubscribeForm />
     <Footer />
     </>
   )
