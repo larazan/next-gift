@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import logo from '/public/assets/img/logo.svg'
+import NavLinks from './NavLinks';
 
  const Header = () => {
   return (
@@ -41,7 +42,7 @@ import logo from '/public/assets/img/logo.svg'
         </div>
         <div className="flex flex-row space-x-3">
           <div className="flex space-x-2 items-center">
-            
+            <NavLinks />
             <Link href={"/login"} className="hidden md:flex">
               <button className="flex button items-center justify-center px-4 py-1.5 opacity-90 hover:opacity-100">
                 <span className="text-sm font-semibold font-mabrybold text-gray-900">

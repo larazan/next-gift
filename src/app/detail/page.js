@@ -364,6 +364,7 @@ export default function page() {
                   <p>
                   It can improve your overall mood and help you feel happier and more positive. Plus, taking care of yourself can help you be more productive and focused, leading to better relationships with the people around you. Self-care is truly the gift that keeps on giving!
                   </p>
+                  
                 </article>
 
               </section>
