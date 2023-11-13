@@ -9,6 +9,7 @@ import Search from '@/app/components/Search';
 import Pagination from '@/app/components/Pagination';
 import Filter from '@/app/components/Filter';
 import Card from '@/app/components/Card';
+import CookieConsent from '@/app/components/CookieConsent';
 
 export default function page() {
   return (
@@ -21,6 +22,7 @@ export default function page() {
 
       <Header />
       <GoTop />
+      <CookieConsent />
       <Search />
       <Filter />
       <Card />

@@ -1,4 +1,7 @@
 import React from 'react'
+import Image from 'next/image'
+
+import product from "@/assets/iwatch.png";
 
  const Hero = () => {
   return (
@@ -23,7 +26,7 @@ import React from 'react'
                 </div>
             </div>
             <div className="hidden sm:block sm:w-1/3 lg:w-3/5 relative">
-                <img src="https://www.tailwind-kit.com/images/object/10.png" className="max-w-xs md:max-w-sm2 m-auto"/>
+                <Image src={product} alt='' className="max-w-xs md:max-w-sm2 m-auto"/>
             </div>
         </div>
     </div>

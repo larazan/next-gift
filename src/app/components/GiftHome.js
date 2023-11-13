@@ -85,7 +85,7 @@ import gift12 from "@/assets/gift12.png";
         {gifts.map((data, index) => {
           return (
             <div className="shadow-md " key={index}>
-              <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105  ">
+              <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105  hover:shadow-md">
                 <Link href="/detail" className="relative">
                   <Image src={data.image} alt="" className="w-80 shadow" />{" "}
                   <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>

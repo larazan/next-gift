@@ -19,7 +19,7 @@ const NavLinks = () => {
         <div className="z-30">
           <div className="px-0 text-left  group ">
             <h1
-              className="py-7  flex cursor-pointer justify-between items-center md:pr-0 pr-5 group text-sm font-semibold font-mabrybold text-gray-900"
+              className="py-7  flex cursor-pointer justify-between items-center md:pr-0 pr-5 group text-md font-semibold font-mabrybold text-gray-900"
               onClick={() => {
                 setHeading("");
                 setSubHeading("");
@@ -29,10 +29,10 @@ const NavLinks = () => {
             </h1>
             
               <div>
-                <div className="w-[550px] absolute top-12 right-10 shadow-md border rounded-2xl hidden group-hover:md:block hover:md:block">
+                <div className="w-[550px] absolute top-12 right-5 shadow-md border rounded-2xl hidden group-hover:md:block hover:md:block">
                   <div className="w-full bg-white rounded-2xl flex  flex-row space-x-2">
                     <div className="w-2/3 bg-white rounded-2xl">
-                      <div className="flex flex-col space-y-3 p-5">
+                      <div className="flex flex-col space-y-2 p-5">
                         <div className="flex p-2 rounded-lg hover:bg-green-200 items-center space-x-3 cursor-pointer">
                           <div className="w-14">
                             <Image src={icon1} alt="" className="" />

@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="px-4 py-8 sm:px-6 lg:col-span-3 lg:px-8">
           <div className="">
             <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-              <div>
+              <div className="flex w-full justify-center md:justify-start text-center md:text-left">
                 <nav
                   aria-label="Footer Navigation - Services"
                   className="flex flex-col space-y-3 mt-6"
@@ -78,7 +78,7 @@ const Footer = () => {
                 </nav>
               </div>
 
-              <div>
+              <div className="flex w-full justify-center md:justify-start text-center md:text-left">
                 <nav
                   aria-label="Footer Navigation - Company"
                   className="flex flex-col space-y-3 mt-6"
@@ -141,7 +141,7 @@ const Footer = () => {
                 </nav>
               </div>
 
-              <div>
+              <div className="flex w-full justify-center md:justify-start text-center md:text-left">
                 <nav
                   aria-label="Footer Navigation - Services"
                   className="flex flex-col space-y-3 mt-6"
@@ -215,7 +215,7 @@ const Footer = () => {
                 </nav>
               </div>
 
-              <div>
+              <div className="flex w-full justify-center md:justify-start text-center md:text-left">
                 <nav
                   aria-label="Footer Navigation - Company"
                   className="flex flex-col space-y-3 mt-6"
