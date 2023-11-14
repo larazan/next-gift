@@ -59,7 +59,7 @@ const NavLinks = () => {
                             </span>
                           </div>
                         </Link>
-                        <div className="flex p-2 rounded-lg hover:bg-yellow-200 items-center space-x-3 cursor-pointer">
+                        <Link href={"/detail"} className="flex p-2 rounded-lg hover:bg-yellow-200 items-center space-x-3 cursor-pointer">
                           <div className="w-14">
                             <Image src={icon3} alt="" className="" />
                           </div>
@@ -71,7 +71,7 @@ const NavLinks = () => {
                               Create your pallete in seconds
                             </span>
                           </div>
-                        </div>
+                        </Link>
                         <div className="flex p-2 rounded-lg hover:bg-blue-200 items-center space-x-3 cursor-pointer">
                           <div className="w-14">
                             <Image src={icon4} alt="" className="" />
