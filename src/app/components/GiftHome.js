@@ -81,7 +81,7 @@ import gift12 from "@/assets/gift12.png";
 
   return (
     <>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8 mb-8 mx-auto w-full md:w-11/12 ">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8 mb-8 mx-auto w-full px-3 md:px-0 md:w-11/12 ">
         {gifts.map((data, index) => {
           return (
             <div className="shadow-md " key={index}>
@@ -99,6 +99,11 @@ import gift12 from "@/assets/gift12.png";
             </div>
           );
         })}
+      </div>
+      <div className="mx-auto w-full px-3 md:px-0 md:w-8/12 pb-10">
+        <div className="w-full rounded-2xl py-3 text-center bg-[#ff74be] hover:opacity-95 cursor-pointer">
+          <span className="font-semibold text-white">See more</span>
+        </div>
       </div>
     </>
   )

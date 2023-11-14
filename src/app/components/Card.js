@@ -89,7 +89,7 @@ const Card = () => {
   ];
   return (
     <>
-      <div className="grid grid-cols-3 gap-4 mt-8 mb-8 mx-auto w-full md:w-11/12 ">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8 mb-8 mx-auto w-full px-3 md:px-0 md:w-11/12 ">
         {gifts.map((data, index) => {
           return (
             <div className="shadow-md " key={index}>
@@ -108,6 +108,7 @@ const Card = () => {
           );
         })}
       </div>
+      
     </>
   );
 };

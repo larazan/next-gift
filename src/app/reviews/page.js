@@ -138,8 +138,8 @@ export default function page() {
                   </div>
                 </div>
                 {/* load more */}
-                <div className="w-full rounded py-1.5 text-center bg-[#ff74be] hover:opacity-95 cursor-pointer">
-                  <span className="font-semibold">Load more</span>
+                <div className="w-full rounded-2xl py-3 text-center bg-[#ff74be] hover:opacity-95 cursor-pointer">
+                  <span className="font-semibold text-white">Load more</span>
                 </div>
               </section>
             </div>

@@ -33,7 +33,7 @@ const NavLinks = () => {
                   <div className="w-full bg-white rounded-2xl flex  flex-row space-x-2">
                     <div className="w-2/3 bg-white rounded-2xl">
                       <div className="flex flex-col space-y-2 p-5">
-                        <div className="flex p-2 rounded-lg hover:bg-green-200 items-center space-x-3 cursor-pointer">
+                        <Link href={"/category"} className="flex p-2 rounded-lg hover:bg-green-200 items-center space-x-3 cursor-pointer">
                           <div className="w-14">
                             <Image src={icon1} alt="" className="" />
                           </div>
@@ -45,8 +45,8 @@ const NavLinks = () => {
                               Create your pallete in seconds
                             </span>
                           </div>
-                        </div>
-                        <div className="flex p-2 rounded-lg hover:bg-pink-200 items-center space-x-3 cursor-pointer">
+                        </Link>
+                        <Link href={"/reviews"} className="flex p-2 rounded-lg hover:bg-pink-200 items-center space-x-3 cursor-pointer">
                           <div className="w-14">
                             <Image src={icon2} alt="" className="" />
                           </div>
@@ -58,7 +58,7 @@ const NavLinks = () => {
                               Create your pallete in seconds
                             </span>
                           </div>
-                        </div>
+                        </Link>
                         <div className="flex p-2 rounded-lg hover:bg-yellow-200 items-center space-x-3 cursor-pointer">
                           <div className="w-14">
                             <Image src={icon3} alt="" className="" />

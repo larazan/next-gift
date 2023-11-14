@@ -73,13 +73,12 @@ export default function page() {
 
         <Header />
         <GoTop />
-        <div className="flex bg-white min-h-screen pt-10 pb-10 md:pt-[100px]">
+        <div className="flex bg-white min-h-screen w-full  pt-10 pb-10 md:pt-[20px]">
           <div className="flex flex-row w-full">
-            <div className="flex flex-1 flex-col items-center justify-center relative">
-              <div className="flex flex-1 flex-col pb-18 max-w-md md:max-w-2xl ">
+            <div className="flex w-full flex-1 flex-col items-center justify-center relative">
+              <div className="flex w-full flex-1 flex-col pb-18 max-w-md md:max-w-2xl ">
                 
-
-                <section className="w-full mx-auto  mt-6 md:mt-6 px-5 ">
+                <section className="w-full mx-auto mt-6 md:mt-6 px-5 ">
                   <h5 className="font-semibold md:font-bold text-2xl md:text-3xl text-center ">
                     Frequently asked questions
                   </h5>

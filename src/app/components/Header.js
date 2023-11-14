@@ -6,6 +6,7 @@ import Image from "next/image";
 
 import logo from "/public/assets/img/logo.svg";
 import NavLinks from "./NavLinks";
+import Autocomplete from "./Autocomplete";
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -22,7 +23,7 @@ const Header = () => {
   return (
     <>
       <header className="fixed2 z-20 flex h-10 md:h-14 w-full top-0 md:m-0 px-4 md:px-6 py-6 md:py-3  items-center justify-between bg-white border-b shadow2">
-        <div className="flex w-full md:w-1/5 justify-between space-x-4 ">
+        <div className="flex w-full md:w-1/5 justify-between ">
           <div className="flex justify-between w-full md:w-[100px]">
             <section className="w-1/6">
               <button className=" h-8 w-8 md:hidden" onClick={clickMenu}>
@@ -46,7 +47,7 @@ const Header = () => {
                   openMenu === false ? "hidden" : "flex flex-col"
                 }   z-30 fixed top-0 left-0 text-white text-4xl font-bold  flex-1 flex-col justify-between`}
               >
-                <aside className="bg-white w-[300px] h-[100vh] w-full p-6 sm:w-60 z-50">
+                <aside className="bg-white w-[300px] h-[100vh] p-6 z-50">
                   <button
                     className="absolute flex top-1 right-1 rounded text-gray-800 px-1 py-1 cursor-pointer"
                     onClick={clickMenu}
@@ -167,7 +168,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="w-3/5 hidden  md:flex items-center bg-[#ebebeb] rounded-lg">
+        {/* <div className="w-3/5 hidden  md:flex items-center bg-[#ebebeb] rounded-lg">
           <div className="pl-2">
             <svg
               className="fill-current text-gray-500 w-4 h-4"
@@ -186,9 +187,11 @@ const Header = () => {
             type="text"
             placeholder="Search something"
           />
-        </div>
+        </div> */}
 
-        <div className="w-1/5 hidden md:flex flex-row space-x-3 justify-end">
+        <Autocomplete />
+
+        <div className="w-1/5 hidden md:flex justify-end">
           <div className="flex space-x-2 items-center">
             <NavLinks />
             {/* <Link href={"/login"} className="hidden md:flex">

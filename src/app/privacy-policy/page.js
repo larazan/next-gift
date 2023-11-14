@@ -19,16 +19,16 @@ export default function page() {
       <Header />
       <GoTop />  
 
-      <div className="flex bg-white min-h-screen pt-16 md:pt-[100px]">
+      <div className="flex bg-white min-h-screen pt-4 md:pt-[20px]">
         <div className="flex flex-row w-full">
           <div className="flex flex-1 flex-col items-center justify-center relative">
-            <div className="flex flex-1 flex-col pb-20  max-w-md md:max-w-2xl markdown-blog">
+            <div className="flex flex-1 flex-col pb-20  max-w-md2 md:max-w-2xl markdown-blog">
               <section className="w-full mx-auto  mt-10 md:mt-10 px-5 ">
                 <h5 className="font-semibold md:font-bold text-2xl md:text-3xl text-center ">
                   Privacy
                 </h5>
 
-                <article className="mx-auto mt-12 prose md:mt-24 md:prose-previewify">
+                <article className="mx-auto mt-6 prose md:mt-14 md:prose-previewify">
                   <p>Last updated: Dec 9, 2022</p>
                   <p>
                     This Privacy Policy describes Our policies and procedures on

@@ -23,11 +23,11 @@ export default function page() {
       <Header />
       <GoTop />
 
-      <div className="flex bg-[#f2f6f6] min-h-screen pt-16 pb-10 md:pt-[100px]">
-        <div className="flex mx-auto w-10/12 bg-white rounded-md shadow border">
+      <div className="flex bg-[#f2f6f6] min-h-screen pt-10 pb-10 md:pt-[100px]">
+        <div className="flex mx-auto w-11/12 md:w-10/12 bg-white rounded-md shadow border">
           <div className="flex py-10 flex-col space-y-10 mx-auto w-10/12">
             <div>
-              <span className="text-4xl font-bold leading-snug ">
+              <span className="text-3xl md:text-4xl font-bold md:leading-snug ">
                 Imagine a community of passionate & ambitious learners, all
                 working to make a positive impact on the world around them. Now
                 imagine your high school :/
@@ -65,9 +65,9 @@ export default function page() {
         </div>
       </div>
 
-      <div className="flex space-x-4 bg-white py-10 mx-auto w-11/12">
-        <div className="w-1/2 flex flex-col space-y-5">
-          <span className="text-4xl font-semibold text-gray-800 leading-snug">
+      <div className="flex flex-col md:flex-row space-y-6 md:space-x-4 bg-white py-10 mx-auto w-11/12">
+        <div className="w-full md:w-1/2 flex flex-col space-y-5">
+          <span className="text-3xl md:text-4xl font-semibold text-gray-800 md:leading-snug">
             Everything you need to get started with your passion, and nothing
             you don't need. Ivy Stat bootcamp is the best way for you to do your
             thing.
@@ -138,7 +138,7 @@ export default function page() {
             </div>
           </div>
         </div>
-        <div className="w-1/2 grid gap-4 grid-cols-2">
+        <div className="w-full md:w-1/2 grid gap-4 grid-cols-2">
             <div className="flex flex-col space-y-3 bg-gray-100 rounded-lg p-5 shadow">
                 <div>
                     <Image src={ava1} alt="" className="rounded-full w-16" />

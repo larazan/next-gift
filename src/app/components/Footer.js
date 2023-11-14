@@ -225,30 +225,39 @@ const Footer = () => {
                   </span>
                   <ul className="space-y-1 text-md font-mabrybold">
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="/about"
                         className="text-white hover:underline  transition "
                       >
                         About Us
-                      </a>
+                      </Link>
                     </li>
 
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="/faqs"
+                        className="text-white hover:underline  transition "
+                      >
+                        Faqs
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        href="/privacy-policy"
                         className="text-white hover:underline  transition "
                       >
                         Privacy Policy
-                      </a>
+                      </Link>
                     </li>
 
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        href="/contact"
                         className="text-white hover:underline  transition "
                       >
                         Contact Us
-                      </a>
+                      </Link>
                     </li>
                     
                   </ul>
