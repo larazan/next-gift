@@ -36,7 +36,7 @@ export default function page() {
             <div>
               <span className="text-lg  leading-snug text-gray-700">
                 We understand that traditional education is important, but it is
-                not enough to prepare you for the real world. That's why we've
+                not enough to prepare you for the real world. That&apos;s why we&apos;ve
                 created a full-cycle curriculum that goes beyond the boundaries
                 of traditional education, providing you with the hands-on
                 experience, mentorship, and support you need to turn your dreams
@@ -47,7 +47,7 @@ export default function page() {
               <span className="text-lg  leading-snug text-gray-700">
                 Our team is dedicated to helping you discover your strengths,
                 develop your skills, and build a successful future. Whether
-                you're interested in entrepreneurship, technology, arts, or any
+                you&apos;re interested in entrepreneurship, technology, arts, or any
                 other field, our program will provide you with the resources,
                 guidance, and opportunities you need to make the most of your
                 potential.
@@ -69,7 +69,7 @@ export default function page() {
         <div className="w-full md:w-1/2 flex flex-col space-y-5">
           <span className="text-3xl md:text-4xl font-semibold text-gray-800 md:leading-snug">
             Everything you need to get started with your passion, and nothing
-            you don't need. Ivy Stat bootcamp is the best way for you to do your
+            you don&apos;t need. Ivy Stat bootcamp is the best way for you to do your
             thing.
           </span>
           <div className="flex flex-col space-y-3">

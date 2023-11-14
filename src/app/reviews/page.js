@@ -89,7 +89,7 @@ export default function page() {
             <div className="flex flex-1 flex-col pb-18 max-w-md md:max-w-2xl ">
               <section className="w-full mx-auto  mt-10 md:mt-10 px-5 ">
                 <h1 className="text-3xl font-bold tracking-tighter md:text-5xl lg:text-7xl text-black">
-                Apple’s New MacBook Air Is $200 More{" "}—{" "}and Probably Worth It
+                Apples New MacBook Air Is $200 More{" "}—{" "}and Probably Worth It
                 </h1>
                 <p className="max-w-3xl mt-6 text-lg font-medium md:text-xl lg:text-2xl text-black">
                   Say goodbye to Canva! Create a template, integrate it into

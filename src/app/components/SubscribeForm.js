@@ -8,7 +8,7 @@ import React from 'react'
           <div className="flex flex-row py-10 space-x-10 mx-auto w-11/12">
             <div className='w-3/6 flex flex-col space-y-3'>
               <h3 className='text-3xl font-semibold text-white'>
-              Hit us up, and we’ll come to your high school!
+              Hit us up, and well come to your high school!
               </h3>
               <span className="text-md font-bold leading-snug text-white">
                 Imagine a community of passionate & ambitious learners, all
@@ -24,7 +24,7 @@ import React from 'react'
                         Sign up for our newsletter
                         </h3>
                         <span className='text-sm'>
-                        Get Wirecutter’s independent reviews, expert advice, and intensively researched deals sent straight to your inbox.
+                        Get Wirecutters independent reviews, expert advice, and intensively researched deals sent straight to your inbox.
                         </span>
                         <div>
                         <input

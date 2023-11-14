@@ -11,7 +11,7 @@ import product from "@/assets/iwatch.png";
             <div className="sm:w-2/3 lg:w-2/5 px-6 flex flex-col relative z-20 ">
                 
                 <h1 className="font-bebas-neue uppercase text-3xl sm:text-5xl font-bold flex flex-col leading-none dark:text-white text-[#b02768]">
-                Life's a party.
+                Life&apos;s a party.
                 </h1>
                 <h3 className='text-2xl font-semibold flex flex-col py-4 leading-tight tracking-tight dark:text-white text-[#1d4943]'>
                 Gift responsibly.

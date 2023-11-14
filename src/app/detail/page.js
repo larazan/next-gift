@@ -304,9 +304,9 @@ export default function page() {
                 <article>
                   <p>
                     Welcome to your go-to resource for exceptional self-care
-                    gift basket ideas! Whether you’re planning a revitalizing
+                    gift basket ideas! Whether you&apos;re planning a revitalizing
                     DIY spa experience for yourself or looking to lavish a loved
-                    one with well-deserved indulgence, we’ve got something to
+                    one with well-deserved indulgence, we&apos;ve got something to
                     suit every preference. Explore our handpicked guide to
                     unearth the finest self-care gifts the market offers!
                   </p>
@@ -330,14 +330,14 @@ export default function page() {
                           </div>
                           <div className="w-4/6 flex flex-col ">
                             <p>
-                              The ‘Time to Relax’ Gift Box from Nurture by
+                              The &apos;Time to Relax&apos; Gift Box from Nurture by
                               Nature is the ideal present for anyone craving
                               some peace, relaxation, and downright serenity.
                               Treat them to a selection of luxurious, essential
                               oil-infused products featuring soothing aromas
                               like Lavender, Oat Honey, and Shea Butter. This
                               deluxe set is a curated collection of Nurture by
-                              Nature’s finest offerings, designed to transport
+                              Nature&apos;s finest offerings, designed to transport
                               you or a special someone to a heavenly realm of
                               deep relaxation.
                             </p>

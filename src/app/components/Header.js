@@ -144,7 +144,7 @@ const Header = () => {
             </section>
             <div className="w-4/6 md:w-full flex justify-center items-center">
               <Link href={"/"}>
-                <Image src={logo} />
+                <Image src={logo} alt="" />
               </Link>
             </div>
             <div className="w-1/6 flex justify-end md:hidden">

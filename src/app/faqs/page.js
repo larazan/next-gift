@@ -8,7 +8,7 @@ import Footer from '@/app/components/Footer'
 import AccordionItem from "@/app/components/AccordionItem";
 import GoTop from "@/app/components/GoTop";
 
-export default function page() {
+export default function Page() {
     const [open, setOpen] = useState(false)
 
     const toggle = (index) => {
