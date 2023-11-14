@@ -321,7 +321,7 @@ export default function page() {
                   {cosmetics.map((data, index) => {
                     return (
                       <div className="w-full flex flex-col" key={index}>
-                        <h1 className="text-2xl tracking-tight pb-4">
+                        <h1 className="text-2xl tracking-tight pb-4 md:pb-0">
                           {index + 1}. {data.title}
                         </h1>
                         <div className="flex w-full flex-col md:flex-row space-y-2 md:space-x-5 items-center">
