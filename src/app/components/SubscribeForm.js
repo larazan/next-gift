@@ -5,8 +5,8 @@ import React from 'react'
     <>
         <div className="flex bg-[#2df8bb]  pt-12 pb-12 ">
         <div className="flex mx-auto w-11/12 bg-[#736ef7] rounded-3xl shadow ">
-          <div className="flex flex-row py-10 space-x-10 mx-auto w-11/12">
-            <div className='w-3/6 flex flex-col space-y-3'>
+          <div className="flex flex-col md:flex-row py-10 space-y-5 md:space-x-10 mx-auto w-11/12">
+            <div className='w-full md:w-3/6 flex flex-col space-y-3'>
               <h3 className='text-3xl font-semibold text-white'>
               Hit us up, and well come to your high school!
               </h3>
@@ -17,7 +17,7 @@ import React from 'react'
               </span>
 
             </div>
-            <div className='w-3/6'>
+            <div className='w-full md:w-3/6'>
                 <div className='w-full p-5 bg-white rounded-3xl shadow'>
                     <div className='flex flex-col space-y-3'>
                         <h3 className='text-lg font-semibold'>

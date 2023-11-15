@@ -18,6 +18,8 @@ import product8 from "@/assets/products/product8.png";
 import product9 from "@/assets/products/product9.png";
 import product10 from "@/assets/products/product10.png";
 import product11 from "@/assets/products/product11.png";
+import AdsSide from "../components/AdsSide";
+import AdsRight from "../components/AdsLeft";
 
 export default function page() {
   const products = [
@@ -27,17 +29,17 @@ export default function page() {
       image: product1,
     },
     {
-      title: "The Apple Watch Is the Best Smartwatch for iPhone Owners",
+      title: "The 32 Best Gifts for Frequent Travelers",
       url: "best-smartwatch-iphone",
       image: product2,
     },
     {
-      title: "The Apple Watch Is the Best Smartwatch for iPhone Owners",
+      title: "The Gadgets We Bring on Every Trip",
       url: "best-smartwatch-iphone",
       image: product3,
     },
     {
-      title: "The Apple Watch Is the Best Smartwatch for iPhone Owners",
+      title: "The best Earbuds under $50",
       url: "best-smartwatch-iphone",
       image: product4,
     },
@@ -47,7 +49,7 @@ export default function page() {
       image: product5,
     },
     {
-      title: "The Apple Watch Is the Best Smartwatch for iPhone Owners",
+      title: "How to choose the Best running shoes for you",
       url: "best-smartwatch-iphone",
       image: product6,
     },
@@ -57,12 +59,12 @@ export default function page() {
       image: product7,
     },
     {
-      title: "The Apple Watch Is the Best Smartwatch for iPhone Owners",
+      title: "The 16 best tech gifts for any gadget lovers",
       url: "best-smartwatch-iphone",
       image: product8,
     },
     {
-      title: "The Apple Watch Is the Best Smartwatch for iPhone Owners",
+      title: "The best turkey fryer according to NYT cooking",
       url: "best-smartwatch-iphone",
       image: product9,
     },
@@ -82,16 +84,21 @@ export default function page() {
 
       <Header />
       <GoTop />
+      <AdsSide />
+      <AdsRight />
 
       <div className="flex bg-white min-h-screen pt-5 mb-10 md:pt-[10px]">
         <div className="flex flex-row w-full">
           <div className="flex flex-1 flex-col items-center justify-center relative">
             <div className="flex flex-1 flex-col pb-18 max-w-md md:max-w-2xl ">
+            <Link href={""} className="h-20 md:h-40 w-full bg-green-200 mx-auto flex items-center justify-center">
+              <div className="md:text-lg text-gray-400 font-bold">advertising</div>
+            </Link>
               <section className="w-full mx-auto  mt-10 md:mt-10 px-5 ">
                 <h1 className="text-3xl font-bold tracking-tighter md:text-5xl lg:text-7xl text-black">
                 Apples New MacBook Air Is $200 More{" "}—{" "}and Probably Worth It
                 </h1>
-                <p className="max-w-3xl mt-6 text-lg font-medium md:text-xl lg:text-2xl text-black">
+                <p className="max-w-3xl mt-6 text-lg font-medium md:text-xl lg:text-2xl text-black leading-snug">
                   Say goodbye to Canva! Create a template, integrate it into
                   your site once, and focus on creating great content.
                 </p>
@@ -109,8 +116,8 @@ export default function page() {
                             href="/"
                             key={index}
                           >
-                            <div className="my-[1em] mx-[0em] flex items-center w-full bg-white leading-[1.25em]">
-                              <figure className="m-0 mr-2 md:mr-5 flex aspect-[10/9] md:aspect-[16/9] h-fit flex-1 items-center justify-center">
+                            <div className="my-[1em] mx-[0em] flex md:items-center w-full bg-white leading-[1.25em]">
+                              <figure className="m-0 mr-2 md:mr-5 flex aspect-[16/9] md:aspect-[16/9] h-fit flex-1 items-center justify-center">
                                 <Image
                                   alt=""
                                   src={data.image}
@@ -120,10 +127,9 @@ export default function page() {
                               </figure>
                               <div className="flex w-2/3 md:max-w-[55%] flex-1 flex-col space-y-1 md:space-y-2">
                                 <span className="my-[0.25em] mx-[0em] overflow-hidden break-words text-md md:text-lg leading-tight md:leading-tight font-semibold">
-                                  80 Funny Work Memes to Keep You Laughing
-                                  Through the Week
+                                  {data.title}
                                 </span>
-                                <span className="text-sm md:text-lg leading-tight md:leading-tight tracking-tight break-words text-justify">
+                                <span className="hidden md:block text-sm md:text-lg leading-tight md:leading-tight tracking-tight break-words text-justify">
                                   Whether you&apos;re waiting for the weekend or
                                   commiserating about your job, these funny work
                                   memes will help you cope
@@ -134,11 +140,15 @@ export default function page() {
                           </Link>
                         );
                       })}
+
+                      <Link href={""} className="h-20 md:h-40 w-full bg-green-200 mx-auto flex items-center justify-center">
+                        <div className="md:text-lg text-gray-400 font-bold">advertising</div>
+                      </Link>
                     </div>
                   </div>
                 </div>
                 {/* load more */}
-                <div className="w-full rounded-2xl py-3 text-center bg-[#ff74be] hover:opacity-95 cursor-pointer">
+                <div className="mt-5 w-full rounded-2xl py-3 text-center bg-[#ff74be] hover:opacity-95 cursor-pointer">
                   <span className="font-semibold text-white">Load more</span>
                 </div>
               </section>

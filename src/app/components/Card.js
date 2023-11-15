@@ -92,8 +92,8 @@ const Card = () => {
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8 mb-8 mx-auto w-full px-3 md:px-0 md:w-11/12 ">
         {gifts.map((data, index) => {
           return (
-            <div className="shadow-md " key={index}>
-              <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 hover:shadow-md">
+            <div className="shadow-md hover:scale-105 " key={index}>
+              <div className=" bg-white group flex flex-col overflow-hidden ">
                 <Link href="/detail" className="relative">
                   <Image src={data.image} alt="" className="w-80 shadow" />{" "}
                   <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>

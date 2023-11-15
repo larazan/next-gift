@@ -5,7 +5,7 @@ import React from 'react'
     <>
         <div className="h-max flex flex-col mt-0">
         <div className="flex items-center">
-          <div className="bg-[#ff74be] border w-full shadow-bleed-teal-sm  p-4 font-mono flex flex-wrap md:flex-nowrap items-center md:space-x-6">
+          <div className="bg-[#ff74be]  w-full shadow-bleed-teal-sm  p-4 font-mono flex flex-wrap md:flex-nowrap items-center md:space-x-6">
             <select
               name="version"
               className="input-select text-sm z-1 border border-gray-800 text-gray-900 text-md font-mabrybold"

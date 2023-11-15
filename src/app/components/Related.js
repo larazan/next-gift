@@ -70,7 +70,7 @@ const Related = () => {
 
   return (
     <>
-      <div className="py-10">
+      <div className="py-10 px-3">
         <div>
           <p className="max-w-3xl mt-6 text-lg font-bold md:text-xl lg:text-2xl text-black">
             Related Gift List

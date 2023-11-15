@@ -269,7 +269,7 @@ const Footer = () => {
           <div className="pt-12 ">
             <div className="sm:flex  sm:items-center sm:justify-between">
               <nav aria-label="Footer Navigation - Support">
-                <ul className="flex gap-6 ">
+                <ul className="flex justify-around md:justify-none gap-6 ">
                   <li>
                     <a
                       href="/"

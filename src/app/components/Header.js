@@ -47,7 +47,7 @@ const Header = () => {
                   openMenu === false ? "hidden" : "flex flex-col"
                 }   z-30 fixed top-0 left-0 text-white text-4xl font-bold  flex-1 flex-col justify-between`}
               >
-                <aside className="bg-white w-[300px] h-[100vh] p-6 z-50">
+                <aside className="bg-white w-[300px] h-[100vh] py-6 z-50">
                   <button
                     className="absolute flex top-1 right-1 rounded text-gray-800 px-1 py-1 cursor-pointer"
                     onClick={clickMenu}
@@ -67,72 +67,72 @@ const Header = () => {
                       />
                     </svg>
                   </button>
-                  <nav className="space-y-8 text-sm">
-                    <div className="space-y-2">
-                      <div className="flex flex-col space-y-3 text-2xl">
-                        <a
+                  <nav className="mt-3 space-y-7 text-sm">
+                    <div className="px-2 space-y-2">
+                      <div className="flex flex-col space-y-1 text-[20px]">
+                        <Link
                           rel="noopener noreferrer"
-                          href="#"
-                          className="text-green-500"
+                          href="/category"
+                          className="px-3 py-1 rounded text-green-500 hover:bg-green-500 hover:text-white"
                         >
                           Recipients
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                           rel="noopener noreferrer"
-                          href="#"
-                          className="text-pink-500"
+                          href="/detail"
+                          className="px-3 py-1 rounded text-pink-500 hover:bg-pink-500 hover:text-white"
                         >
                           Occasions
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                           rel="noopener noreferrer"
-                          href="#"
-                          className="text-blue-500"
+                          href="reviews"
+                          className="px-3 py-1 rounded text-blue-500 hover:bg-blue-500 hover:text-white"
                         >
                           Interests
-                        </a>
+                        </Link>
                         <a
                           rel="noopener noreferrer"
                           href="#"
-                          className="text-indigo-500"
+                          className="px-3 py-1 rounded text-indigo-500 hover:bg-indigo-500 hover:text-white"
                         >
                           Popular
                         </a>
                       </div>
                     </div>
-                    <div className="space-y-4">
-                      <h2 className="text-[16px] font-semibold text-gray-400">
+                    <div className="px-6 space-y-4">
+                      <h2 className="text-[18px] font-semibold text-gray-400">
                         Review
                       </h2>
-                      <div className="flex flex-col space-y-4 text-[16px] text-gray-600 capitalize">
-                        <a rel="noopener noreferrer" href="#">
+                      <div className="flex flex-col space-y-3 text-[14px] text-gray-600 capitalize">
+                        <a rel="noopener noreferrer" href="#" className="hover:text-indigo-500">
                           electronic
                         </a>
-                        <a rel="noopener noreferrer" href="#">
+                        <a rel="noopener noreferrer" href="#" className="hover:text-indigo-500">
                           kitchen
                         </a>
-                        <a rel="noopener noreferrer" href="#">
+                        <a rel="noopener noreferrer" href="#" className="hover:text-indigo-500">
                           home & garden
                         </a>
-                        <a rel="noopener noreferrer" href="#">
+                        <a rel="noopener noreferrer" href="#" className="hover:text-indigo-500">
                           health & leisure
                         </a>
-                        <a rel="noopener noreferrer" href="#">
+                        <a rel="noopener noreferrer" href="#" className="hover:text-indigo-500">
                           tech
                         </a>
-                        <a rel="noopener noreferrer" href="#">
+                        <a rel="noopener noreferrer" href="#" className="hover:text-indigo-500">
                           baby & kid
                         </a>
-                        <a rel="noopener noreferrer" href="#">
+                        <a rel="noopener noreferrer" href="#" className="hover:text-indigo-500">
                           style
                         </a>
                       </div>
                     </div>
 
-                    <div className="space-y-4">
+                    <div className="px-6 space-y-4">
                       <Link
                         href={""}
-                        className="text-[18px] font-semibold text-gray-800"
+                        className="text-[18px] font-semibold text-gray-800 hover:text-indigo-600"
                       >
                         Deals
                       </Link>

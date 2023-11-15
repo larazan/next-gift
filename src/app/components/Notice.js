@@ -15,7 +15,7 @@ import React, { useEffect, useState } from "react";
         <div className="bg-[#f2f6f6] py-3 px-5">
         <div className="flex z-20 rounded justify-between space-x-5 px-2 md:px-3 py-2 bg-opacity-40 bg-orange-400">
           <div className="flex space-x-5 items-center">
-            <p className="flex text-sm font-semibold tracking-tight text-orange-500">
+            <p className="flex text-sm md:font-semibold tracking-tight text-orange-500">
             We independently review everything we recommend. When you buy through our links, we may earn a commission.
             </p>
           </div>

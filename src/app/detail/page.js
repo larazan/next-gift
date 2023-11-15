@@ -370,6 +370,10 @@ export default function page() {
               </section>
 
               <Related />
+
+              <Link href={""} className="h-20 md:h-40 w-full bg-green-200 mx-auto flex items-center justify-center">
+              <div className="md:text-lg text-gray-400 font-bold">advertising</div>
+            </Link>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
  const CookieConsent = () => {
   const [isShow, setIsShow] = useState(true);
@@ -15,7 +15,7 @@ import React, { useEffect, useState } from "react";
         <div className="fixed left-2 bottom-0 z-50 ">
           <div className="fixed sm:left-4 bottom-3 border rounded-lg bg-white shadow-2xl w-full sm:w-1/2 xl:w-1/4 max-w-[300px] md:max-w-[450px] overflow-hidden">
             <div className="">
-              <div className="relative overflow-hidden px-8 pt-8">
+              <div className="relative overflow-hidden px-4 md:px-8 pt-4 md:pt-8">
                 <div
                   width="80"
                   height="77"
@@ -35,29 +35,26 @@ import React, { useEffect, useState } from "react";
                     />
                   </svg>
                 </div>
-                <div className="text-lg md:text-2xl flex flex-col pb-4 text-gray-800">
+                <div className="text-base md:text-2xl flex flex-col pb-4 text-gray-800">
                   <small>Hello there..</small>
-                  <span className="text-2xl md:text-3xl font-bold">
+                  <span className="text-lg md:text-3xl font-bold">
                     We are the Cookies !
                   </span>
                 </div>
-                <div className="pb-4 text-gray-800 leading-tight md:leading-snug">
+                <div className="pb-4 text-sm md:text-base text-gray-800 leading-tight md:leading-snug">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Ab, accusamus aliquid aperiam beatae consectetur culpa
-                    dolores eum expedita, ipsam iure laboriosam nobis odit quos,
-                    sed sunt veritatis voluptas voluptate voluptatum!
+                  By using this website, you agree to our use of cookies. We use cookies to provide you with a great experience and to help our website run effectively.
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="flex flex-col space-y-2 mx-auto w-11/12 pb-7">
-              <div onClick={handleClick} className="flex justify-center w-full py-2 rounded-md bg-blue-700 hover:bg-blue-800 cursor-pointer text-white font-semibold">
-                <span>Accept all cookies</span>
+              <div onClick={handleClick} className="flex justify-center text-sm md:text-base w-full py-2 rounded-md bg-blue-700 hover:bg-blue-800 cursor-pointer text-white font-semibold">
+                <span>Accept</span>
               </div>
-              <div className="flex justify-center w-full py-2 border rounded-md bg-white hover:bg-gray-50 cursor-pointer text-gray-800 font-semibold">
-                <span>Manage cookies</span>
+              <div onClick={handleClick} className="flex justify-center text-sm md:text-base w-full py-2 border rounded-md bg-white hover:bg-gray-50 cursor-pointer text-gray-800 font-semibold">
+                <span>Decline</span>
               </div>
             </div>
 
