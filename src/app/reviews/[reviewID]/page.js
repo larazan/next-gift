@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
@@ -6,6 +6,24 @@ import Head from "next/head";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import GoTop from "@/app/components/GoTop";
+
+import Related from "@/app/components/Related";
+
+import ava1 from "/public/assets/img/ava1.svg";
+import ava2 from "/public/assets/img/ava2.svg";
+
+import product1 from "@/assets/products/product1.png";
+import product2 from "@/assets/products/product2.png";
+import product3 from "@/assets/products/product3.png";
+import product4 from "@/assets/products/product4.png";
+import product5 from "@/assets/products/product5.png";
+import product6 from "@/assets/products/product6.png";
+import product7 from "@/assets/products/product7.png";
+import product8 from "@/assets/products/product8.png";
+import product9 from "@/assets/products/product9.png";
+import product10 from "@/assets/products/product10.png";
+import product11 from "@/assets/products/product11.png";
+import product12 from "@/assets/products/product12.png";
 
 export default function page() {
   return (
@@ -19,8 +37,308 @@ export default function page() {
       <Header />
       <GoTop />
 
+      <div className="flex flex-col bg-white min-h-screen ">
+        <div className="flex mt-10 flex-row w-full">
+          <div className="flex flex-1 flex-col items-center justify-center relative">
+            <div className="flex flex-1 flex-col pb-18 max-w-md md:max-w-2xl ">
+              <section className="w-full mx-auto  mt-2 md:mt-4 px-5">
+                <div className="flex flex-col space-y-1 pt-3 pb-5 border-gray-900 border-t-8">
+                  <h1 className="text-3xl md:text-4xl font-semibold md:font-bold">
+                    Which iPhone Should I Get?
+                  </h1>
+                  <div className="flex space-x-3">
+                    <div>
+                      <span className="text-sm font-semibold">
+                        By <span className="underline">Roderick Scott</span>
+                      </span>
+                    </div>
+                    <div>
+                      <span className="text-sm">Updated October 2, 2023</span>
+                    </div>
+                  </div>
+                  <div className="font-mabry">
+                    <div className=" flex justify-between items-center text-base md:text-sm text-green-500 font-bold">
+                      <div className="flex justify-end space-x-2">
+                        <button>
+                          <div className="flex rounded-full border py-1.5 px-1.5 shadow-menu border-gray-800 bg-[#1877f2] hover:bg-[#1877f2]  fill-[#1877f2] hover:fill-white  items-center justify-between md:space-x-1 hover:shadow-blue-500/50 ">
+                            <svg
+                              className="w-5 h-5 md:w-4 md:h-4 text-white"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                              aria-hidden="true"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                clipRule="evenodd"
+                              ></path>
+                            </svg>
+                          </div>
+                        </button>
+                        <button>
+                          <div className="flex rounded-full border py-1.5 px-1.5 shadow-menu border-gray-800 bg-[#1d9bf0] hover:bg-[#1d9bf0] fill-[#1d9bf0] hover:fill-white  items-center justify-between md:space-x-1 hover:shadow-sky-500/50">
+                            <svg
+                              className="w-5 h-5 md:w-4 md:h-4 text-white"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                              aria-hidden="true"
+                            >
+                              <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                            </svg>
+                          </div>
+                        </button>
+
+                        <button>
+                          <div className="flex rounded-full border py-1.5 px-1.5 shadow-menu border-gray-800 bg-white hover:bg-white text-black hover:fill-white  items-center justify-between space-x-1 hover:shadow-sky-500/50">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              strokeWidth={1.5}
+                              stroke="currentColor"
+                              className="w-5 h-5 md:w-4 md:h-4 "
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                              />
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <Image src={product12} alt="" />
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-row w-full">
+          <div className="flex flex-1 flex-col items-center justify-center relative">
+            <div className="flex flex-1 flex-col pb-18 max-w-md md:max-w-2xl ">
+              <section className="w-full mx-auto  mt-2 md:mt-4 px-5 markdown-blog">
+                <article>
+                  <p>
+                    If you have an iPhone that you’re happy with, keep it. We
+                    don’t think you should upgrade just because Apple has
+                    released new phones.
+                  </p>
+                  <p>
+                    But if your current phone is running too slow or is damaged,
+                    or if you’re simply ready for an upgrade and want a new
+                    phone now, we recommend the Apple iPhone 15. It offers an
+                    almost Pro-like iPhone experience, with an all-day battery,
+                    a snappy processor, and versatile cameras—and, finally, a
+                    USB-C port.
+                  </p>
+                  <h2>Everything we recommend</h2>
+                  <p>
+                    The Apple iPhone 15 has many of the same features as the
+                    pricier 15 Pro model and almost as much processing power.
+                    Even with its large, 6.1-inch display, its battery can get
+                    almost anyone through a full day without needing to
+                    recharge. But on heavier days where it doesn’t, you now have
+                    the benefit of a fast-charging USB-C port. The iPhone 15’s
+                    two rear cameras—one standard wide-angle, one telephoto—are
+                    excellent, and they offer better low-light performance. The
+                    iPhone 15 can even pull off beautiful ultrawide angles
+                    without a dedicated ultrawide lens, thanks to a combination
+                    of hardware and software.
+                  </p>
+                  <p>
+                    With a larger battery than in the iPhone 15 or 15 Pro, the
+                    Apple iPhone 15 Plus has the best battery life of any iPhone
+                    15 model, which makes it an ideal option for those who
+                    prefer a larger screen and don’t want to pay the extra money
+                    for an iPhone 15 Pro Max.
+                  </p>
+                  <p>
+                    The titanium Apple iPhone 15 Pro offers an always-on
+                    display, allowing you to view notifications, weather, and
+                    other widgets without having to press the power button or
+                    move the device. The Pro models run on Apple’s newest
+                    processor, the A17 Pro, whose performance benefits are
+                    focused on graphics-heavy gaming and machine-learning tasks
+                    such as speech-to-text and voice commands for Siri. The Pro
+                    models also trade the physical Mute switch for an Action
+                    button, and you can customize what it does, whether that’s
+                    opening the Camera app to immediately take a photo,
+                    recording a voice memo, or launching a third-party app via
+                    Shortcuts. The 15 Pro also has upgraded cameras, namely a
+                    48-megapixel main lens, a 12-megapixel ultrawide camera, and
+                    a 12-megapixel telephoto camera capable of up to 6x optical
+                    zoom with a total of seven different focal lengths, ranging
+                    from 13mm to 77mm. If you’re buying the 15 Pro Max for
+                    professional use, choose a storage capacity of 256 GB or
+                    more.
+                  </p>
+                  <p>
+                    The Apple iPhone SE (3rd generation) is the ideal choice if
+                    you want a small phone, prefer a fingerprint reader over
+                    Face ID, or don’t want to pay as much for a new smartphone
+                    as you would for a decent laptop. The iPhone SE is
+                    significantly cheaper than the iPhone 15, but in many
+                    situations it feels just as fast. It lacks the iPhone 15’s
+                    second telephoto lens and Night Mode camera setting, so
+                    capturing good photos in dark environments is harder. If you
+                    use your phone for more power-hungry activities such as
+                    games, video, or voice or FaceTime calls over LTE or 5G,
+                    this model’s smaller battery may not last all day. However,
+                    whereas cheap Android phones often stop receiving software
+                    updates soon after purchase, even the least expensive
+                    iPhones, such as the SE, will receive iOS support for many
+                    years.
+                  </p>
+                  <h2>When should you upgrade if you have an older iPhone?</h2>
+                  <p>
+                    Our general philosophy about upgrading (as described by
+                    Wirecutter’s founder) is that if you’re happy with what you
+                    have, you don’t need the latest and greatest. Last year’s
+                    iPhone or the one before that (or even the one before that)
+                    should continue to serve you well. New phones tend to offer
+                    incremental upgrades—they’re not revolutionary products that
+                    change the experience. Apple still issues security updates
+                    to older devices, and iOS 17 still supports every iPhone
+                    from 2018 on; even five-plus years later, older phones are
+                    getting new features.
+                  </p>
+                  <p>
+                    If you have an older phone that’s beginning to feel slower,
+                    you may want to check the battery’s health. A battery with
+                    depleted capacity can slow down your phone due to
+                    power-conservation features. If the iOS Battery Health
+                    screen shows the status “Performance management applied” or
+                    “Battery health degraded,” consider having Apple replace the
+                    battery (which can cost up to $69 out of warranty) rather
+                    than investing in a new phone.
+                  </p>
+
+                  <h2>better cameras, premium finish: Apple iPhone 15 Pro</h2>
+
+                  <p>
+                    The Apple iPhone 15 Pro gives you the best features of
+                    Apple’s smartphones. If you absolutely need a 5x telephoto
+                    zoom and Spatial Video for the Apple Vision Pro headset, you
+                    have to get the iPhone 15 Pro Max, but otherwise, the 15 Pro
+                    has it all. It offers a bright always-on display, a new
+                    titanium finish, improved performance for high-end gaming
+                    and tasks such as speech-to-text and voice commands, a
+                    better telephoto camera, more camera focal lengths, and
+                    faster data transfers via USB-C.
+                  </p>
+                  <p>
+                    The new titanium frame is lighter but doesn’t look or feel
+                    cheap. Apple swapped out the previous generation’s stainless
+                    steel frame for a new titanium one that the company claims
+                    is lighter than that of previous Pro models. When we held
+                    both the 15 Pro and the 14 Pro, we noticed the difference in
+                    weight. The new titanium side rails aren’t as fingerprint
+                    resistant as we had hoped, though the previous stainless
+                    steel Pros were a whole lot worse in that regard.
+                  </p>
+                  <p>
+                    The 15 Pro has a slightly thinner bezel, too, so it’s
+                    slightly smaller than the 14 Pro despite having the same
+                    6.1-inch screen.
+                  </p>
+                  <p>
+                    It’s the best iPhone for gaming. The 15 Pro’s new, faster
+                    A17 Pro processor makes it feel snappier than the iPhone 14
+                    Pro in everyday use and allows it to handle more
+                    machine-learning tasks on-device, in addition to
+                    multitasking in various apps. But Apple also promises
+                    console-like graphics with the 15 Pro, and so far it seems
+                    to be delivering. In our testing, the 15 Pro handled
+                    high-end mobile games like Call of Duty: Mobile and Diablo
+                    Immortal well, but more important, it also handled a beta
+                    version of the 2021 console and PC title Resident Evil
+                    Village with ease, though the phone did get a little warm to
+                    the touch after about 30 minutes of gameplay.
+                  </p>
+                  <p>
+                    The Pro’s trio of camera lenses offer seven focal lengths.
+                    Apple’s iPhone cameras usually rank among the best for
+                    smartphone video, and the same is true for the 2023 Pro
+                    models. With the 48-megapixel main lens, a 12-megapixel
+                    ultrawide, and a 12-megapixel telephoto, you can capture
+                    13mm macro, 13mm ultra-wide, 24mm, 28mm, 35mm, a 48mm 2x
+                    telephoto, and a 77mm 3x telephoto angle, which gives you
+                    more control over how your photos look. We prefer the 28mm
+                    and 35mm options for shooting photos of family and friends.
+                  </p>
+                  <p>
+                    The iPhone 15 Pro’s new processor and improved Photonic
+                    Engine make shutter speeds and processing faster, producing
+                    slightly improved portraits, night-mode shots, and
+                    night-mode portraits. If you want maximum zoom range, the 15
+                    Pro Max swaps out the 77mm 3x telephoto for a 120mm 5x
+                    telephoto angle, but the 15 Pro’s telephoto lens is likely
+                    to be good enough for most people.
+                  </p>
+                  <p>
+                    The results with 4K and 120 fps slow-motion video are
+                    superb. And as with the iPhone 14 Pro last year, you have to
+                    go Pro if you want access to the ProRes and macro video
+                    features.
+                  </p>
+                  <p>
+                    The 15 Pro has the same 48-megapixel main lens that the
+                    base-model iPhone 15 does, but it raises the resolution of
+                    the resulting images to 24 megapixels versus the base
+                    model’s 12 megapixels (though Apple provides the option of
+                    saving 12-megapixel images to conserve storage space). But
+                    if you have the storage space and want to take full
+                    advantage of that 48-megapixel sensor, you can turn on the
+                    ProRAW and Resolution Control toggle in the Camera section
+                    of the Settings. There, selecting HEIF Max allows the camera
+                    to output images of up to 5 MB; the less-compressed larger
+                    ProRAW Max option can save images of up to 75 MB. (All of
+                    this matters if you’re a photographer, but amateurs don’t
+                    need to worry about it.)
+                  </p>
+                </article>
+
+                <article>
+                  <h2>What are the benefits of practicing self-care?</h2>
+                  <p>
+                    Oh my goodness, where do I even begin with the benefits of
+                    practicing self-care?! So many amazing things can come from
+                    taking some time to pamper yourself. It can help reduce
+                    stress and anxiety, which is always good. Self-care can also
+                    help you feel more centered and balanced and give you
+                    greater control over your life.
+                  </p>
+                  <p>
+                    It can improve your overall mood and help you feel happier
+                    and more positive. Plus, taking care of yourself can help
+                    you be more productive and focused, leading to better
+                    relationships with the people around you. Self-care is truly
+                    the gift that keeps on giving!
+                  </p>
+                </article>
+              </section>
+
+              <Related />
+
+              <Link
+                href={""}
+                className="h-20 md:h-40 w-full bg-green-200 mx-auto flex items-center justify-center"
+              >
+                <div className="md:text-lg text-gray-400 font-bold">
+                  advertising
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <Footer />
     </>
-  )
+  );
 }

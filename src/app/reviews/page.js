@@ -18,6 +18,7 @@ import product8 from "@/assets/products/product8.png";
 import product9 from "@/assets/products/product9.png";
 import product10 from "@/assets/products/product10.png";
 import product11 from "@/assets/products/product11.png";
+import product12 from "@/assets/products/product12.png";
 import AdsSide from "../components/AdsSide";
 import AdsRight from "../components/AdsLeft";
 
@@ -117,18 +118,21 @@ export default function page() {
                             key={index}
                           >
                             <div className="my-[1em] mx-[0em] flex md:items-center w-full bg-white leading-[1.25em]">
-                              <figure className="m-0 mr-2 md:mr-5 flex aspect-[16/9] md:aspect-[16/9] h-fit flex-1 items-center justify-center">
+                              
+                              <Link href={"/reviews/the-gadgets-we-bring-on-every-trip"} className="m-0 mr-2 md:mr-5 flex aspect-[16/9] md:aspect-[16/9] h-fit flex-1 items-center justify-center">
                                 <Image
                                   alt=""
                                   src={data.image}
                                   className="h-full w-full rounded object-cover"
                                   style={{ color: "transparent" }}
                                 />
-                              </figure>
+                              </Link>
                               <div className="flex w-2/3 md:max-w-[55%] flex-1 flex-col space-y-1 md:space-y-2">
+                                <Link href={"/reviews/the-gadgets-we-bring-on-every-trip"} className="text-gray-900 hover:text-indigo-600">
                                 <span className="my-[0.25em] mx-[0em] overflow-hidden break-words text-md md:text-lg leading-tight md:leading-tight font-semibold">
                                   {data.title}
                                 </span>
+                                </Link>
                                 <span className="hidden md:block text-sm md:text-lg leading-tight md:leading-tight tracking-tight break-words text-justify">
                                   Whether you&apos;re waiting for the weekend or
                                   commiserating about your job, these funny work

@@ -7,7 +7,7 @@ const Search = () => {
         <div className="dark:bg-transparent">
           <div className="mx-auto flex flex-col items-center py-12 sm:py-12">
             <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 sm:mb-10">
-              <h1 className="text-4xl md:text-4xl lg:text-4xl text-center text-gray-900 dark:text-white font-bold leading-10">
+              <h1 className="text-4xl md:text-4xl lg:text-4xl text-center text-gray-900 font-bold leading-10">
                 The Wall of Love ❤️
               </h1>
               <p className="mt-7  lg:w-10/12 text-gray-900  font-normal text-center text-[18px] ">

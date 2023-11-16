@@ -79,7 +79,7 @@ const Related = () => {
         <div className=" w-full grid grid-cols-3 gap-3">
           {gifts.map((data, index) => {
             return (
-              <Link className="text-tundora no-underline " href="/" key={index}>
+              <Link className="text-tundora no-underline " href="/detail" key={index}>
               <div className=" mx-[0em] flex flex-col items-center w-full bg-white leading-[1.25em]">
                 <figure className="m-0 flex aspect-[10/9] md:aspect-[16/10] h-fit flex-1 items-center justify-center">
                   <Image
@@ -90,10 +90,11 @@ const Related = () => {
                   />
                 </figure>
                 <div className="flex w-11/12  flex-1">
-                  <span className="my-[0.05em] mx-[0em] overflow-hidden break-words text-sm leading-tight md:leading-tight font-semibold">
+                  <Link href={"/detail"}>
+                  <span className="my-[0.05em] mx-[0em] overflow-hidden break-words text-sm leading-tight md:leading-tight font-semibold text-gray-900 hover:text-indigo-600">
                     {data.title}
                   </span>
-                  
+                  </Link>
                 </div>
               </div>
               {/* <div className="h-px bg-mercury"></div> */}

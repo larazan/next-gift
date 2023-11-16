@@ -6,7 +6,7 @@ import product from "@/assets/iwatch.png";
  const Hero = () => {
   return (
     <>
-      <div className="bg-[#f2f6f6] dark:bg-gray-800 flex relative z-20 items-center overflow-hidden">
+      <div className="bg-[#f2f6f6] flex relative z-20 items-center overflow-hidden">
         <div className="container2 mx-auto px-6 flex items-center relative py-12">
             <div className="sm:w-2/3 lg:w-2/5 px-6 flex flex-col relative z-20 ">
                 
