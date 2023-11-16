@@ -16,7 +16,7 @@ import nike from '/public/assets/img/nike.jpg'
     <>
         {isShow ? (
           <>
-        <div className="fixed inset-0 z-50 overflow-hidden flex items-start top-1/3 mb-4 justify-center transform px-4 sm:px-6 ">
+        <div className="fixed inset-0 z-50 overflow-hidden flex items-start top-[25%] md:top-1/3 mb-4 justify-center transform px-4 sm:px-6 ">
          <div
           className="relative bg-white overflow-auto max-w-2xl w-full max-h-full rounded2 shadow-lg"
         >
