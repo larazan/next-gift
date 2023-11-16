@@ -40,7 +40,7 @@ body {
   --tw-shadow-colored: 3px 3px 0 var(--tw-shadow-color);
   -webkit-appearance: none;
   background-color: rgb(255 255 255/var(--tw-bg-opacity));
-  background-image: url('/public/chev-down.svg');
+  background-image: url('../../public/chev-down.svg');
   background-position: 96% 50%;
   background-repeat: no-repeat;
   border-radius: 0;
