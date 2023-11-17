@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
-import { Tweet } from 'react-tweet'
+import { Tweet } from "react-tweet";
 // import TweetEmbed from "react-tweet-embed";
 
 import Header from "@/app/components/Header";
@@ -103,7 +103,10 @@ export default function page() {
                 </div>
               </Link>
               <section className="w-full mx-auto  mt-10 md:mt-10 px-5 ">
-                <Link href={"/reviews/the-gadgets-we-bring-on-every-trip"} className="text-3xl font-bold tracking-tighter md:text-5xl lg:text-7xl text-black hover:text-indigo-600">
+                <Link
+                  href={"/reviews/the-gadgets-we-bring-on-every-trip"}
+                  className="text-3xl font-bold tracking-tighter md:text-5xl lg:text-7xl text-black hover:text-indigo-600"
+                >
                   Apples New MacBook Air Is $200 More — and Probably Worth It
                 </Link>
                 <p className="max-w-3xl mt-6 text-lg font-medium md:text-xl lg:text-2xl text-black leading-snug">
@@ -115,28 +118,33 @@ export default function page() {
                   <div className="py-6">
                     <Image src={product8} alt="" />
                   </div>
+                  {/* tweet */}
                   <div className="flex min-w-0 flex-1 flex-col py-2">
-                      <div className="w-full rounded p-4 bg-[##14ada8]">
-                        <div className="flex flex-col space-y-1 md:space-y-2">
-                          <Link href={"/reviews/the-gadgets-we-bring-on-every-trip"} className="my-[0.25em] mx-[0em] overflow-hidden break-words text-md md:text-lg leading-tight md:leading-tight font-semibold text-gray-900 hover:text-indigo-600">
-                          Apple&apos;s iPhone 15 Event Recap: New Phones, New Watches, and USB-C
-                          </Link>
-                          <span className="text-sm md:text-lg leading-tight md:leading-tight break-words text-justify">
-                          Apple&apos;s annual fall product-launch event brought few surprises but still delivered big news: The company unveiled four iPhone 15 models
-                          </span>
-                        </div>
-                        <div className="pt-2 ">
-                          <Tweet
-                            id="1724501306109579518"
-                            className="w-1/2 md:w-full"
-                          />
-                        </div>
+                    <div className="w-full rounded p-4 bg-[##14ada8]">
+                      <div className="flex flex-col space-y-1 md:space-y-2">
+                        <Link
+                          href={"/reviews/the-gadgets-we-bring-on-every-trip"}
+                          className="my-[0.25em] mx-[0em] overflow-hidden break-words text-md md:text-lg leading-tight md:leading-tight font-semibold text-gray-900 hover:text-indigo-600"
+                        >
+                          Apple&apos;s iPhone 15 Event Recap: New Phones, New
+                          Watches, and USB-C
+                        </Link>
+                        <span className="text-sm md:text-lg leading-tight md:leading-tight break-words text-justify">
+                          Apple&apos;s annual fall product-launch event brought
+                          few surprises but still delivered big news: The
+                          company unveiled four iPhone 15 models
+                        </span>
                       </div>
-                      <div className="h-px bg-mercury"></div>
+                      <div className="pt-2 ">
+                        <Tweet
+                          id="1724501306109579518"
+                          className="w-1/2 md:w-full"
+                        />
+                      </div>
                     </div>
+                    <div className="h-px bg-mercury"></div>
+                  </div>
                   <div className="flex w-full space-x-4">
-                    
-
                     <div>
                       {products.map((data, index) => {
                         return (

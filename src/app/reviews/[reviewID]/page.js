@@ -24,6 +24,7 @@ import product9 from "@/assets/products/product9.png";
 import product10 from "@/assets/products/product10.png";
 import product11 from "@/assets/products/product11.png";
 import product12 from "@/assets/products/product12.png";
+import RelatedReview from "@/app/components/RelatedReview";
 
 export default function page() {
   return (
@@ -37,11 +38,37 @@ export default function page() {
       <Header />
       <GoTop />
 
-      <div className="flex flex-col bg-white min-h-screen ">
-        <div className="flex mt-10 flex-row w-full">
+      <div className="flex flex-col bg-[#f9f9f9] min-h-screen ">
+        <div className="flex mt-6 flex-row w-full">
           <div className="flex flex-1 flex-col items-center justify-center relative">
             <div className="flex flex-1 flex-col pb-18 max-w-md md:max-w-2xl ">
-              <section className="w-full mx-auto  mt-2 md:mt-4 px-5">
+              <section className="w-full mx-auto  mt-0 md:mt-2 px-5">
+                {/* breadcrumb */}
+                <nav className="text-sm my-1" aria-label="Breadcrumb">
+                  <ol className="list-none p-0 inline-flex">
+                    <li className="flex items-center">
+                      <a href="#" className="uppercase text-gray-500">
+                        Electronics
+                      </a>
+                      <svg
+                        className="fill-current text-gray-500 w-2 h-2 mx-1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512"
+                      >
+                        <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" />
+                      </svg>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="text-gray-500 uppercase"
+                        aria-current="page"
+                      >
+                        smartphone
+                      </a>
+                    </li>
+                  </ol>
+                </nav>
                 <div className="flex flex-col space-y-1 pt-3 pb-5 border-gray-900 border-t-8">
                   <h1 className="text-3xl md:text-4xl font-semibold md:font-bold">
                     Which iPhone Should I Get?
@@ -53,7 +80,7 @@ export default function page() {
                       </span>
                     </div>
                     <div>
-                      <span className="text-sm">Updated October 2, 2023</span>
+                      <span className="text-sm text-gray-500">Updated October 2, 2023</span>
                     </div>
                   </div>
                   <div className="font-mabry">
@@ -323,7 +350,7 @@ export default function page() {
                 </article>
               </section>
 
-              <Related />
+              <RelatedReview />
 
               <Link
                 href={""}

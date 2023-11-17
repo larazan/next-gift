@@ -80,7 +80,7 @@ const Related = () => {
           {gifts.map((data, index) => {
             return (
               <Link className="text-tundora no-underline " href="/detail" key={index}>
-              <div className=" mx-[0em] flex flex-col items-center w-full bg-white leading-[1.25em]">
+              <div className=" mx-[0em] flex flex-col items-center2 space-y-2 w-full bg-white leading-[1.25em]">
                 <figure className="m-0 flex aspect-[10/9] md:aspect-[16/10] h-fit flex-1 items-center justify-center">
                   <Image
                     alt=""
@@ -89,7 +89,7 @@ const Related = () => {
                     style={{ color: "transparent" }}
                   />
                 </figure>
-                <div className="flex w-11/12  flex-1">
+                <div className="flex w-11/12 px-2 py-1 flex-1">
                   <Link href={"/detail"}>
                   <span className="my-[0.05em] mx-[0em] overflow-hidden break-words text-sm leading-tight md:leading-tight font-semibold text-gray-900 hover:text-indigo-600">
                     {data.title}
