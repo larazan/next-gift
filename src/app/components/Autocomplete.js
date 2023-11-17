@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -15,9 +15,26 @@ const Autocomplete = () => {
     setShow(false);
   };
 
+  let autoRef = useRef();
+
+  useEffect(() => {
+    let handler = (e) => {
+      if (!autoRef.current.contains(e.target)) {
+        setShow(false);
+        console.log(autoRef.current);
+      }
+    }
+
+    document.addEventListener("mousedown", handler);
+
+    return() => {
+      document.removeEventListener("mousedown", handler);
+    }
+  })
+
   return (
     <>
-      <div className="relative w-3/5 hidden  md:flex flex-col">
+      <div className="relative w-3/5 hidden  md:flex flex-col" ref={autoRef}>
         <div
           className={` ${
             show == false ? "bg-[#ebebeb]" : "bg-white"
@@ -43,8 +60,8 @@ const Autocomplete = () => {
             onClick={handleClick}
           />
         </div>
-        <div className="absolute top-10 w-full z-40">
-          <div className={` ${
+        <div className="absolute top-12 w-full z-40">
+          {/* <div className={` ${
               show == false ? "hidden" : "flex"
             } mx-auto w-full justify-center`}>
             <div
@@ -69,7 +86,7 @@ const Autocomplete = () => {
               </div>
               <span className="text-sm">close</span>
             </div>
-          </div>
+          </div> */}
           <div
             className={` ${
               show == false ? "hidden" : "flex"
