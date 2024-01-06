@@ -7,6 +7,7 @@ import Image from "next/image";
 import logo from "/public/assets/img/logo.svg";
 import NavLinks from "./NavLinks";
 import Autocomplete from "./Autocomplete";
+import Logo from "./Logo";
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -144,7 +145,8 @@ const Header = () => {
             </section>
             <div className="w-4/6 md:w-full flex justify-center items-center">
               <Link href={"/"}>
-                <Image src={logo} alt="" />
+                {/* <Image src={logo} alt="" /> */}
+                <Logo />
               </Link>
             </div>
             <div className="w-1/6 flex justify-end md:hidden">
