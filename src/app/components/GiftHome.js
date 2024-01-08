@@ -80,8 +80,13 @@ import gift12 from "@/assets/gift12.png";
       ];
 
   return (
-    <>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8 mb-8 mx-auto w-full px-3 md:px-0 md:w-11/12 ">
+    <>  
+    <div className="bg-white mt-8">
+        <div className="flex flex-col mx-auto items-center justify-center w-11/12">
+          <div className="flex w-full py-4 items-center justify-start">
+            <span className="text-gray-900 text-2xl font-semibold">Hot Gifts</span>
+          </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4  mb-8 mx-auto w-full px-3 md:px-0  ">
         {gifts.map((data, index) => {
           return (
             <div className="shadow-md hover:scale-105 " key={index}>
@@ -101,9 +106,11 @@ import gift12 from "@/assets/gift12.png";
         })}
       </div>
       <div className="mx-auto w-full px-3 md:px-0 md:w-8/12 pb-10">
-        <div className="w-full rounded-2xl py-3 text-center bg-[#ff74be] hover:opacity-95 cursor-pointer">
-          <span className="font-semibold text-white">See more</span>
+        <div className="w-full rounded-2xl py-3 text-center bg-[#f2ffc2] hover:bg-[#e8f8b0] cursor-pointer">
+          <span className="font-semibold text-[#333333]">See more</span>
         </div>
+      </div>
+      </div>
       </div>
     </>
   )

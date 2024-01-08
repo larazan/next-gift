@@ -9,6 +9,8 @@ import AdsModal from './components/AdsModal'
 import GoTop from './components/GoTop';
 import GiftHome from './components/GiftHome';
 import SubscribeForm from './components/SubscribeForm';
+import NewsFeed from './components/NewsFeed';
+import TrendingHome from './components/TrendingHome';
 
 
 export default function Home() {
@@ -23,8 +25,9 @@ export default function Home() {
     <Header />
     <GoTop />
     <AdsModal />
-    <Notice />
+    <NewsFeed />
     <Hero />
+    <TrendingHome />
     <GiftHome />
     <SubscribeForm />
     <Footer />

@@ -53,7 +53,7 @@ export default function UserMenu() {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6 text-white"
+            className="w-6 h-6 text-gray-900"
           >
             <path
               strokeLinecap="round"
@@ -64,7 +64,7 @@ export default function UserMenu() {
         </button>
 
         <Transition
-          className="origin-top-right z-30 absolute top-full shadow-menu2 right-0 -mr-2 md:-mr-2 sm:mr-0 min-w-52 w-40 bg-white border border-slate-400 py-1.5  shadow-lg overflow-hidden mt-1.5 md:mt-1.5"
+          className="origin-top-right z-30 absolute top-full shadow-menu2 right-0 -mr-2 md:-mr-2 sm:mr-0 min-w-52 w-48 bg-white border border-slate-400 py-1.5  shadow-lg overflow-hidden mt-1.5 md:mt-1.5"
           show={dropdownOpen}
           enter="transition ease-out duration-200 transform"
           enterStart="opacity-0 -translate-y-2"

@@ -36,7 +36,7 @@ const CategoryNav = () => {
 
   return (
     <>
-      <div className="h-14 bg-[#f3f4f3] shadow">
+      <div className="h-14 bg-[#f3f4f3] shadow border-y">
         <nav className="grid-container relative h-full px-3 lg:px-0 mx-auto w-11/12">
           <button 
             className={`absolute left-2 top-4 z-20 flex h-6 w-6 items-center justify-center bg-black/20 ${scrollX !== 0 ? "hover:bg-black/50" : " cursor-default" }  md:-left-2 `}
@@ -67,7 +67,7 @@ const CategoryNav = () => {
                 className="cursor-pointer rounded-full border px-4 py-2 text-sm font-bold text-sold-out hover:border-gray-400 border-sold-out text-sold-out"
                 href="/en/shop/all-plnts"
               >
-                <span>all plants</span>
+                <span>All Beauty</span>
               </a>
             </li>
             <li>
@@ -75,7 +75,7 @@ const CategoryNav = () => {
                 className="cursor-pointer rounded-full border px-4 py-2 text-sm border-grayish text-sold-out hover:border-gray-400"
                 href="/en/shop/babyplnts-home"
               >
-                <span>baby</span>
+                <span>Skincare</span>
               </a>
             </li>
             <li>
@@ -83,7 +83,7 @@ const CategoryNav = () => {
                 className="cursor-pointer rounded-full border px-4 py-2 text-sm border-grayish text-sold-out hover:border-gray-400"
                 href="/en/shop/new-releases"
               >
-                <span>new releases</span>
+                <span>Hair</span>
               </a>
             </li>
             <li>
@@ -91,7 +91,7 @@ const CategoryNav = () => {
                 className="cursor-pointer rounded-full border px-4 py-2 text-sm border-grayish text-sold-out hover:border-gray-400"
                 href="/en/shop/rare-plnts"
               >
-                <span>rare</span>
+                <span>Makeup</span>
               </a>
             </li>
             <li>
@@ -99,7 +99,7 @@ const CategoryNav = () => {
                 className="cursor-pointer rounded-full border px-4 py-2 text-sm border-grayish text-sold-out hover:border-gray-400"
                 href="/en/shop/pots"
               >
-                <span>pots</span>
+                <span>Celebrity Beauty</span>
               </a>
             </li>
             <li>
@@ -107,7 +107,7 @@ const CategoryNav = () => {
                 className="cursor-pointer rounded-full border px-4 py-2 text-sm border-grayish text-sold-out hover:border-gray-400"
                 href="/en/shop/accessories"
               >
-                <span>accessories</span>
+                <span>Product Reviews</span>
               </a>
             </li>
             <li>
@@ -115,7 +115,7 @@ const CategoryNav = () => {
                 className="cursor-pointer rounded-full border px-4 py-2 text-sm border-grayish text-sold-out hover:border-gray-400"
                 href="/en/shop/care-products"
               >
-                <span>care products</span>
+                <span>How-to</span>
               </a>
             </li>
             <li>

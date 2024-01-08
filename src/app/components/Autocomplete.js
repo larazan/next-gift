@@ -38,7 +38,7 @@ const Autocomplete = () => {
         <div
           className={` ${
             show == false ? "bg-[#ebebeb]" : "bg-white"
-          } flex w-full items-center  rounded-lg z-40`}
+          } flex w-full items-center  rounded-lg z-30`}
         >
           <div className="pl-2">
             <svg
@@ -276,7 +276,7 @@ const Autocomplete = () => {
         </div>
       </div>
       {show ? (
-        <div className="opacity-50 fixed inset-0 z-30 bg-black"></div>
+        <div className="opacity-50 fixed inset-0 z-20 bg-black"></div>
       ) : (
         <></>
       )}

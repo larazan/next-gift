@@ -3,7 +3,7 @@ import React from "react";
 const Search = () => {
   return (
     <>
-      <div className="bg-[#fbd718]">
+      <div className="bg-white">
         <div className="dark:bg-transparent">
           <div className="mx-auto flex flex-col items-center py-12 sm:py-12">
             <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 sm:mb-10">

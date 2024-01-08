@@ -55,7 +55,7 @@ const NewsFeed = () => {
 
   return (
     <>
-      <div className="md:border-b border-sold-out/50 bg-grayish">
+      <div className="md:border-b border-sold-out/50 bg-[#f2ffc2]">
         <div className="grid-container overflow-x-hidden px-3 py-2 md:py-3 lg:px-0 lg:py-4">
           <div
             // style={{ transform: 'translateX(-200%)' }}
