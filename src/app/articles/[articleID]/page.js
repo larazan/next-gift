@@ -33,7 +33,7 @@ export default function Detail() {
         <div className="flex flex-col py-4 mx-auto w-11/12">
           <BreadcrumbArticle />
           <h1 className="text-4xl font-bold leading-snug">
-            Keeping a Food Diary Can Improve Your Health—so Long as It's Not
+            Keeping a Food Diary Can Improve Your Health—so Long as It&lsquo;s Not
             About Counting Calories
           </h1>
           <div className="flex flex-col space-y-1">

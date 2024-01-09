@@ -27,7 +27,7 @@ export default function Custom404() {
             Uh-oh!
           </h1>
           <p className="mt-4 text-gray-500">
-            We can't find that page. Go to{" "}
+            We can&lsquo;t find that page. Go to{" "}
             <a
               className="hover:underline"
               style={{ color: 'rgb(255 86 120 / 90%)' }}

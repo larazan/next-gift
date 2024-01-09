@@ -4,16 +4,16 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import product1 from "@/assets/product/produk1.png";
-import product2 from "@/assets/product/produk2.png";
-import product3 from "@/assets/product/produk3.png";
-import product4 from "@/assets/product/produk4.png";
-import product5 from "@/assets/product/produk5.png";
-import product6 from "@/assets/product/produk6.png";
-import product7 from "@/assets/product/produk7.png";
-import product8 from "@/assets/product/produk8.png";
-import product9 from "@/assets/product/produk9.png";
-import pro1 from "@/assets/product/produk14.png";
+import product1 from "@/assets/gallery/gallery1.png";
+import product2 from "@/assets/gallery/gallery2.png";
+import product3 from "@/assets/gallery/gallery3.png";
+import product4 from "@/assets/gallery/gallery4.png";
+import product5 from "@/assets/gallery/gallery5.png";
+import product6 from "@/assets/gallery/gallery6.png";
+import product7 from "@/assets/gallery/gallery7.png";
+import product8 from "@/assets/gallery/gallery8.png";
+import product9 from "@/assets/gallery/gallery9.png";
+
 import Pagination from "./Pagination";
 
 const ProductList = () => {
@@ -31,39 +31,39 @@ const ProductList = () => {
   const productData = [
     {
       id: 1,
-      title: "Thai Constellation",
+      title: "Glow Balm",
       slug: "product-1",
       price: "37.95",
-      category: "Anthurium",
+      category: "Ursa Major",
       img: product1,
     },
     {
       id: 2,
-      title: "Florida Ghost",
+      title: "Mighty Patch Original Patch",
       slug: "product-1",
       price: "8.00",
-      category: "Monstera",
+      category: "Osea",
       img: product2,
     },
     {
       id: 3,
-      title: "Warocqueanum",
+      title: "Mighty Patch Nose Patch",
       slug: "product-1",
       price: "21.00",
-      category: "Anthurium",
+      category: "Ilia",
       img: product3,
     },
     {
       id: 4,
-      title: "Frydek Variegata",
+      title: "Mighty Patch Variety Patch",
       slug: "product-1",
       price: "28.00",
-      category: "Alocasia",
+      category: "Heretic",
       img: product4,
     },
     {
       id: 5,
-      title: "Frozen Freckles",
+      title: "Pore Release",
       slug: "product-1",
       price: "35.00",
       category: "Anthurium",
@@ -71,7 +71,7 @@ const ProductList = () => {
     },
     {
       id: 6,
-      title: "Kentia Palm",
+      title: "Pore Purity",
       slug: "product-1",
       price: "16.00",
       category: "Monstera",
@@ -79,7 +79,7 @@ const ProductList = () => {
     },
     {
       id: 7,
-      title: "Obliqua",
+      title: "Rescue Balm",
       slug: "product-1",
       price: "48.00",
       category: "Anthurium",
@@ -87,7 +87,7 @@ const ProductList = () => {
     },
     {
       id: 8,
-      title: "Esqueleto",
+      title: "Rescue Balm Red Correct",
       slug: "product-1",
       price: "85.00",
       category: "Monstera",
@@ -95,7 +95,7 @@ const ProductList = () => {
     },
     {
       id: 9,
-      title: "Heterophylla",
+      title: "Lightning Wand",
       slug: "product-1",
       price: "8.00",
       category: "Anthurium",
