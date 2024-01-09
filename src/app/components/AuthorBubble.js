@@ -9,8 +9,8 @@ const AuthorBubble = () => {
     <>
       <div className="shrink-0 z-50 cursor-pointer group">
         
-        <div className="text-sm font-semibold text-white inset-0 w-full">
-            By <span className="underline">Roderick Scott</span>
+        <div className="text-sm font-semibold text-[#757575] inset-0 w-full">
+            By <span className="underline">Brigitt Earley</span>
         </div>
         <div className="absolute member hidden group-hover:block w-56 md:w-64 shadow-xl rounded border border-gray-400 mt-2 md:mt-2 -ml-102">
           

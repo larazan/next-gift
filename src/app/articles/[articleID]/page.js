@@ -14,6 +14,7 @@ import Tags from "@/app/components/Tags";
 import ShareIt from "@/app/components/ShareIt";
 import Author from "@/app/components/Author";
 import BreadcrumbArticle from "@/app/components/BreadcrumbArticle";
+import AuthorBubble from "@/app/components/AuthorBubble";
 
 export default function Detail() {
   return (
@@ -30,22 +31,21 @@ export default function Detail() {
 
       <div className="flex flex-col bg-white min-h-screen ">
         <div className="flex flex-col py-4 mx-auto w-11/12">
-            <BreadcrumbArticle />
-            <h1 className="text-4xl font-bold leading-snug">
-            Keeping a Food Diary Can Improve Your Health—so Long as It's Not About Counting Calories
-            </h1>
-            <div className="flex flex-col space-y-1">
-                        <p className="text-sm font-semibold text-[#757575]">
+          <BreadcrumbArticle />
+          <h1 className="text-4xl font-bold leading-snug">
+            Keeping a Food Diary Can Improve Your Health—so Long as It's Not
+            About Counting Calories
+          </h1>
+          <div className="flex flex-col space-y-1">
+            {/* <p className="text-sm font-semibold text-[#757575]">
                           By Brigitt Earley
-                        </p>
-                        <span className="text-xs text-gray-900">
-                          January 6, 2024
-                        </span>
-                      </div>
+                        </p> */}
+            <AuthorBubble />
+            <span className="text-xs text-gray-900">January 6, 2024</span>
+          </div>
         </div>
         <div className="relative2 z-0 mx-auto w-11/12 overflow-hidden bg-grayish h-[230px] md:h-[363px]">
           <Image src={bg} alt="" className=" object-cover h-full" />
-          
         </div>
 
         <div className="flex flex-row w-full">

@@ -13,7 +13,7 @@ import React, { useState } from "react";
       {isShow ? (
         <>
         <div className="fixed left-2 bottom-0 z-50 ">
-          <div className="fixed sm:left-4 bottom-3 border rounded-lg bg-white shadow-2xl w-full sm:w-1/2 xl:w-1/4 max-w-[300px] md:max-w-[450px] overflow-hidden">
+          <div className="fixed sm:left-4 bottom-3 border  bg-[#fee4d5] shadow-2xl w-full sm:w-1/2 xl:w-1/4 max-w-[300px] md:max-w-[350px] overflow-hidden">
             <div className="">
               <div className="relative overflow-hidden px-4 md:px-8 pt-4 md:pt-8">
                 <div
@@ -35,25 +35,20 @@ import React, { useState } from "react";
                     />
                   </svg>
                 </div>
-                <div className="text-base md:text-2xl flex flex-col pb-4 text-gray-800">
-                  <small>Hello there..</small>
-                  <span className="text-lg md:text-3xl font-bold">
-                    We are the Cookies !
-                  </span>
-                </div>
+                
                 <div className="pb-4 text-sm md:text-base text-gray-800 leading-tight md:leading-snug">
                   <p>
-                  By using this website, you agree to our use of cookies. We use cookies to provide you with a great experience and to help our website run effectively.
+                  🍪 This website uses cookies to ensure you get the best experience
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="flex flex-col space-y-2 mx-auto w-11/12 pb-7">
-              <div onClick={handleClick} className="flex justify-center text-sm md:text-base w-full py-2 rounded-md bg-blue-700 hover:bg-blue-800 cursor-pointer text-white font-semibold">
+            <div className="flex space-x-2 mx-auto w-11/12 pb-6">
+              <div onClick={handleClick} className="flex items-center justify-center text-sm md:text-sm border border-gray-900 w-full py-1.5 bg-transparent hover:underline cursor-pointer text-gray-900 font-semibold">
                 <span>Accept</span>
               </div>
-              <div onClick={handleClick} className="flex justify-center text-sm md:text-base w-full py-2 border rounded-md bg-white hover:bg-gray-50 cursor-pointer text-gray-800 font-semibold">
+              <div onClick={handleClick} className="flex items-center justify-center text-sm md:text-sm border border-gray-900 w-full py-1.5 bg-transparent hover:underline cursor-pointer text-gray-900 font-semibold">
                 <span>Decline</span>
               </div>
             </div>

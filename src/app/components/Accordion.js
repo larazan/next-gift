@@ -7,9 +7,9 @@ const Accordion = (props) => {
     <div className={` ${props.bg ? 'bg-[#'+props.bg+']' : 'bg-white'} py-0 flex flex-col w-full `}>
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
-        className="flex items-center justify-between h-12 px-3 group text-base md:text-[18px] font-semibold md:font-bold"
+        className="flex items-center justify-between h-10 px-3 group text-base md:text-[12px] font-semibold md:font-bold"
       >
-        <span className="text-white">{props.title}</span>
+        <span className="text-gray-900 text-sm">{props.title}</span>
         {accordionOpen ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +17,7 @@ const Accordion = (props) => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6 text-white"
+            className="w-6 h-6 text-gray-900"
           >
             <path strokeLinecap="round" strokeLinejoin="round" d="M18 12H6" />
           </svg>
@@ -28,7 +28,7 @@ const Accordion = (props) => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6 text-white transition duration-150 group-hover:rotate-90"
+            className="w-6 h-6 text-gray-900 transition duration-150 group-hover:rotate-90"
           >
             <path
               strokeLinecap="round"

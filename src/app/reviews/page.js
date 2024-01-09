@@ -87,8 +87,8 @@ export default function page() {
 
       <Header />
       <GoTop />
-      <AdsSide />
-      <AdsRight />
+      {/* <AdsSide /> */}
+      {/* <AdsRight /> */}
 
       <div className="flex bg-white min-h-screen pt-5 mb-10 md:pt-[10px]">
         <div className="flex flex-row w-full">

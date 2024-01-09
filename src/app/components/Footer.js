@@ -18,9 +18,9 @@ const Footer = () => {
             <div className=" mb-7 flex flex-col items-center justify-center md:mb-0 md:w-full md:flex-row md:justify-start lg:w-auto lg:flex-col xl:w-full xl:flex-row 3xl:w-auto 3xl:flex-col ">
               <Image src={logo} alt="" className="w-40" />
             </div>
-            <div className="hidden flex-none flex-col justify-start gap-2 px-3 md:flex md:px-0">
+            <div className="hidden flex-none flex-col justify-start gap-3 px-3 md:flex md:px-0">
               <span className="font-bold">Shop</span>
-              <ul>
+              <ul className="space-y-1">
                 <li>
                   <Link className="md:hover:underline" href="/shop">
                     All houseplants
@@ -69,9 +69,9 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="hidden flex-none flex-col justify-start gap-2 px-3 md:flex md:px-0">
+            <div className="hidden flex-none flex-col justify-start gap-3 px-3 md:flex md:px-0">
               <span className="font-bold">Customer service</span>
-              <ul>
+              <ul className="space-y-1">
                 <li>
                   <Link
                     href="/faqs"
@@ -125,9 +125,9 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="hidden flex-none flex-col justify-start gap-2 px-3 md:flex md:px-0">
-              <span className="font-bold">About PLNTS</span>
-              <ul>
+            <div className="hidden flex-none flex-col justify-start gap-3 px-3 md:flex md:px-0">
+              <span className="font-bold">About </span>
+              <ul className="space-y-1">
                 <li>
                   <a className="md:hover:underline" href="/">
                     Giftcard

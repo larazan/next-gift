@@ -7,7 +7,7 @@ import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import GoTop from "@/app/components/GoTop";
 
-export default function page() {
+export default function Deals() {
   return (
     <>
       <Head>
