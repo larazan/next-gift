@@ -14,7 +14,7 @@ const DropFilter = (props) => {
         onClick={() => setAccordionOpen(!accordionOpen)}
         className="flex items-center justify-between py-3 group font-semibold md:font-bold"
       >
-        <span className="text-sm font-bold text-gray-900">{props.title}</span>
+        <span className="text-[13px] font-semibold uppercase text-gray-900">{props.title}</span>
         {accordionOpen ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"

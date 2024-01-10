@@ -23,6 +23,19 @@ const FilterPopup = ({ isOpen, handleClose, setIsOpen }) => {
     };
   });
 
+  const concernData = [
+    "Acne",
+    "Acne & Blemishes",
+    "Aging",
+    "Anti-Aging",
+    "Color Care",
+    "Curl Care",
+    "Damaged Hair",
+    "Dark Circles",
+    "Dry Hair",
+    "Dry Skin",
+  ]
+
   return (
     <>
       <div
@@ -60,36 +73,64 @@ const FilterPopup = ({ isOpen, handleClose, setIsOpen }) => {
         </div>
 
         <div className="divide-y">
-          <DropFilter title="Size">
+          <DropFilter title="Brands">
             <div className="overflow-hidden pb-0">
               <div className="duration-300 px-0 pb-3">
                 <div className="space-y-1">
-                  <ul className="flex flex-row flex-wrap justify-start gap-2">
+                  <ul className="flex flex-col flex-wrap justify-start space-y-2 px-2">
                     <li>
-                      <span className="flex cursor-pointer select-none items-center justify-center rounded-full bg-[#f3f4f3] text-[#7e8784] h-8 w-8 lg:h-9 lg:w-9">
-                        <button className="h-full w-full outline-none focus:outline-none">
-                          S
+                      <span className="flex cursor-pointer justify-start text-gray-900 ">
+                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
+                          Abbott
                         </button>
                       </span>
                     </li>
                     <li>
-                      <span className="flex cursor-pointer select-none items-center justify-center rounded-full bg-[#7e8784] text-[#f3f4f3] h-8 w-8 lg:h-9 lg:w-9">
-                        <button className="h-full w-full outline-none focus:outline-none">
-                          M
+                      <span className="flex cursor-pointer justify-start text-gray-900 ">
+                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
+                          Arey
                         </button>
                       </span>
                     </li>
                     <li>
-                      <span className="flex cursor-pointer select-none items-center justify-center rounded-full bg-[#f3f4f3] text-[#7e8784] h-8 w-8 lg:h-9 lg:w-9">
-                        <button className="h-full w-full outline-none focus:outline-none">
-                          L
+                      <span className="flex cursor-pointer justify-start text-gray-900 ">
+                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
+                          Bathing Culture
                         </button>
                       </span>
                     </li>
                     <li>
-                      <span className="flex cursor-pointer select-none items-center justify-center rounded-full bg-[#f3f4f3] text-[#7e8784] h-8 w-8 lg:h-9 lg:w-9">
-                        <button className="h-full w-full outline-none focus:outline-none">
-                          XL
+                      <span className="flex cursor-pointer justify-start text-gray-900 ">
+                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
+                          Cocofloss
+                        </button>
+                      </span>
+                    </li>
+                    <li>
+                      <span className="flex cursor-pointer justify-start text-gray-900 ">
+                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
+                          Corpus
+                        </button>
+                      </span>
+                    </li>
+                    <li>
+                      <span className="flex cursor-pointer justify-start text-gray-900 ">
+                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
+                          Dedcool
+                        </button>
+                      </span>
+                    </li>
+                    <li>
+                      <span className="flex cursor-pointer justify-start text-gray-900 ">
+                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
+                          Ellis Brooklyn
+                        </button>
+                      </span>
+                    </li>
+                    <li>
+                      <span className="flex cursor-pointer justify-start text-gray-900 ">
+                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
+                          Eleven by Venus William
                         </button>
                       </span>
                     </li>
@@ -98,88 +139,97 @@ const FilterPopup = ({ isOpen, handleClose, setIsOpen }) => {
               </div>
             </div>
           </DropFilter>
-          <DropFilter title="Price">
+          <DropFilter title="Category">
             <div className="overflow-hidden pb-0">
-              <div className="duration-300 px-4">
-                <div>
-                  <div>
-                    <div className="mb-3 flex items-center justify-between text-sm">
-                      Between €0 and €300
-                      <button
-                        className="cursor-pointer inline-block leading-none select-none text-center focus:outline-none disabled:cursor-not-allowed max-h-10 relative p-0 text-sm text-primary transition-all hover:underline invisible opacity-0"
-                        type="button"
-                        data-variant="null_null"
-                      ></button>
-                    </div>
-                    <div
-                      className="relative my-6 flex h-auto w-full px-2"
-                      style={{ transform: "scale(1)", cursor: "inherit" }}
-                    >
-                      <div
-                        className="h-[1px] w-full self-center before:absolute before:left-0 before:h-[1px] before:w-2 before:bg-[#707070] after:absolute after:right-0 after:h-[1px] after:w-2 after:bg-[#707070]"
-                        style={{
-                          background:
-                            "linear-gradient(to right, #707070 0%, #707070 0%, #debe48 0%, #debe48 100%, #707070 100%, #707070 100%)",
-                        }}
-                      >
-                        <div
-                          style={{
-                            position: "absolute",
-                            zIndex: 0,
-                            cursor: "grab",
-                            touchAction: "none",
-                            userSelect: "none",
-                            transform: "translate(-8px, -7.5px)",
-                          }}
-                          tabindex="0"
-                          aria-valuemax="300"
-                          aria-valuemin="0"
-                          aria-valuenow="0"
-                          draggable="false"
-                          role="slider"
-                          className="flex h-4 w-4 items-center justify-center rounded-full bg-primary outline-none transition-shadow"
-                        >
-                          <span className="border-1 absolute -top-12 hidden rounded-[4px] border-black bg-white px-4 py-2 text-[14px] opacity-0 shadow-lg transition-opacity md:inline-block invisible">
-                            €0
-                          </span>
-                        </div>
-                        <div
-                          style={{
-                            position: "absolute",
-                            zIndex: "1",
-                            cursor: "grab",
-                            touchAction: "none",
-                            userSelect: "none",
-                            transform: "translate(217.328px, -7.5px)",
-                          }}
-                          tabindex="0"
-                          aria-valuemax="300"
-                          aria-valuemin="0"
-                          aria-valuenow="300"
-                          draggable="false"
-                          role="slider"
-                          className="flex h-4 w-4 items-center justify-center rounded-full bg-primary outline-none transition-shadow"
-                        >
-                          <span className="border-1 absolute -top-12 hidden rounded-[4px] border-black bg-white px-4 py-2 text-[14px] opacity-0 shadow-lg transition-opacity md:inline-block invisible">
-                            €300
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div className="duration-300 px-0 pb-3">
+                <div className="space-y-1">
+                  <ul className="flex flex-col flex-wrap justify-start space-y-2 px-2">
+                    <li>
+                      <span className="flex cursor-pointer justify-start text-gray-900 ">
+                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
+                        Moisturizers & Face Oils
+                        </button>
+                      </span>
+                    </li>
+                    <li>
+                      <span className="flex cursor-pointer justify-start text-gray-900 ">
+                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
+                        Serums & Eye Creams
+                        </button>
+                      </span>
+                    </li>
+                    <li>
+                      <span className="flex cursor-pointer justify-start text-gray-900 ">
+                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
+                        SPF & Skin Tint SPF
+                        </button>
+                      </span>
+                    </li>
+                    <li>
+                      <span className="flex cursor-pointer justify-start text-gray-900 ">
+                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
+                        Cleansers
+                        </button>
+                      </span>
+                    </li>
+                    <li>
+                      <span className="flex cursor-pointer justify-start text-gray-900 ">
+                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
+                        Essence, Mists & Toners
+                        </button>
+                      </span>
+                    </li>
+                    <li>
+                      <span className="flex cursor-pointer justify-start text-gray-900 ">
+                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
+                        Masks & Treatments
+                        </button>
+                      </span>
+                    </li>
+                    <li>
+                      <span className="flex cursor-pointer justify-start text-gray-900 ">
+                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
+                        Hair Care
+                        </button>
+                      </span>
+                    </li>
+                    <li>
+                      <span className="flex cursor-pointer justify-start text-gray-900 ">
+                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
+                        Body Care
+                        </button>
+                      </span>
+                    </li>
+                    <li>
+                      <span className="flex cursor-pointer justify-start text-gray-900 ">
+                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
+                        Skincare
+                        </button>
+                      </span>
+                    </li>
+                    <li>
+                      <span className="flex cursor-pointer justify-start text-gray-900 ">
+                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
+                        Tools & Accessories
+                        </button>
+                      </span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </DropFilter>
-          <DropFilter title="Characteristics">
+          
+          <DropFilter title="Concern">
             <div className="overflow-hidden pb-0">
               <div className="duration-300 px-0 pb-3">
                 <ul>
-                  <li className="pl-2">
+                  {concernData.map((data,index) => {
+                    return (
+                      <li className="pl-2">
                     <label className="flex h-8 flex-row items-center justify-start">
                       <span className="grow">
-                        <span className="text-sm">Easy </span>
-                        <span className="text-xs text-sold-out">(8)</span>
+                        <span className="text-sm">{data} </span>
                       </span>
                       <label className="relative inline-block h-[22px] w-[45px] flex-none">
                         <input
@@ -192,57 +242,10 @@ const FilterPopup = ({ isOpen, handleClose, setIsOpen }) => {
                       </label>
                     </label>
                   </li>
-                  <li className="pl-2">
-                    <label className="flex h-8 flex-row items-center justify-start">
-                      <span className="grow">
-                        <span className="text-sm">Air purifying </span>
-                        <span className="text-xs text-sold-out">(8)</span>
-                      </span>
-                      <label className="relative inline-block h-[22px] w-[45px] flex-none">
-                        <input
-                          className="peer h-0 w-0 opacity-0"
-                          type="checkbox"
-                          name="properties:air-purifying"
-                          value="367"
-                        />
-                        <span className="absolute bottom-0 left-0 right-0 top-0 cursor-pointer rounded-[22px] bg-white ring-1 ring-inset ring-sold-out duration-300 before:absolute before:bottom-[2px] before:left-[2px] before:h-[18px] before:w-[18px] before:rounded-full before:bg-sold-out before:duration-300 before:content-[''] peer-checked:bg-primary peer-checked:ring-primary peer-checked:before:translate-x-[23px] peer-checked:before:transform peer-checked:before:bg-white peer-checked:peer-disabled:bg-primary/50 peer-checked:peer-disabled:ring-0"></span>
-                      </label>
-                    </label>
-                  </li>
-                  <li className="pl-2">
-                    <label className="flex h-8 flex-row items-center justify-start">
-                      <span className="grow">
-                        <span className="text-sm">Pet friendly </span>
-                        <span className="text-xs text-sold-out">(7)</span>
-                      </span>
-                      <label className="relative inline-block h-[22px] w-[45px] flex-none">
-                        <input
-                          className="peer h-0 w-0 opacity-0"
-                          type="checkbox"
-                          name="properties:pet-friendly"
-                          value="368"
-                        />
-                        <span className="absolute bottom-0 left-0 right-0 top-0 cursor-pointer rounded-[22px] bg-white ring-1 ring-inset ring-sold-out duration-300 before:absolute before:bottom-[2px] before:left-[2px] before:h-[18px] before:w-[18px] before:rounded-full before:bg-sold-out before:duration-300 before:content-[''] peer-checked:bg-primary peer-checked:ring-primary peer-checked:before:translate-x-[23px] peer-checked:before:transform peer-checked:before:bg-white peer-checked:peer-disabled:bg-primary/50 peer-checked:peer-disabled:ring-0"></span>
-                      </label>
-                    </label>
-                  </li>
-                  <li className="pl-2">
-                    <label className="flex h-8 flex-row items-center justify-start">
-                      <span className="grow">
-                        <span className="text-sm">Hanging plant </span>
-                        <span className="text-xs text-sold-out">(1)</span>
-                      </span>
-                      <label className="relative inline-block h-[22px] w-[45px] flex-none">
-                        <input
-                          className="peer h-0 w-0 opacity-0"
-                          type="checkbox"
-                          name="properties:hanging-plant"
-                          value="370"
-                        />
-                        <span className="absolute bottom-0 left-0 right-0 top-0 cursor-pointer rounded-[22px] bg-white ring-1 ring-inset ring-sold-out duration-300 before:absolute before:bottom-[2px] before:left-[2px] before:h-[18px] before:w-[18px] before:rounded-full before:bg-sold-out before:duration-300 before:content-[''] peer-checked:bg-primary peer-checked:ring-primary peer-checked:before:translate-x-[23px] peer-checked:before:transform peer-checked:before:bg-white peer-checked:peer-disabled:bg-primary/50 peer-checked:peer-disabled:ring-0"></span>
-                      </label>
-                    </label>
-                  </li>
+                    )
+                  })}
+                  
+                
                 </ul>
               </div>
             </div>
@@ -323,141 +326,7 @@ const FilterPopup = ({ isOpen, handleClose, setIsOpen }) => {
               </div>
             </div>
           </DropFilter>
-          <DropFilter title="Room">
-            <div className="overflow-hidden pb-0">
-              <div className="duration-300 px-0 pb-3">
-                <ul>
-                  <li className="pl-2">
-                    <label className="flex h-8 flex-row items-center justify-start">
-                      <span className="grow">
-                        <span className="text-sm">Bathroom </span>
-                        <span className="text-xs text-sold-out">(8)</span>
-                      </span>
-                      <label className="relative inline-block h-[22px] w-[45px] flex-none">
-                        <input
-                          className="peer h-0 w-0 opacity-0"
-                          type="checkbox"
-                          name="properties:air-purifying"
-                          value="367"
-                        />
-                        <span className="absolute bottom-0 left-0 right-0 top-0 cursor-pointer rounded-[22px] bg-white ring-1 ring-inset ring-sold-out duration-300 before:absolute before:bottom-[2px] before:left-[2px] before:h-[18px] before:w-[18px] before:rounded-full before:bg-sold-out before:duration-300 before:content-[''] peer-checked:bg-primary peer-checked:ring-primary peer-checked:before:translate-x-[23px] peer-checked:before:transform peer-checked:before:bg-white peer-checked:peer-disabled:bg-primary/50 peer-checked:peer-disabled:ring-0"></span>
-                      </label>
-                    </label>
-                  </li>
-                  <li className="pl-2">
-                    <label className="flex h-8 flex-row items-center justify-start">
-                      <span className="grow">
-                        <span className="text-sm">Bedroom </span>
-                        <span className="text-xs text-sold-out">(8)</span>
-                      </span>
-                      <label className="relative inline-block h-[22px] w-[45px] flex-none">
-                        <input
-                          className="peer h-0 w-0 opacity-0"
-                          type="checkbox"
-                          name="properties:air-purifying"
-                          value="367"
-                        />
-                        <span className="absolute bottom-0 left-0 right-0 top-0 cursor-pointer rounded-[22px] bg-white ring-1 ring-inset ring-sold-out duration-300 before:absolute before:bottom-[2px] before:left-[2px] before:h-[18px] before:w-[18px] before:rounded-full before:bg-sold-out before:duration-300 before:content-[''] peer-checked:bg-primary peer-checked:ring-primary peer-checked:before:translate-x-[23px] peer-checked:before:transform peer-checked:before:bg-white peer-checked:peer-disabled:bg-primary/50 peer-checked:peer-disabled:ring-0"></span>
-                      </label>
-                    </label>
-                  </li>
-                  <li className="pl-2">
-                    <label className="flex h-8 flex-row items-center justify-start">
-                      <span className="grow">
-                        <span className="text-sm">Livingroom </span>
-                        <span className="text-xs text-sold-out">(7)</span>
-                      </span>
-                      <label className="relative inline-block h-[22px] w-[45px] flex-none">
-                        <input
-                          className="peer h-0 w-0 opacity-0"
-                          type="checkbox"
-                          name="properties:pet-friendly"
-                          value="368"
-                        />
-                        <span className="absolute bottom-0 left-0 right-0 top-0 cursor-pointer rounded-[22px] bg-white ring-1 ring-inset ring-sold-out duration-300 before:absolute before:bottom-[2px] before:left-[2px] before:h-[18px] before:w-[18px] before:rounded-full before:bg-sold-out before:duration-300 before:content-[''] peer-checked:bg-primary peer-checked:ring-primary peer-checked:before:translate-x-[23px] peer-checked:before:transform peer-checked:before:bg-white peer-checked:peer-disabled:bg-primary/50 peer-checked:peer-disabled:ring-0"></span>
-                      </label>
-                    </label>
-                  </li>
-                  <li className="pl-2">
-                    <label className="flex h-8 flex-row items-center justify-start">
-                      <span className="grow">
-                        <span className="text-sm">Office </span>
-                        <span className="text-xs text-sold-out">(1)</span>
-                      </span>
-                      <label className="relative inline-block h-[22px] w-[45px] flex-none">
-                        <input
-                          className="peer h-0 w-0 opacity-0"
-                          type="checkbox"
-                          name="properties:hanging-plant"
-                          value="370"
-                        />
-                        <span className="absolute bottom-0 left-0 right-0 top-0 cursor-pointer rounded-[22px] bg-white ring-1 ring-inset ring-sold-out duration-300 before:absolute before:bottom-[2px] before:left-[2px] before:h-[18px] before:w-[18px] before:rounded-full before:bg-sold-out before:duration-300 before:content-[''] peer-checked:bg-primary peer-checked:ring-primary peer-checked:before:translate-x-[23px] peer-checked:before:transform peer-checked:before:bg-white peer-checked:peer-disabled:bg-primary/50 peer-checked:peer-disabled:ring-0"></span>
-                      </label>
-                    </label>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </DropFilter>
-          <DropFilter title="Water care">
-            <div className="overflow-hidden pb-0">
-              <div className="duration-300 px-0 pb-3">
-                <ul>
-                  <li className="pl-2">
-                    <label className="flex h-8 flex-row items-center justify-start">
-                      <span className="grow">
-                        <span className="text-sm">Weekly </span>
-                        <span className="text-xs text-sold-out">(8)</span>
-                      </span>
-                      <label className="relative inline-block h-[22px] w-[45px] flex-none">
-                        <input
-                          className="peer h-0 w-0 opacity-0"
-                          type="checkbox"
-                          name="properties:air-purifying"
-                          value="367"
-                        />
-                        <span className="absolute bottom-0 left-0 right-0 top-0 cursor-pointer rounded-[22px] bg-white ring-1 ring-inset ring-sold-out duration-300 before:absolute before:bottom-[2px] before:left-[2px] before:h-[18px] before:w-[18px] before:rounded-full before:bg-sold-out before:duration-300 before:content-[''] peer-checked:bg-primary peer-checked:ring-primary peer-checked:before:translate-x-[23px] peer-checked:before:transform peer-checked:before:bg-white peer-checked:peer-disabled:bg-primary/50 peer-checked:peer-disabled:ring-0"></span>
-                      </label>
-                    </label>
-                  </li>
-                  <li className="pl-2">
-                    <label className="flex h-8 flex-row items-center justify-start">
-                      <span className="grow">
-                        <span className="text-sm">Bi-weekly </span>
-                        <span className="text-xs text-sold-out">(8)</span>
-                      </span>
-                      <label className="relative inline-block h-[22px] w-[45px] flex-none">
-                        <input
-                          className="peer h-0 w-0 opacity-0"
-                          type="checkbox"
-                          name="properties:air-purifying"
-                          value="367"
-                        />
-                        <span className="absolute bottom-0 left-0 right-0 top-0 cursor-pointer rounded-[22px] bg-white ring-1 ring-inset ring-sold-out duration-300 before:absolute before:bottom-[2px] before:left-[2px] before:h-[18px] before:w-[18px] before:rounded-full before:bg-sold-out before:duration-300 before:content-[''] peer-checked:bg-primary peer-checked:ring-primary peer-checked:before:translate-x-[23px] peer-checked:before:transform peer-checked:before:bg-white peer-checked:peer-disabled:bg-primary/50 peer-checked:peer-disabled:ring-0"></span>
-                      </label>
-                    </label>
-                  </li>
-                  <li className="pl-2">
-                    <label className="flex h-8 flex-row items-center justify-start">
-                      <span className="grow">
-                        <span className="text-sm">Monthly </span>
-                        <span className="text-xs text-sold-out">(7)</span>
-                      </span>
-                      <label className="relative inline-block h-[22px] w-[45px] flex-none">
-                        <input
-                          className="peer h-0 w-0 opacity-0"
-                          type="checkbox"
-                          name="properties:pet-friendly"
-                          value="368"
-                        />
-                        <span className="absolute bottom-0 left-0 right-0 top-0 cursor-pointer rounded-[22px] bg-white ring-1 ring-inset ring-sold-out duration-300 before:absolute before:bottom-[2px] before:left-[2px] before:h-[18px] before:w-[18px] before:rounded-full before:bg-sold-out before:duration-300 before:content-[''] peer-checked:bg-primary peer-checked:ring-primary peer-checked:before:translate-x-[23px] peer-checked:before:transform peer-checked:before:bg-white peer-checked:peer-disabled:bg-primary/50 peer-checked:peer-disabled:ring-0"></span>
-                      </label>
-                    </label>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </DropFilter>
+          
           <div>
             {/* <div
             className="bg-[#073d30] hover:opacity-80 uppercase  rounded text-white border border-[#073d30] flex p-3 justify-center items-center w-full font-semibold cursor-pointer"

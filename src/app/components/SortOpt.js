@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import FilterPopup from "../components/FilterPopup";
+import SortSelect from "./SortSelect";
 
 const SortOpt = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,10 +11,10 @@ const SortOpt = () => {
   };
   return (
     <>
-      <div className="py-3 col-span-full col-start-1 flex flex-wrap items-center justify-between gap-2 md:col-start-5 md:flex-nowrap xl:col-start-4 xl:col-end-12 ">
-        <div className="flex md:hidden w-max rounded-full border-gray-400 border border-solid hover:shadow-md transform duration-200 hover:scale-105">
+      <div className="py-1 col-span-full col-start-1 flex flex-wrap items-center justify-between gap-2 md:col-start-52 md:flex-nowrap xl:col-start-4 xl:col-end-12 ">
+        <div className="flex  w-max rounded-full border-gray-400 border border-solid hover:shadow-md transform duration-200 hover:scale-105">
           <button
-            className="filter2 place-content-center flex w-full space-x-1 px-2 items-center py-1 text-black focus:outline-none "
+            className="filter2 place-content-center flex w-full space-x-1 px-3 items-center py-1 text-black focus:outline-none "
             type="button"
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -33,10 +34,10 @@ const SortOpt = () => {
                 />
               </svg>
             </div>
-            <span className="text-sm font-semibold">Filter</span>
+            <span className="text-xs font-semibold">Filter</span>
           </button>
         </div>
-        <div className="flex flex-row items-center justify-between gap-1 md:gap-2">
+        {/* <div className="flex flex-row items-center justify-between gap-1 md:gap-2">
           <span className="flex-none text-sm text-gray-900">sort by:</span>
           <select className="w-full text-gray-900 py-1 xl:py-2 tracking-tighter focus:border-primary focus:ring focus:ring-inset focus:ring-primary disabled:bg-grayish disabled:bg-none h-full border border-gray-400 px-2 rounded-full pr-2 text-sm leading-none">
             <option value="default" selected="">
@@ -49,10 +50,11 @@ const SortOpt = () => {
             <option value="relevance-asc">relevance: ascending</option>
             <option value="relevance-desc">relevance: descending</option>
           </select>
-        </div>
-        <span className="text-xs text-gray-500">
+        </div> */}
+        <SortSelect />
+        {/* <span className="text-xs text-gray-500">
           showing 1-20 of 583 results
-        </span>
+        </span> */}
       </div>
       <FilterPopup
         isOpen={isOpen}

@@ -4,56 +4,42 @@ import Link from 'next/link'
  const Pagination = () => {
   return (
     <>
-      <div className="flex items-center justify-center mt-12 mb-10 space-x-2">
+      <div className="flex items-center justify-center mt-12 mb-10 space-x-1.5">
         <button
           disabled=""
-          className="border border-[#E4E4E4] rounded p-1 text-[#191919] disabled:text-[#A3A3A3] disabled:cursor-not-allowed"
+          className=" rounded-full p-2 text-white bg-gray-200 disabled:text-[#A3A3A3] cursor-not-allowed disabled:cursor-not-allowed"
           aria-label="go to previous page"
         >
-          <svg
-            fill="currentColor"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M14.5303 5.46967C14.8232 5.76256 14.8232 6.23744 14.5303 6.53033L10.793 10.2676C10.3882 10.6724 10.117 10.9444 9.92485 11.1708C9.73841 11.3904 9.67096 11.5171 9.63955 11.6137C9.55798 11.8648 9.55798 12.1352 9.63955 12.3863C9.67096 12.4829 9.73841 12.6096 9.92485 12.8292C10.117 13.0556 10.3882 13.3276 10.793 13.7324L14.5303 17.4697C14.8232 17.7626 14.8232 18.2374 14.5303 18.5303C14.2374 18.8232 13.7625 18.8232 13.4696 18.5303L9.73235 14.7931L9.71083 14.7715C9.33312 14.3939 9.01785 14.0786 8.78134 13.8C8.53467 13.5094 8.32993 13.2098 8.21296 12.8498C8.0335 12.2975 8.0335 11.7025 8.21296 11.1502C8.32993 10.7902 8.53467 10.4906 8.78134 10.2C9.01785 9.9214 9.33312 9.60615 9.71083 9.22845L9.73235 9.20693L13.4696 5.46967C13.7625 5.17678 14.2374 5.17678 14.5303 5.46967Z"
-            ></path>
-          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-white">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+</svg>
+
         </button>
         <Link
-          className="rounded p-1 w-8 h-8 text-center text-sm font-medium flex justify-center items-center text-white bg-orange-500"
+          className="rounded-full p-1 w-8 h-8 text-center text-sm font-medium flex justify-center items-center text-white bg-orange-500"
           href="/blog?category=All%20Categories&amp;page=1"
         >
           1
         </Link>
         <Link
-          className="rounded p-1 w-8 h-8 text-center text-sm font-medium flex justify-center items-center text-gray-900 border border-[#E4E4E4]"
+          className="rounded-full p-1 w-8 h-8 text-center text-sm font-medium flex justify-center items-center text-gray-900 "
           href="/blog?category=All%20Categories&amp;page=2"
         >
           2
         </Link>
         <Link
-          className="rounded p-1 w-8 h-8 text-center text-sm font-medium flex justify-center items-center text-gray-900 border border-[#E4E4E4]"
+          className="rounded p-1 w-8 h-8 text-center text-sm font-medium flex justify-center items-center text-gray-900 "
           href="/blog?category=All%20Categories&amp;page=3"
         >
           3
         </Link>
         <Link
-          className="rounded p-1 w-8 h-8 text-center text-sm font-medium flex justify-center items-center text-gray-900 border border-[#E4E4E4]"
+          className="rounded p-1 w-8 h-8 text-center text-sm font-medium flex justify-center items-center text-gray-900 "
           href="/blog?category=All%20Categories&amp;page=4"
         >
           4
         </Link>
-        <Link
-          className="rounded p-1 w-8 h-8 text-center text-sm font-medium hidden md:flex justify-center items-center text-gray-900 border border-[#E4E4E4]"
-          href="/blog?category=All%20Categories&amp;page=5"
-        >
-          5
-        </Link>
+       
         <svg
           width="32"
           height="32"
@@ -75,28 +61,19 @@ import Link from 'next/link'
           ></path>
         </svg>
         <Link
-          className="rounded p-1 w-8 h-8 text-center text-sm font-medium flex justify-center items-center text-gray-900 border border-[#E4E4E4]"
+          className="rounded p-1 w-8 h-8 text-center text-sm font-medium flex justify-center items-center text-gray-900 "
           href="/blog?category=All%20Categories&amp;page=29"
         >
           29
         </Link>
         <button
-          className="border border-[#E4E4E4] rounded p-1 text-[#191919] disabled:text-[#A3A3A3] disabled:cursor-not-allowed"
+          className=" rounded-full p-2 text-white bg-gray-900 disabled:text-[#A3A3A3] disabled:cursor-not-allowed"
           aria-label="go to next page"
         >
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M9.46967 5.46967C9.76256 5.17678 10.2374 5.17678 10.5303 5.46967L14.2676 9.20693L14.2891 9.22846C14.6668 9.60615 14.9821 9.9214 15.2186 10.2C15.4653 10.4906 15.67 10.7902 15.787 11.1502C15.9664 11.7025 15.9664 12.2975 15.787 12.8498C15.67 13.2098 15.4653 13.5094 15.2186 13.8C14.9821 14.0786 14.6668 14.3938 14.2891 14.7715L14.2676 14.7931L10.5303 18.5303C10.2374 18.8232 9.76256 18.8232 9.46967 18.5303C9.17678 18.2374 9.17678 17.7626 9.46967 17.4697L13.2069 13.7324C13.6117 13.3276 13.883 13.0556 14.0751 12.8292C14.2615 12.6096 14.329 12.4829 14.3604 12.3863C14.442 12.1352 14.442 11.8648 14.3604 11.6137C14.329 11.5171 14.2615 11.3904 14.0751 11.1708C13.883 10.9444 13.6117 10.6724 13.2069 10.2676L9.46967 6.53033C9.17678 6.23744 9.17678 5.76256 9.46967 5.46967Z"
-            ></path>
-          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+</svg>
+
         </button>
       </div>
     </>

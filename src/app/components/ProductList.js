@@ -105,7 +105,7 @@ const ProductList = () => {
 
   return (
     <>
-      <div className="col-start-1 md:col-span-8 md:col-start-5 md:row-start-2 xl:col-start-4">
+      <div className="col-start-1 md:col-span-12 md:col-start-0 md:row-start-2 xl:col-start-4">
         <section className="grid w-full grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-4 xl:gap-4">
           {productData.map((data, index) => {
             return (
@@ -117,11 +117,15 @@ const ProductList = () => {
                   href="/detail"
                   className="group relative flex flex-col justify-start"
                 >
-                  <div className="aspect-h-305 aspect-w-246 bg-grayish transform transition-transform  md:motion-safe:group-hover:scale-110">
+                  <div className="aspect-h-305 aspect-w-246 bg-grayish transform transition-transform  md:motion-safe:group-hover:scale-105">
                     <Image src={data.img} alt="" />
-                    <div>
-                      <span className="w-auto px-2 py-1.5 text-sm font-bold leading-none text-white 3xl:px-3 3xl:py-1.7 3xl:text-base bg-sale/80 absolute bottom-2 left-0 3xl:bottom-3">sale -15%</span></div>
+                    
                   </div>
+                  <div>
+                      <span className="w-auto px-2 py-1.5 text-[10px] font-semibold leading-none rounded-full uppercase text-red-600 3xl:px-3 3xl:py-1.7 3xl:text-base bg-[#ffefef] border border-red-100 absolute top-2 left-2 ">
+                        save 12%
+                      </span>
+                    </div>
                   <button
                     className="max-h-8 max-w-8 overflow-hidden rounded-full lg:max-h-10 lg:max-w-10 absolute right-2 top-2 z-10"
                     aria-label="product is not on your wishlist"
@@ -150,57 +154,23 @@ const ProductList = () => {
                     </svg>
                   </button>
 
-                  <section className="flex grow flex-col justify-start lg:mt-2 lg:justify-between">
-                    <span className="truncate m-0 font-sans text-sm font-bold leading-tight 3xl:text-base text-gray-900">
-                      {data.title}
-                    </span>
-                    <span className="text-sm italic leading-none lg:text-base 3xl:text-base text-gray-900">
+                  <section className="flex py-1 mt-1 space-y-1 grow flex-col justify-start lg:mt-2 lg:justify-between">
+                    <span className="text-[11px] italic2 font-semibold uppercase leading-tight tracking-tight lg:text-base 3xl:text-base text-gray-900">
                       {data.category}
                     </span>
+                    <span className="truncate2 m-0 font-sans text-md font-bold leading-tight 3xl:text-base text-gray-900">
+                      {data.title}
+                    </span>
+
                     <span className="flex flex-row items-center gap-2 text-sm leading-tight 3xl:text-base">
-                      <span className="font-normal line-through decoration-sale text-gray-900">€29.95</span>
+                      <span className="font-normal line-through decoration-sale text-gray-900">
+                        €29.95
+                      </span>
                       <span className="font-bold text-sale">€32.95</span>
                     </span>
                   </section>
                 </Link>
               </article>
-              // <Link
-              //   href={`/detail`}
-              //   className="transform overflow-hidden bg-transparent duration-200 hover:scale-105 cursor-pointer"
-              //   key={index}
-              // >
-              //   <div
-              //     className="bg-[#f4f4f4] p-2 rounded-md"
-              //     onMouseOver={() => setOpen(data.id)}
-              //     onMouseOut={unhover}
-              //   >
-              //     <Image
-              //       width={500}
-              //       height={500}
-              //       src={open === data.id ? pro1 : data.img}
-              //       alt={data.title}
-              //       onMouseOver={(e) => console.log(e)}
-              //     />
-              //   </div>
-              //   <div className="p-2 flex flex-col justify-center items-center space-y-1 text-black/[0.9]">
-              //     <h2 className="text-base text-center font-medium leading-tight">
-              //       {data.title}
-              //     </h2>
-              //     <div className="flex items-center text-black/[0.5]">
-              //       <p className="mr-2 text-lg text-gray-950 font-semibold">
-              //         ${data.price}
-              //       </p>
-
-              //       {data.price && (
-              //         <>
-              //           <p className="text-base  font-medium line-through">
-              //             ${data.price}
-              //           </p>
-              //         </>
-              //       )}
-              //     </div>
-              //   </div>
-              // </Link>
             );
           })}
         </section>

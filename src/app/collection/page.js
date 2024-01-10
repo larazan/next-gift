@@ -7,7 +7,7 @@ import Image from "next/image";
 import GoTop from "../components/GoTop";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Slideshow from "../components/Slideshow";
+// import Slideshow from "../components/Slideshow";
 import ProductList from "../components/ProductList";
 import Pagination from "../components/Pagination";
 // import FilterSide from "../components/FilterSide";
@@ -31,7 +31,7 @@ export default function Collection() {
       <Header />
       <GoTop />
       <NewsFeed />
-      <Slideshow />
+      {/* <Slideshow /> */}
       {/* <CategoryNav /> */}
       <div className="w-full bg-white">
         <main className="mx-auto max-w-4xl">
