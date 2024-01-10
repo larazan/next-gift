@@ -63,11 +63,10 @@ const SortSelect = () => {
           {isOpen && (
             <div className="min-w-[170px] absolute top-6 py-2 right-0 z-10 mt-4 origin-top-right rounded-md border border-gray-100 bg-white shadow-lg">
               {options.map((option, index) => (
-                <div className="px-2">
+                <div className="px-2" key={index}>
                   <button
                     type="button"
                     onClick={onOptionClicked(option)}
-                    key={index}
                     className="flex py-1 px-2 w-full rounded text-sm text-gray-500 no-underline hover:bg-pink-50"
                   >
                     <span>{option}</span>
