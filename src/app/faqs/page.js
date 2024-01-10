@@ -2,11 +2,13 @@
 
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 import Header from '@/app/components/Header'
 import Footer from '@/app/components/Footer'
 import AccordionItem from "@/app/components/AccordionItem";
 import GoTop from "@/app/components/GoTop";
+import SubscribeForm from "../components/SubscribeForm";
 
 export default function Page() {
     const [open, setOpen] = useState(false)
@@ -82,10 +84,10 @@ export default function Page() {
                   <h5 className="font-semibold md:font-bold text-2xl md:text-3xl text-center ">
                     Frequently asked questions
                   </h5>
-                  <p className="mt-3 font-normal text-lg text-gray-700 text-center ">
+                  <p className="mt-3 font-normal text-md md:text-lg text-gray-700 text-center ">
                     Browse through the most frequently asked questions.
                   </p>
-                  <dl className="w-full mt-6 space-y-6 divide-y divide-gray-200">
+                  <dl className="w-full mt-6 space-y-2 md:space-y-6 divide-y divide-gray-200">
                     {accordionData.map((data, index) => {
                       return (
                         <AccordionItem
@@ -99,12 +101,20 @@ export default function Page() {
                     })}
                   </dl>
                 </section>
-
+                <div className="py-20">
+                    <h1 className="py-2 text-2xl">Can&lsquo;t find what you&lsquo;re looking for?</h1>
+                    <div className="py-2 text-sm leading-tight">
+                    Send us an email to tell us what’s up and someone from our Customer Service team will get back to you as soon as possible. Be sure to include your order number (if you have one).
+                    </div>
+                    <div className="text-sm leading-tight">
+                    Please email us at <Link href={""} className="underline underline-offset-2">support@greenspaces.id</Link>
+                    </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
+<SubscribeForm />
         <Footer />
       </div>  
     </>

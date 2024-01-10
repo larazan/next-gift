@@ -11,7 +11,7 @@ const SortOpt = () => {
   };
   return (
     <>
-      <div className="py-1 col-span-full col-start-1 flex flex-wrap items-center justify-between gap-2 md:col-start-52 md:flex-nowrap xl:col-start-4 xl:col-end-12 ">
+      <div className="py-3 md:py-1 col-span-full col-start-1 flex flex-wrap items-center justify-between gap-2 md:col-start-52 md:flex-nowrap xl:col-start-4 xl:col-end-12 ">
         <div className="flex  w-max rounded-full border-gray-400 border border-solid hover:shadow-md transform duration-200 hover:scale-105">
           <button
             className="filter2 place-content-center flex w-full space-x-1 px-3 items-center py-1 text-black focus:outline-none "

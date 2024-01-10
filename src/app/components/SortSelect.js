@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const options = ["Most popular", "Most upvoted", "Most discussed", "Newest"];
 
@@ -15,10 +15,27 @@ const SortSelect = () => {
     setIsOpen(false);
   };
 
+  let autoRef = useRef();
+
+  useEffect(() => {
+    let handler = (e) => {
+      if (!autoRef.current.contains(e.target)) {
+        setIsOpen(false);
+        console.log(autoRef.current);
+      }
+    };
+
+    document.addEventListener("mousedown", handler);
+
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
+  });
+
   return (
     <>
-      <div className="flex">
-        <div className="w-[170px] relative flex group bg-white">
+      <div className="flex z-20">
+        <div className="w-[170px] relative flex group bg-white " ref={autoRef}>
           <button className="w-full rounded-l-md px-2 text-sm text-gray-900 py-1.5 group-hover:bg-pink-50 group-hover:text-gray-700" onClick={toggling}>
             {selectedOption || "sort by"}
           </button>

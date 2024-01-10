@@ -7,7 +7,7 @@ import Image from "next/image";
 import GoTop from "../components/GoTop";
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import ProductSlider from "../components/ProductSlider";
+// import ProductSlider from "../components/ProductSlider";
 // import Review from "../components/Review";
 import Guarantee from "../components/Guarantee";
 import Breadcrumb from "../components/Breadcrumb";

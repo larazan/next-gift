@@ -128,21 +128,21 @@ const Recommended = () => {
             <p className=" text-lg font-bold md:text-xl lg:text-2xl text-black">
             Recommended for you
             </p>
-            <div className="flex space-x-1">
+            <div className="flex space-x-0">
               <div
                 onClick={() => slide(-shiftN)}
-                className={`p-1 rounded shadow-md text-black  ${
+                className={`p-1 text-pink-500  ${
                   scrollX !== 0
-                    ? "bg-[#fd9c0c] cursor-pointer"
-                    : "bg-orange-300 opacity-50 cursor-default"
-                } border-2 border-gray-800 shadow-menu`}
+                    ? "bg-white cursor-pointer"
+                    : "bg-white opacity-50 cursor-default"
+                } shadow-menu`}
               >
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    strokeWidth={1.5}
+                    strokeWidth={2}
                     stroke="currentColor"
                     className="w-5 h-5"
                   >
@@ -156,18 +156,18 @@ const Recommended = () => {
               </div>
               <div
                 onClick={() => slide(+shiftN)}
-                className={`p-1 rounded  shadow-md text-black  ${
+                className={`p-1 text-pink-500  ${
                   !scrolEnd
-                    ? "bg-[#fd9c0c] cursor-pointer"
-                    : "bg-orange-300 opacity-50 cursor-default"
-                } border-2 border-gray-800 shadow-menu`}
+                    ? "bg-white cursor-pointer"
+                    : "bg-white opacity-50 cursor-default"
+                }`}
               >
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    strokeWidth={1.5}
+                    strokeWidth={2}
                     stroke="currentColor"
                     className="w-5 h-5"
                   >

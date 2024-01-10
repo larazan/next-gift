@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import detail1 from "@/assets/gallery/detail1.jpg";
 import detail2 from "@/assets/gallery/detail2.png";
-import detail3 from "@/assets/gallery/detail3.png";
+import detail3 from "@/assets/gallery/detail3.jpg";
 import detail4 from "@/assets/gallery/detail4.png";
 
 const ThumbnailProduct = () => {

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import product1 from "@/assets/products/product1.png";
+import product1 from "@/assets/gallery/gallery2.png";
 
 const ProductItem = () => {
   const [count, setCount] = useState(0);
@@ -33,9 +33,9 @@ const ProductItem = () => {
                 </span> */}
                 <Link
                   href={"/shop/product-4"}
-                  className="text-sm font-medium leading-tight hover:underline"
+                  className="text-sm font-medium leading-tight hover:underline underline-offset-1"
                 >
-                  Anthurium king of spades x papillilaminum
+                  Rescue Balm Red Correct
                 </Link>
               </div>
 

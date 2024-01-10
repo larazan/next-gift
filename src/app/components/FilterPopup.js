@@ -46,7 +46,7 @@ const FilterPopup = ({ isOpen, handleClose, setIsOpen }) => {
       >
         <div className="flex w-full items-center justify-between py-4 border-b">
           <div className="w-1/2">
-            <span className="uppercase font-semibold text-gray-900">Filters</span>
+            <span className="uppercase text-sm md:text-lg tracking-wide font-semibold text-[#001838]">Filters</span>
           </div>
 
           <div className="flex justify-end w-1/2">
