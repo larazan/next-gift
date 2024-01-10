@@ -4,11 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import product1 from "@/assets/products/product1.png";
-import product2 from "@/assets/products/product2.png";
-import product3 from "@/assets/products/product3.png";
-import product4 from "@/assets/products/product4.png";
-
+import product1 from "@/assets/gallery/gallery1.png";
 
 const CartItem = () => {
   const [count, setCount] = useState(0);
@@ -24,7 +20,7 @@ const CartItem = () => {
   return (
     <div className="flex py-5 gap-3 md:gap-5 border-b">
       {/* IMAGE START */}
-      <div className="shrink-0 aspect-square w-[70px] md:w-[120px] md:bg-[#f3f6f9] p-1">
+      <div className="shrink-0 aspect-square w-[70px] md:w-[120px] md:bg-grayish p-1 bg-grayish">
         <Image src={product1} alt="" width={120} height={120} />
       </div>
       {/* IMAGE END */}
@@ -36,7 +32,7 @@ const CartItem = () => {
             href="/shop/product-3"
             className="text-base leading-tight hover:underline font-semibold text-black/[0.8]"
           >
-            Frieskies Seafood Sensations Dry Cat Food
+            Deep Scrub
           </Link>
 
           {/* PRODUCT SUBTITLE */}

@@ -226,7 +226,7 @@ const FilterPopup = ({ isOpen, handleClose, setIsOpen }) => {
                 <ul>
                   {concernData.map((data,index) => {
                     return (
-                      <li className="pl-2">
+                      <li className="pl-2" key={index}>
                     <label className="flex h-8 flex-row items-center justify-start">
                       <span className="grow">
                         <span className="text-sm">{data} </span>

@@ -2,10 +2,7 @@ import React from 'react'
 import Image from "next/image";
 import Link from "next/link";
 
-import product1 from "@/assets/products/product1.png";
-import product2 from "@/assets/products/product2.png";
-import product3 from "@/assets/products/product3.png";
-import product4 from "@/assets/products/product4.png";
+import product1 from "@/assets/gallery/gallery1.png";
 
 const CheckoutItem = () => {
   return (
@@ -24,7 +21,7 @@ const CheckoutItem = () => {
             href="/shop/product-3"
             className="text-sm leading-tight hover:underline font-semibold text-black/[0.8]"
           >
-            Frieskies Seafood Sensations Dry Cat Food
+            Deep Scrub
           </Link>
           
         </div>

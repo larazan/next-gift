@@ -36,7 +36,7 @@ export default function Checkout() {
       <div className="grid  md:grid-cols-2 lg:px-20 xl:px-32 ">
       
         <div className="px-6 pt-8 pb-2 bg-white border-r shadow">
-            <div className="py-5 flex justify-center items-center bg-[#00634b]">
+            <div className="py-5 flex justify-center items-center ">
               <Link href={"/"}>
                 <Logo className="h-10 text-red-600" />
               </Link>

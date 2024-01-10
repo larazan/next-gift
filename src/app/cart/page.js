@@ -28,11 +28,11 @@ export default function Cart() {
       <Header />
       <GoTop />
 
-      <div className="w-full py-1  md:py-10 bg-[#f5f7f9]">
+      <div className="w-full py-1  md:py-10 bg-white">
         <div className={`w-full max-w-[1280px] px-5 md:px-10 mx-auto`}>
           {/* HEADING AND PARAGRAPH START */}
           <div className="text-center max-w-[800px] mx-auto mt-8 md:mt-0">
-            <div className="text-[28px] md:text-[34px] mb-5 font-semibold uppercase tracking-tight leading-tight text-slate-900">
+            <div className="text-md md:text-[26px] mb-5 font-semibold uppercase tracking-tight leading-tight text-slate-900">
               Shopping Cart
             </div>
           </div>
@@ -69,7 +69,7 @@ export default function Cart() {
               </div>
 
               {/* BUTTON START */}
-              <Link href={"/checkout"} className="w-full py-2 md:py-3 rounded uppercase tracking-tighter bg-[#073d30] text-white text-lg font-medium transition-transform active:scale-95 mb-3 hover:opacity-80 flex items-center gap-2 justify-center">
+              <Link href={"/checkout"} className="w-full py-2 md:py-3 rounded-full uppercase  bg-gray-900 text-white text-lg font-semibold transition-transform active:scale-95 mb-3 hover:opacity-80 flex items-center gap-2 justify-center">
                 Checkout
                 {loading && <Image src={spinner} alt="" />}
               </Link>
