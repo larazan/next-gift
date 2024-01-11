@@ -19,12 +19,13 @@ import promo3 from "@/assets/promo/promo3.png"
     <>
         {isShow ? (
           <>
-        <div className="fixed inset-0 z-50 overflow-hidden flex items-start top-[13%] md:top-1/3 mb-4 justify-center transform px-4 sm:px-6 ">
+        <div className="fixed inset-0 z-50 overflow-hidden flex items-start top-[10%] md:top-1/3 mb-4 justify-center transform px-4 sm:px-6 ">
          <div
-          className="relative bg-white overflow-auto max-w-3xl w-full max-h-full rounded2 shadow-lg"
+          className="relative bg-white overflow-auto max-w-3xl w-full h-96 max-h-full rounded shadow-lg"
         >
           {/* Search form */}
-          <section className="overflow-hidden  shadow-2xl md:grid md:grid-cols-3">
+          <section className="overflow-hidden h-full shadow-2xl md:grid md:grid-cols-3">
+            
             <Image
               alt="Trainer"
               src={promo1}

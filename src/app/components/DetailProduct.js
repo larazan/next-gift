@@ -5,15 +5,15 @@ import CartButton from "./CartButton";
 const DetailProduct = () => {
   return (
     <>
-      <div className="col-span-full px-3 md:col-span-7 md:col-start-6 md:px-0 lg:col-span-5 lg:col-start-7">
+      <div className="col-span-full px-3 md:col-span-7 md:col-start-8 md:px-0 lg:col-span-5 lg:col-start-7">
         <div className="flex flex-row items-start justify-between">
           <div>
             <h1 className="flex flex-row flex-wrap font-sans text-base leading-normal">
-              <span className="order-3 w-full flex-auto basis-full italic text-gray-900">
-                Monstera&nbsp;
+              <span className="order-3 w-full flex-auto basis-full font-semibold italic2 uppercase text-gray-900">
+                Osea&nbsp;
               </span>
-              <span className="order-2 basis-auto font-bold md:text-xl lg:text-4xl text-gray-900">
-                Monstera Frozen Freckles
+              <span className="order-2 basis-auto font-bold md:text-2xl lg:text-4xl text-[#023e55]">
+                Collagen Dream Night Cream
               </span>
             </h1>
           </div>
@@ -21,8 +21,8 @@ const DetailProduct = () => {
             <span className="font-bold text-gray-900">€114.95</span>
           </span>
         </div>
-        <section className="flex flex-row justify-between">
-          <h2 className="sr-only">Product review(s)</h2>
+        <section className="flex flex-col justify-between">
+          {/* <h2 className="sr-only">Product review(s)</h2> */}
           <section className="flex flex-row items-center justify-start gap-2.5 text-sm md:gap-3.5 mt-2">
             <h2 className="sr-only">Product review</h2>
             <div className="flex flex-row-reverse justify-end">
@@ -43,7 +43,7 @@ const DetailProduct = () => {
               >
                 <path
                   d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  fill="#debe48"
+                  fill="#24a3aa"
                 ></path>
               </svg>
               <svg
@@ -53,7 +53,7 @@ const DetailProduct = () => {
               >
                 <path
                   d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  fill="#debe48"
+                  fill="#24a3aa"
                 ></path>
               </svg>
               <svg
@@ -63,7 +63,7 @@ const DetailProduct = () => {
               >
                 <path
                   d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  fill="#debe48"
+                  fill="#24a3aa"
                 ></path>
               </svg>
               <svg
@@ -73,14 +73,18 @@ const DetailProduct = () => {
               >
                 <path
                   d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  fill="#debe48"
+                  fill="#24a3aa"
                 ></path>
               </svg>
             </div>
-            <button className="text-sold-out underline hover:no-underline">
-              (0 customer reviews)
+            <button className="text-sold-out text-gray-900 font-semibold text-xs underline hover:no-underline">
+              0 Reviews
             </button>
           </section>
+          <p className="py-2 text-sm text-gray-900">
+            Ultra-hydrating, overnight cream proven to reduce the effects of
+            stress on skin during its nightly repair phase.
+          </p>
         </section>
         <svg
           className="my-2 h-px w-full"
@@ -143,42 +147,22 @@ const DetailProduct = () => {
         >
           <path d="M0,0 100,0" stroke="#707070" stroke-width="1"></path>
         </svg>
-        <section className="flex flex-col justify-between">
-          <p className="text-sm font-bold text-gray-900">
-            Pot styles perfect for this plant:
-          </p>
-          <ul className="flex flex-row flex-wrap justify-start gap-3">
-            <li>
-              <button className="cursor-pointer text-sm font-bold hover:underline text-sold-out">
-                Design
-              </button>
-            </li>
-            <li>
-              <button className="cursor-pointer text-sm font-bold hover:underline text-sold-out">
-                Nature
-              </button>
-            </li>
-            <li>
-              <button className="cursor-pointer text-sm font-bold hover:underline text-sold-out">
-                Basic
-              </button>
-            </li>
-            <li>
-              <button className="cursor-pointer text-sm font-bold hover:underline text-sold-out">
-                Handmade
-              </button>
-            </li>
-            <li>
-              <button className="cursor-pointer text-sm font-bold hover:underline text-sold-out">
-                Fun
-              </button>
-            </li>
-            <li>
-              <button className="cursor-pointer text-sm font-bold hover:underline text-black underline">
-                show all
-              </button>
-            </li>
-          </ul>
+        {/* <section className="flex flex-row flex-wrap justify-between">
+          <div className="flex flex-col justify-start">
+            <span className="text-sm font-bold text-gray-900">Color</span>
+            <div className="flex flex-row flex-wrap justify-start gap-2 pt-2">
+              <a href="/en/product/monstera-frozen-freckles-s">
+                <span className="flex h-10 w-10 cursor-pointer select-none items-center justify-center rounded-full bg-grayish text-sold-out">
+                  <span>S</span>
+                </span>
+              </a>
+              <a href="/en/product/monstera-frozen-freckles-m">
+                <span className="flex h-10 w-10 cursor-pointer select-none items-center justify-center rounded-full bg-[#7e8784] text-[#f3f4f3]">
+                  <span>M</span>
+                </span>
+              </a>
+            </div>
+          </div>
 
           <svg
             className="my-2 h-px w-full"
@@ -188,13 +172,13 @@ const DetailProduct = () => {
           >
             <path d="M0,0 100,0" stroke="#707070" stroke-width="1"></path>
           </svg>
-        </section>
+        </section> */}
         <ul>
           <li className="grid grid-flow-row auto-rows-max grid-cols-3 gap-2">
             <div className="col-span-2 col-start-1 flex flex-row items-center justify-between">
               <span className="truncate">
                 <span className="truncate font-bold md:text-sm text-gray-900">
-                  Monstera Frozen Freckles
+                  Collagen Dream Night Cream
                 </span>{" "}
                 <span className="font-bold  text-gray-900">
                   (<span className="md:text-sm">M</span>)
@@ -206,11 +190,7 @@ const DetailProduct = () => {
                 <span className="font-bold  text-gray-900">€114.95</span>
               </span>
             </div>
-            <div className="col-span-2 col-start-1 flex flex-row items-start justify-between md:col-span-1">
-              <span className="cursor-pointer text-sm underline text-sm text-gray-900">
-                in nursery pot
-              </span>
-            </div>
+
             <div className="col-span-1 col-start-1 flex flex-row items-center justify-start">
               <div className="relative flex w-full flex-row items-center justify-between gap-1 w-[120px]">
                 <button
@@ -220,7 +200,9 @@ const DetailProduct = () => {
                 >
                   -
                 </button>
-                <span className="grow text-center text-sm font-bold text-gray-900">1</span>
+                <span className="grow text-center text-sm font-bold text-gray-900">
+                  1
+                </span>
                 <button
                   className="cursor-pointer inline-block leading-none select-none text-center focus:outline-none transition-colors disabled:cursor-not-allowed relative bg-grayish text-black hover:bg-[#7e8784] hover:text-white disabled:bg-grayish/40 disabled:hover:text-black rounded-full w-8 h-8 max-w-8 max-h-8 overflow-hidden flex justify-center items-center h-8 w-8 flex-none leading-[0]"
                   type="button"
@@ -255,7 +237,7 @@ const DetailProduct = () => {
           >
             <path d="M0,0 100,0" stroke="#707070" stroke-width="1"></path>
           </svg>
-          
+
           <section className="flex justify-between md:flex-col 3xl:flex-row-reverse 3xl:items-start">
             <div className="flex flex-row justify-end">
               <div className="relative mr-3 hidden md:flex">
@@ -288,7 +270,7 @@ const DetailProduct = () => {
                 </button>
               </div>
               <button
-                className="cursor-pointer flex items-center inline-block leading-none select-none text-center focus:outline-none transition-colors disabled:cursor-not-allowed max-h-10 px-6 py-3 relative bg-primary text-white hover:opacity-80 disabled:bg-primary/40 rounded-full group"
+                className="cursor-pointer flex items-center inline-block leading-none select-none text-center focus:outline-none transition-colors disabled:cursor-not-allowed max-h-10 px-6 py-3 relative bg-[#023e55] text-white hover:opacity-80 disabled:bg-[#023e55]/40 rounded-full group"
                 aria-label="Add to cart"
                 type="button"
                 data-variant="rounded_yellow"
@@ -309,7 +291,9 @@ const DetailProduct = () => {
                     />
                   </svg>
 
-                  <span>Add to cart</span>
+                  <span className="uppercase text-white text-sm font-semibold">
+                    Add to bag
+                  </span>
                 </span>
               </button>
             </div>
@@ -334,11 +318,8 @@ const DetailProduct = () => {
               </li>
             </ul>
           </section>
-        
         </div>
-        
       </div>
-      
     </>
   );
 };

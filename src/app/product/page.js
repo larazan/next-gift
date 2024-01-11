@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 
 import GoTop from "../components/GoTop";
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 // import ProductSlider from "../components/ProductSlider";
 // import Review from "../components/Review";
 import Guarantee from "../components/Guarantee";
@@ -16,9 +16,10 @@ import DetailProduct from "../components/DetailProduct";
 import Specification from "../components/Specification";
 import Recommended from "../components/Recommended";
 import NewsFeed from "../components/NewsFeed";
+import Ingredient from "../components/Ingredient";
 
 export default function Product() {
-    const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
 
   const handleSubtractOne = () => {
     setCount(count - 1);
@@ -39,288 +40,21 @@ export default function Product() {
       <Header />
       <GoTop />
 
-<NewsFeed />
+      <NewsFeed />
       <main className=" bg-white">
-      <section className="mx-auto max-w-[120rem] w-11/12 md:w-10/12">
-
-      
-        <Breadcrumb />
-        <div className="grid-container grid w-full grid-cols-1 gap-3 md:grid-cols-12 xl:gap-4 pt-0 md:pt-3 lg:grid-cols-productDetail lg:pt-6 pb-3 md:pb-10 md:px-3 lg:px-0">
-          <ThumbnailProduct />
-          <DetailProduct />
-          <Specification />
-        </div>
+        <section className="mx-auto max-w-[120rem] w-11/12 md:w-10/12">
+          <Breadcrumb />
+          <div className="grid-container grid w-full grid-cols-1 gap-3 md:grid-cols-12 xl:gap-4 pt-0 md:pt-1 lg:grid-cols-productDetail lg:pt-6 pb-3 md:pb-10 md:px-3 lg:px-0">
+            <ThumbnailProduct />
+            <DetailProduct />
+            {/* <Specification /> */}
+            <Ingredient />
+          </div>
         </section>
       </main>
 
-      {/* <div className="flex relative z-10 items-center overflow-hidden bg-white">
-        <div className="flex w-full flex-col md:flex-row items-center2 justify-center2 bg-[#f1f1f3]">
-          <div className="w-full md:hidden flex flex-col px-4 py-2 bg-transparent">
-            <div>
-              <nav className="text-sm my-1" aria-label="Breadcrumb">
-                <ol className="list-none p-0 inline-flex">
-                  <li className="flex items-center">
-                    <a
-                      href="#"
-                      className="capitalize text-gray-900 hover:underline tracking-tight"
-                    >
-                      Product
-                    </a>
-                    <svg
-                      className="fill-current text-gray-900 w-2 h-2 mx-1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 320 512"
-                    >
-                      <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" />
-                    </svg>
-                  </li>
-                  <li className="flex items-center">
-                    <a
-                      href="#"
-                      className="text-gray-900 capitalize hover:underline tracking-tight"
-                      aria-current="page"
-                    >
-                      Treats
-                    </a>
-                    <svg
-                      className="fill-current text-gray-900 w-2 h-2 mx-1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 320 512"
-                    >
-                      <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" />
-                    </svg>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="text-gray-900 font-semibold capitalize hover:underline tracking-tight"
-                      aria-current="page"
-                    >
-                      Salmon Savory Chews
-                    </a>
-                  </li>
-                </ol>
-              </nav>
-            </div>
-            <div className="flex py-2">
-              <div>
-                <span className="text-3xl font-semibold leading-tight">
-                  Salmon Savory Chews
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="w-full md:w-1/2 h-full bg-[#f1f1f3]">
-            <div className="flex h-full justify-center items-center">
-              
-              <ProductSlider />
-            </div>
-          </div>
-          <div className="w-full md:w-1/2 flex flex-col px-4 md:px-10 py-4 bg-[#f1f1f3]">
-            <div className="hidden md:block">
-              <nav className="text-sm my-1" aria-label="Breadcrumb">
-                <ol className="list-none p-0 inline-flex">
-                  <li className="flex items-center">
-                    <a
-                      href="#"
-                      className="capitalize text-gray-900 hover:underline tracking-tight"
-                    >
-                      Product
-                    </a>
-                    <svg
-                      className="fill-current text-gray-900 w-2 h-2 mx-1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 320 512"
-                    >
-                      <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" />
-                    </svg>
-                  </li>
-                  <li className="flex items-center">
-                    <a
-                      href="#"
-                      className="text-gray-900 capitalize hover:underline tracking-tight"
-                      aria-current="page"
-                    >
-                      Treats
-                    </a>
-                    <svg
-                      className="fill-current text-gray-900 w-2 h-2 mx-1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 320 512"
-                    >
-                      <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" />
-                    </svg>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="text-gray-900 font-semibold capitalize hover:underline tracking-tight"
-                      aria-current="page"
-                    >
-                      Salmon Savory Chews
-                    </a>
-                  </li>
-                </ol>
-              </nav>
-            </div>
-            <div className="flex flex-col py-4 space-y-3">
-              <div>
-                <span className="text-3xl font-semibold leading-tight">
-                  Salmon Savory Chews
-                </span>
-              </div>
-              <div>
-                <span className="text-2xl font-bold">$8.50</span>
-              </div>
-              <div>
-                <span className="text-[17px] leading-tight">
-                  Spoil your cat with confidence, courtesy of our simple jerky
-                  treats. Kitty will love the big meaty flavor and chewy
-                  texture, and you’ll feel good knowing that they’re free from
-                  grains, fillers, and artificial ingredients.
-                </span>
-              </div>
-            </div>
-            <div className="py-4 md:py-6 flex flex-col">
-              <div className="flex h-14 border-x-2 border-t-2 border-gray-900">
-                <button
-                  data-action="decrement"
-                  onClick={handleSubtractOne}
-                  className="flex bg-[#f1f1f3] text-gray-600 hover:text-gray-700 hover:bg-gray-200 h-full w-20 cursor-pointer outline-none"
-                >
-                  <span className="m-auto text-2xl font-thin">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-6 h-6"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M18 12H6"
-                      />
-                    </svg>
-                  </span>
-                </button>
-                <input
-                  type="number"
-                  className="outline-none2 focus:outline-none text-center w-full bg-[#f1f1f3] font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none"
-                  name="custom-input-number"
-                  value={count}
-                  readOnly
-                ></input>
-                <button
-                  data-action="increment"
-                  onClick={handleAddOne}
-                  className="flex bg-[#f1f1f3] text-gray-600 hover:text-gray-700 hover:bg-gray-200 h-full w-20 cursor-pointer"
-                >
-                  <span className="m-auto text-2xl font-thin">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-6 h-6"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M12 6v12m6-6H6"
-                      />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-              <button className="flex w-full items-center justify-center py-4 border-2 border-gray-900 bg-[#c7dbf0] hover:bg-[#8fb7e1]">
-                <span className="uppercase text-[16px] font-semibold">
-                  Add to cart
-                </span>
-              </button>
-            </div>
-            <div className="flex w-44  items-center space-x-2 mb-3 cursor-pointer hover:text-pink-500">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-7 h-7"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-                  />
-                </svg>
-              </div>
-              <span className="capitalize font-semibold text-[16px]">
-                Add to favorite
-              </span>
-            </div>
-            <div className="flex flex-col space-y-1">
-              <div className="flex space-x-1 items-center">
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1}
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"
-                    />
-                  </svg>
-                </div>
-                <span className="">Free shipping on orders of $50 or more</span>
-              </div>
-              <div className="flex space-x-1 items-center">
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1}
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
-                    />
-                  </svg>
-                </div>
-                <span>30-day Money Back Guarantee</span>
-              </div>
-            </div>
-            <div className="flex flex-col space-y-2 py-5">
-              <div>
-                <span className="font-bold">Description</span>
-              </div>
-              <ul className="text-[15px] list-disc pl-5">
-                <li>92% real, dehydrated salmon</li>
-                <li>
-                  Grain-free and low carb. No potatoes, corn, rice or wheat
-                </li>
-                <li>Satisfying chewy texture</li>
-                <li>Resealable bag</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
       {/* <Review /> */}
-<Recommended />
+      <Recommended />
       <Guarantee />
 
       <Footer />

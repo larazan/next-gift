@@ -7,7 +7,7 @@ const Breadcrumb = () => {
         <div className="grid-container px-3 lg:px-0">
           <nav aria-label="breadcrumbs">
             <div className="relative w-full">
-              <button className="absolute z-20 flex items-center justify-center bg-grayish hover:bg-grayish left-0 top-0 h-full w-8 ">
+              <button className="hidden absolute z-20 flex2 items-center justify-center bg-grayish hover:bg-grayish left-0 top-0 h-full w-8 ">
                 <svg
                   className="text-black h-6 w-6"
                   xmlns="http://www.w3.org/2000/svg"
@@ -26,43 +26,31 @@ const Breadcrumb = () => {
               <ul className="scrollbar-fix flex flex-row flex-nowrap justify-start overflow-x-scroll no-scrollbar">
                 <li className="">
                   <a
-                    className="whitespace-nowrap text-sm hover:underline text-gray-900"
+                    className="whitespace-nowrap text-xs hover:underline uppercase text-gray-900"
                     href="/en/shop/all-plnts"
                   >
-                    All PLNTS
+                    Home
                   </a>
                 </li>
-                <li className='before:inline before:px-3 before:text-sm before:content-[">"] text-gray-900'>
+                <li className='before:inline before:px-1.5 before:text-sm before:content-["/"] text-gray-900'>
                   <a
-                    className="whitespace-nowrap text-sm hover:underline text-gray-900"
+                    className="whitespace-nowrap text-xs hover:underline uppercase text-gray-900"
                     href="/en/shop/rare-plnts"
                   >
-                    RarePLNTS
+                    Screencare
                   </a>
                 </li>
-                <li className='before:inline before:px-3 before:text-sm before:content-[">"] text-gray-900'>
+                <li className='before:inline before:px-1.5 before:text-sm before:content-["/"] text-gray-900'>
                   <a
-                    className="whitespace-nowrap text-sm hover:underline text-gray-900"
+                    className="whitespace-nowrap text-xs hover:underline uppercase text-gray-900"
                     href="/en/shop/medium-houseplants"
                   >
-                    Medium houseplants
+                    SUPER NOVA 5% VITAMIN C
                   </a>
                 </li>
-                <li className='before:inline before:px-3 before:text-sm before:content-[">"] text-gray-900'>
-                  <a
-                    className="whitespace-nowrap text-sm hover:underline text-gray-900"
-                    href="/en/shop/all-plnts/plantfamily:monstera"
-                  >
-                    Monstera
-                  </a>
-                </li>
-                <li className=" hidden before:inline before:px-3 before:text-sm md:block md:before:content-['>'] text-gray-900">
-                  <span className="text-sm font-semibold text-sold-out underline">
-                    Monstera Frozen Freckles
-                  </span>
-                </li>
+               
               </ul>
-              <button className="absolute z-20 flex items-center justify-center bg-grayish hover:bg-grayish right-0 top-0 h-full w-8 ">
+              <button className="hidden absolute z-20 flex2 items-center justify-center bg-grayish hover:bg-grayish right-0 top-0 h-full w-8 ">
                 <svg
                   className="text-black h-6 w-6"
                   xmlns="http://www.w3.org/2000/svg"
