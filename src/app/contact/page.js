@@ -29,7 +29,7 @@ export default function page() {
                     We’re here to help.
                   </h3>
                   <p className="text-gray-900 leading-tight md:leading-6 text-md">
-                    Whether you need help with a product or your account, we're
+                    Whether you need help with a product or your account, we&lsquo;re
                     here for you. Send us a message using the form to the right
                     and we will get back to you as soon as possible.
                   </p>
