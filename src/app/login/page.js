@@ -15,108 +15,247 @@ export default function Login() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <div className="flex h-max py-20 bg-white">
+      <div className="flex h-max py-8 md:py-20 bg-white">
         <div className="flex flex-row w-full">
-          <div className="flex flex-1 flex-col items-center justify-center px-0 md:px-10 relative">
-            <div className="flex flex-1 flex-col w-10/12 justify-center space-y-3 md:space-y-5 max-w-md">
-              <div className="flex justify-center pb-3 border-b w-full mx-auto">
-                <Link href={""}>
-                  <Logo />
-                </Link>
-                {/* <span className="text-3xl font-bold text-gray-900 uppercase tracking-tight">Business Insider</span> */}
+          <div className="flex flex-1 flex-col items-center justify-center px-0 md:px-0 relative">
+            <div className="flex flex-0 flex-col md:flex-row w-11/12 justify-center md:justify-between space-y-3 md:divide-x-2 md:space-y-5 max-w-3xl">
+              <div className="w-full md:w-1/2 flex flex-col space-y-1 px-4">
+                <div className="flex flex-col space-y-3">
+                  <p className="text-red-600 capitalize text-sm font-medium tracking-tight">
+                    your{" "} account
+                  </p>
+                  <h3 className="text-3xl font-semibold leading-8 text-gray-900">
+                    Friends with beauty benefits
+                  </h3>
+                  <p className="text-gray-900 leading-6 text-md">
+                    Enjoy all the great benefits Credo offers with your free
+                    account. Sign up or sign in to start earning points today.
+                  </p>
+                </div>
+                <div className="flex py-5">
+                  <ul className="flex flex-col space-y-4">
+                    <li>
+                      <div className="flex space-x-6 items-center">
+                        <svg
+                          class="Icon Icon--shopping-bag"
+                          style={{ width: "14px", height: "18px" }}
+                          role="presentation"
+                          viewBox="0 0 15 20"
+                          fill="none"
+                          aria-hidden="true"
+                          focusable="false"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.777778 6.25049H13.2222C13.2376 6.25049 13.25 6.26292 13.25 6.27827V16.6672C13.25 17.5416 12.5411 18.2505 11.6667 18.2505H2.33333C1.45888 18.2505 0.75 17.5416 0.75 16.6672V6.27827C0.75 6.26292 0.762436 6.25049 0.777778 6.25049Z"
+                            stroke="#001922"
+                            stroke-width="1.5"
+                          ></path>
+                          <path
+                            d="M10.8889 7.75V4.75C10.8889 2.67893 9.14775 1 6.99997 1C4.8522 1 3.11108 2.67893 3.11108 4.75V7.75"
+                            stroke="#001922"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                        <span className="text-gray-900 text-[15px]">
+                          Access your online order history
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex space-x-4 items-center">
+                        <svg
+                          class="Icon Icon--star"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="22"
+                          height="20"
+                          fill="none"
+                        >
+                          <path
+                            stroke="#001922"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="m11 1 2.645 6.36 6.866.55-5.231 4.48 1.598 6.7L11 15.5l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L11 1Z"
+                          ></path>
+                        </svg>
+                        <span className="text-gray-900 text-[15px]">
+                          Earn points on all purchases
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex space-x-5 items-center">
+                        <svg
+                          class="Icon Icon--gift"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="18"
+                          fill="none"
+                        >
+                          <path
+                            fill="#001922"
+                            stroke="#001922"
+                            stroke-width=".5"
+                            d="M18.5 4h-3.77c.17-.295.27-.636.27-1 0-1.103-.897-2-2-2-1.152 0-2.347.826-3 1.887C9.347 1.827 8.152 1 7 1c-1.103 0-2 .897-2 2 0 .364.1.705.27 1H1.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5H2v8.5a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5V8h.5a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5ZM13 2a1.001 1.001 0 0 1 0 2H10.58C10.886 2.995 12.02 2 13 2ZM6 3c0-.551.448-1 1-1 .98 0 2.114.995 2.419 2h-2.42c-.55 0-1-.449-1-1ZM2 5h7.5v2H2V5Zm1 3h6.5v8H3V8Zm14 8h-6.5V8H17v8Zm1-9h-7.5V5H18v2Z"
+                          ></path>
+                        </svg>
+                        <span className="text-gray-900 text-[15px]">
+                          Redeem points for free products and other benefits
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex space-x-5 items-center">
+                        <svg
+                          class="Icon Icon--shipping"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="18"
+                          height="18"
+                          fill="none"
+                        >
+                          <path
+                            fill="#001922"
+                            fill-rule="evenodd"
+                            d="M8.655.081a.771.771 0 0 1 .69 0l4.1 2.05.03.016 4.099 2.049c.26.13.426.398.426.69v8.228c0 .292-.165.56-.426.69L9.345 17.92a.77.77 0 0 1-.69 0L.426 13.804a.771.771 0 0 1-.426-.69V4.886c0-.292.165-.56.426-.69L8.655.08Zm2.734 2.748L9 1.634 2.496 4.886l2.39 1.195 6.503-3.252ZM6.61 6.943l6.504-3.252 2.39 1.195L9 8.138 6.61 6.943Zm-5.067 5.694V6.134l6.686 3.343v6.503l-6.686-3.343Zm8.228-3.16v6.503l6.686-3.343V6.134L9.771 9.477Z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="text-gray-900 text-[15px]">
+                          Free shipping over $50
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex space-x-5 items-center">
+                        <svg
+                          class="Icon Icon--virtual"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="14"
+                          fill="none"
+                        >
+                          <path
+                            fill="#001922"
+                            fill-rule="evenodd"
+                            d="M1.5 1.5v7h13v-7h-13ZM1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h6.25v2.5H4A.75.75 0 0 0 4 14h8a.75.75 0 0 0 0-1.5H8.75V10H15a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1Z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                        <span className="text-gray-900 text-[15px]">
+                          Access exclusive virtual events and content
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div className="flex flex-col space-y-1 md:space-y-2">
-                <h2 className="text-2xl md:text-2xl tracking-tight font-bold text-gray-900">
-                  Log in
-                </h2>
-                <p className="text-md md:text-md text-gray-400">
-                  New to Game Zone?{" "}
+              {/* <div className="flex justify-center pb-3 border-b w-full mx-auto">
+              <Link href={""}>
+                <Logo />
+                </Link>
+                <span className="text-3xl font-bold text-gray-900 uppercase tracking-tight">Business Insider</span>
+              </div> */}
+              <div className="flex flex-1 flex-col justify-center md:space-y-5 px-4 max-w-md">
+                <div className="flex flex-col space-y-1 md:space-y-2">
+                  <h2 className="text-lg md:text-2xl tracking-tight font-semibold text-[#023e55]">
+                    Sign in
+                  </h2>
+                  <p className="text-sm text-gray-400">
+                  Don't have an account?{" "}
                   <Link href={"/register"}>
-                    <span className="text-[#2680fb] hover:opacity-70">
+                    <span className="text-[#023e55] underline underline-offset-1 hover:opacity-90">
                       Create an account
                     </span>
                   </Link>
                 </p>
-              </div>
-              <div className="flex flex-col max-w-md space-y-4 md:space-y-5">
-                <div className="relative w-full">
-                  <input
-                    type="text"
-                    placeholder="Enter your email"
-                    className="flex w-full bg-white px-3 py-3 md:px-4 md:py-4 border-2 border-gray-300 rounded font-medium placeholder:font-normal"
-                  />
                 </div>
-                <div className="relative w-full">
-                  <input
-                    type="password"
-                    placeholder="Enter your password"
-                    className="flex w-full bg-white px-3 py-3 md:px-4 md:py-4 border-2 border-gray-300 rounded font-medium placeholder:font-normal"
-                  />
-                  <div className="absolute top-3 md:top-4 right-3 cursor-pointer">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-6 h-6 text-gray-500"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
-                      />
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                      />
-                    </svg>
+                <div className="flex flex-col max-w-md space-y-4 md:space-y-5">
+                  <div className="relative w-full">
+                    <p className="text-[#023e55] text-[11px] font-semibold uppercase tracking-tight">
+                      Email Address
+                    </p>
+                    <input
+                      type="text"
+                      className="flex w-full px-2 py-2 md:px-2 md:py-2 border bg-white border-gray-300 rounded font-medium placeholder:font-normal"
+                    />
                   </div>
-                </div>
-                <Link
+                  <div className="relative w-full">
+                    <p className="text-[#023e55] text-[11px] font-semibold uppercase tracking-tight">
+                      password
+                    </p>
+                    <input
+                      type="password"
+                      className="flex w-full px-2 py-2 md:px-2 md:py-2 border border-gray-300 rounded font-medium placeholder:font-normal"
+                    />
+                    <div className="absolute top-[50%] md:top-[50%] right-2 cursor-pointer">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="w-5 h-5 text-gray-500"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
+                        />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  
+                  <Link
                   href={"/forgot"}
-                  className="cursor-pointer text-gray-500 hover:text-gray-400"
+                  className="cursor-pointer text-[#023e55] hover:underline underline-offset-1"
                 >
                   <span className="text-sm">Forgot password?</span>
                 </Link>
-                <button className="flex items-center uppercase tracking-wide justify-center flex-none px-3 py-3 md:px-4 md:py-3 border-2 rounded-3xl font-bold hover:opacity-80 border-black bg-black text-sm text-white">
-                  Log in
-                </button>
-                <div className="flex justify-center items-center">
-                  <span className="w-full border"></span>
-                  <span className="px-4 text-gray-900">Or</span>
-                  <span className="w-full border"></span>
+                  <button className="flex items-center uppercase tracking-wide justify-center flex-none px-3 py-3 md:px-4 md:py-3 border-2 rounded-3xl font-bold hover:opacity-80 bg-[#023e55] text-sm text-white">
+                    Sign in
+                  </button>
+                  <div className="flex justify-center items-center">
+                    <span className="w-full border"></span>
+                    <span className="px-4 text-gray-900 text-sm">Or</span>
+                    <span className="w-full border"></span>
+                  </div>
+                  <button className="flex items-center justify-center flex-none px-3 py-3 md:px-4 md:py-3 border border-gray-400 hover:border-blue-300 rounded-md font-medium relative">
+                    <span className="absolute left-4">
+                      <svg
+                        width="24px"
+                        height="24px"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        // xmlns:xlink="http://www.w3.org/1999/xlink"
+                      >
+                        <path
+                          fill="#EA4335 "
+                          d="M5.26620003,9.76452941 C6.19878754,6.93863203 8.85444915,4.90909091 12,4.90909091 C13.6909091,4.90909091 15.2181818,5.50909091 16.4181818,6.49090909 L19.9090909,3 C17.7818182,1.14545455 15.0545455,0 12,0 C7.27006974,0 3.1977497,2.69829785 1.23999023,6.65002441 L5.26620003,9.76452941 Z"
+                        />
+                        <path
+                          fill="#34A853"
+                          d="M16.0407269,18.0125889 C14.9509167,18.7163016 13.5660892,19.0909091 12,19.0909091 C8.86648613,19.0909091 6.21911939,17.076871 5.27698177,14.2678769 L1.23746264,17.3349879 C3.19279051,21.2936293 7.26500293,24 12,24 C14.9328362,24 17.7353462,22.9573905 19.834192,20.9995801 L16.0407269,18.0125889 Z"
+                        />
+                        <path
+                          fill="#4A90E2"
+                          d="M19.834192,20.9995801 C22.0291676,18.9520994 23.4545455,15.903663 23.4545455,12 C23.4545455,11.2909091 23.3454545,10.5272727 23.1818182,9.81818182 L12,9.81818182 L12,14.4545455 L18.4363636,14.4545455 C18.1187732,16.013626 17.2662994,17.2212117 16.0407269,18.0125889 L19.834192,20.9995801 Z"
+                        />
+                        <path
+                          fill="#FBBC05"
+                          d="M5.27698177,14.2678769 C5.03832634,13.556323 4.90909091,12.7937589 4.90909091,12 C4.90909091,11.2182781 5.03443647,10.4668121 5.26620003,9.76452941 L1.23999023,6.65002441 C0.43658717,8.26043162 0,10.0753848 0,12 C0,13.9195484 0.444780743,15.7301709 1.23746264,17.3349879 L5.27698177,14.2678769 Z"
+                        />
+                      </svg>
+                    </span>
+                    <span className="text-gray-900">Sign in with Google</span>
+                  </button>
                 </div>
-                <button className="flex items-center justify-center flex-none px-3 py-3 md:px-4 md:py-3 border border-gray-400 hover:border-blue-300 rounded-md font-medium relative">
-                  <span className="absolute left-4">
-                    <svg
-                      width="24px"
-                      height="24px"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                      // xmlns:xlink="http://www.w3.org/1999/xlink"
-                    >
-                      <path
-                        fill="#EA4335 "
-                        d="M5.26620003,9.76452941 C6.19878754,6.93863203 8.85444915,4.90909091 12,4.90909091 C13.6909091,4.90909091 15.2181818,5.50909091 16.4181818,6.49090909 L19.9090909,3 C17.7818182,1.14545455 15.0545455,0 12,0 C7.27006974,0 3.1977497,2.69829785 1.23999023,6.65002441 L5.26620003,9.76452941 Z"
-                      />
-                      <path
-                        fill="#34A853"
-                        d="M16.0407269,18.0125889 C14.9509167,18.7163016 13.5660892,19.0909091 12,19.0909091 C8.86648613,19.0909091 6.21911939,17.076871 5.27698177,14.2678769 L1.23746264,17.3349879 C3.19279051,21.2936293 7.26500293,24 12,24 C14.9328362,24 17.7353462,22.9573905 19.834192,20.9995801 L16.0407269,18.0125889 Z"
-                      />
-                      <path
-                        fill="#4A90E2"
-                        d="M19.834192,20.9995801 C22.0291676,18.9520994 23.4545455,15.903663 23.4545455,12 C23.4545455,11.2909091 23.3454545,10.5272727 23.1818182,9.81818182 L12,9.81818182 L12,14.4545455 L18.4363636,14.4545455 C18.1187732,16.013626 17.2662994,17.2212117 16.0407269,18.0125889 L19.834192,20.9995801 Z"
-                      />
-                      <path
-                        fill="#FBBC05"
-                        d="M5.27698177,14.2678769 C5.03832634,13.556323 4.90909091,12.7937589 4.90909091,12 C4.90909091,11.2182781 5.03443647,10.4668121 5.26620003,9.76452941 L1.23999023,6.65002441 C0.43658717,8.26043162 0,10.0753848 0,12 C0,13.9195484 0.444780743,15.7301709 1.23746264,17.3349879 L5.27698177,14.2678769 Z"
-                      />
-                    </svg>
-                  </span>
-                  <span className="text-gray-900">Sign in with Google</span>
-                </button>
               </div>
             </div>
           </div>
