@@ -6,10 +6,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import slide5 from "@/assets/slides/slide5.png";
-import slide6 from "@/assets/slides/slide6.png";
-import slide7 from "@/assets/slides/slide7.png";
-import slide8 from "@/assets/slides/slide8.png";
+import slide5 from "@/assets/slides/slide1.png";
+import slide6 from "@/assets/slides/slide2.png";
+import slide7 from "@/assets/slides/slide3.png";
 
 const Slideshow = () => {
   const settings = {
@@ -33,9 +32,7 @@ const Slideshow = () => {
     {
       url: slide7,
     },
-    {
-      url: slide8,
-    },
+   
   ];
 
   return (
@@ -45,7 +42,7 @@ const Slideshow = () => {
           <Slider {...settings}>
             {slides.map((data, index) => {
               return (
-                <Image src={data.url} alt="" className="md:h-[500px] w-full" key={index} />
+                <Image src={data.url} alt="" className="md:h-full w-full" key={index} />
               );
             })}
           </Slider>

@@ -94,7 +94,7 @@ const NavLinks = () => {
                         </span>
                       </div>
                     </Link>
-                    <div className="flex py-1 px-2 rounded-lg hover:bg-blue-200 items-center space-x-3 cursor-pointer">
+                    <Link href={"/articles"} className="flex py-1 px-2 rounded-lg hover:bg-blue-200 items-center space-x-3 cursor-pointer">
                       <div className="w-12">
                         <Image src={icon4} alt="" className="" />
                       </div>
@@ -106,9 +106,9 @@ const NavLinks = () => {
                           Create your pallete in seconds
                         </span>
                       </div>
-                    </div>
+                    </Link>
 
-                    <div className="flex py-1 px-2 rounded-lg hover:bg-[#E8E2F7] items-center space-x-3 cursor-pointer">
+                    <Link href={"/articles"} className="flex py-1 px-2 rounded-lg hover:bg-[#E8E2F7] items-center space-x-3 cursor-pointer">
                       <div className="w-12">
                         <Image src={icon5} alt="" className="" />
                       </div>
@@ -120,7 +120,7 @@ const NavLinks = () => {
                           Create your pallete in seconds
                         </span>
                       </div>
-                    </div>
+                    </Link>
                     
                   </div>
                 </div>
@@ -129,7 +129,7 @@ const NavLinks = () => {
                     {menuData.map((data, index) => {
                       return (
                         <Link
-                          href={""}
+                          href={"/collection"}
                           className="capitalize leading-tight text-[13px] text-gray-900 hover:text-indigo-600"
                           key={index}
                         >

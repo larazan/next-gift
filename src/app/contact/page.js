@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
@@ -17,78 +17,150 @@ export default function page() {
       </Head>
 
       <Header />
-      <GoTop />  
+      <GoTop />
 
-      <div className="flex bg-white  pt-20 md:pt-[10px]">
+      <div className="flex h-max py-8 md:py-20 bg-white">
         <div className="flex flex-row w-full">
-          <div className="flex flex-1 flex-col items-center justify-center relative">
-            <div className="flex flex-1 flex-col pb-20  max-w-md md:max-w-2xl ">
-              <section className="w-full mx-auto mt-2 md:mt-10 px-5 ">
-                <h5 className="font-semibold md:font-bold text-2xl md:text-3xl text-center ">
-                  Contact
-                </h5>
-                <p className=" mt-4 text-xl font-semibold text-gray-700">
-                  Now&amp;Me is a safe space for people, from all walks of life,
-                  to take their <i>“first step”</i> towards accepting their
-                  feelings and talking about them.
-                </p>
-                <article className="mx-auto mt-10 prose-previewify">
-                  
-                  <p className="text-2xl">
-                    <strong>Address</strong>
+          <div className="flex flex-1 flex-col items-center justify-center px-0 md:px-0 relative">
+            <div className="flex flex-0 flex-col md:flex-row w-11/12 justify-center md:justify-between space-y-3 md:divide-x-2 md:space-y-0 max-w-3xl">
+              <div className="w-full md:w-1/2 flex flex-col space-y-1 px-4">
+                <div className="flex flex-col space-y-3">
+                  <h3 className="text-3xl font-semibold leading-8 text-[#023e55]">
+                    We’re here to help.
+                  </h3>
+                  <p className="text-gray-900 leading-tight md:leading-6 text-md">
+                    Whether you need help with a product or your account, we're
+                    here for you. Send us a message using the form to the right
+                    and we will get back to you as soon as possible.
                   </p>
-                  <ul className="py-4">
-                    <li>2208 Hillrise Ave</li>
-                    <li>Elizabethton, TN 37643</li>
-                    <li>USA</li>
-                  </ul>
-                </article>
-              </section>
-            </div>
-            
-          </div>
-        </div>
-      </div>
+                  <p className="text-gray-900 leading-tight md:leading-6 text-md">
+                    Experience an unwelcome reaction to one of our products?
+                    Please use this form to let us know. Be sure to include the
+                    brand and name of the product that was used, its product lot
+                    or batch code on the package, as well as a description of
+                    your reaction to the product.
+                  </p>
+                </div>
+                <div className="flex py-5">
+                  <ul className="flex flex-col space-y-4">
+                    <li>
+                      <div className="flex space-x-4 items-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="w-6 h-6"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                          />
+                        </svg>
 
-      <div
-        class="max-w-screen-xl mt-0 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg">
-        <div class="flex flex-col justify-between">
-          <div>
-            <h2 class="text-4xl lg:text-5xl font-bold leading-tight">Lets talk about everything!</h2>
-            <div class="text-gray-700 mt-8">
-              Hate forms? Send us an <span class="underline">email</span> instead.
+                        <span className="text-gray-900 text-[15px] underline underline-offset-2">
+                          glamour@mail.com
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex space-x-4 items-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="w-6 h-6"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                          />
+                        </svg>
+
+                        <span className="text-gray-900 text-[15px] underline underline-offset-2">
+                          844-692-7336
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="flex flex-1 flex-col justify-center md:space-y-5 px-4 max-w-md">
+                <div className="flex flex-col space-y-1 md:space-y-2">
+                  <h2 className="text-lg md:text-2xl tracking-tight font-semibold text-[#023e55]">
+                    Send us a message
+                  </h2>
+                </div>
+                <div className="flex flex-col max-w-md space-y-4 md:space-y-5">
+                  <div class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-2 mx-auto w-full">
+                    <div class="w-full md:w-1/2 flex flex-col space-y-1 ">
+                      <p className="text-[#023e55] text-[11px] font-semibold uppercase tracking-tight">
+                        FIRST NAME
+                      </p>
+                      <div class="relative items-center">
+                        <input
+                          class="flex w-full px-2 py-2 md:px-2 md:py-2 border bg-white border-gray-300 rounded font-medium placeholder:font-normal"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                    <div class="w-full md:w-1/2 flex flex-col space-y-1 ">
+                      <p className="text-[#023e55] text-[11px] font-semibold uppercase tracking-tight">
+                        Last NAME
+                      </p>
+                      <div class="relative items-center">
+                        <input
+                          class="flex w-full px-2 py-2 md:px-2 md:py-2 border bg-white border-gray-300 rounded font-medium placeholder:font-normal"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="relative w-full">
+                    <p className="text-[#023e55] text-[11px] font-semibold uppercase tracking-tight">
+                      Email Address
+                    </p>
+                    <input
+                      type="text"
+                      className="flex w-full px-2 py-2 md:px-2 md:py-2 border bg-white border-gray-300 rounded font-medium placeholder:font-normal"
+                    />
+                  </div>
+                  <div className="relative w-full">
+                    <p className="text-[#023e55] text-[11px] font-semibold uppercase tracking-tight">
+                      subject
+                    </p>
+                    <input
+                      type="text"
+                      className="flex w-full px-2 py-2 md:px-2 md:py-2 border border-gray-300 rounded font-medium placeholder:font-normal"
+                    />
+                  </div>
+                  <div className="relative w-full">
+                    <p className="text-[#023e55] text-[11px] font-semibold uppercase tracking-tight">
+                      message
+                    </p>
+                    <textarea
+                      rows="4" cols="50"
+                      className="flex w-full px-2 py-2 md:px-2 md:py-2 border bg-white border-gray-300 rounded font-medium placeholder:font-normal"
+                    ></textarea>
+                  </div>
+
+                  <button className="flex items-center uppercase tracking-wide justify-center flex-none px-3 py-3 md:px-4 md:py-3 border-2 rounded-md font-bold hover:opacity-80 bg-[#023e55] text-sm text-white">
+                    submit
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="mt-8 text-center">
-            
-          </div>
-        </div>
-        <div class="">
-          <div>
-            <span class="uppercase text-sm text-gray-600 font-bold">Full Name</span>
-            <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              type="text" placeholder="" />
-          </div>
-          <div class="mt-8">
-            <span class="uppercase text-sm text-gray-600 font-bold">Email</span>
-            <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              type="text" />
-          </div>
-          <div class="mt-8">
-            <span class="uppercase text-sm text-gray-600 font-bold">Message</span>
-            <textarea
-              class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
-          </div>
-          <div class="mt-8">
-            <button
-              class="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
-              Send Message
-            </button>
           </div>
         </div>
       </div>
 
       <Footer />
     </>
-  )
+  );
 }

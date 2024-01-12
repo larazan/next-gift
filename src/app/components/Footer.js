@@ -23,7 +23,7 @@ const Footer = () => {
               <ul className="space-y-1">
                 <li>
                   <Link className="md:hover:underline" href="/shop">
-                    All houseplants
+                    Bestseller
                   </Link>
                 </li>
                 <li>
@@ -31,7 +31,7 @@ const Footer = () => {
                     className="md:hover:underline"
                     href="/collection"
                   >
-                    Pots
+                    Hair Care
                   </Link>
                 </li>
                 <li>
@@ -39,7 +39,7 @@ const Footer = () => {
                     className="md:hover:underline"
                     href="/collection"
                   >
-                    Care
+                    Body Care
                   </Link>
                 </li>
                 <li>
@@ -47,7 +47,7 @@ const Footer = () => {
                     className="md:hover:underline"
                     href="/collection"
                   >
-                    Accessories
+                    Skincare
                   </Link>
                 </li>
                 <li>
@@ -464,31 +464,10 @@ const Footer = () => {
                     rel="noreferrer noopener"
                     aria-label="find all #PLNTS messages on instagram"
                   >
-                    #PLNTS
+                    #GLAMOUR
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="font-bold text-primary md:hover:underline"
-                    href="https://www.instagram.com/explore/tags/babyplnts/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    aria-label="find all #BabyPLNTS messages on instagram"
-                  >
-                    #BabyPLNTS
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="font-bold text-primary md:hover:underline"
-                    href="https://www.instagram.com/explore/tags/featuremeplnts/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    aria-label="find all #featuremePLNTS messages on instagram"
-                  >
-                    #featureme
-                  </a>
-                </li>
+                
               </ul>
             </div>
           </nav>

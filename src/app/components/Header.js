@@ -164,7 +164,7 @@ const Header = () => {
               </div> */}
 
               <div class="absolute top-0 right-0 inset-2 object-right-top">
-                <span class="-mr-22 inline-flex items-center rounded-full  bg-[#ff9800] px-1 py-1.5 text-[0.6rem]  leading-none text-gray-900 lg:-mt-1 ">
+                <span class="-mr-22 inline-flex items-center rounded-full  bg-[#ff9800] px-1 py-1 text-[0.6rem]  leading-none text-gray-900 lg:-mt-1 ">
                   {totalQTY}
                 </span>
               </div>
@@ -241,7 +241,7 @@ const Header = () => {
               </div> */}
 
               <div class="absolute top-0 right-0 inset-1 object-right-top">
-                <span class="-mr-22 inline-flex items-center rounded-full  bg-[#ff9800] px-1 py-1.5 text-[0.6rem]  leading-none text-gray-900 lg:-mt-1 ">
+                <span class="-mr-22 inline-flex items-center rounded-full  bg-[#ff9800] px-1 py-1 text-[0.6rem]  leading-none text-gray-900 lg:-mt-1 ">
                   {totalQTY}
                 </span>
               </div>

@@ -6,13 +6,13 @@ import { Tabs, Tab } from "./Tabs";
 
 const Ingredient = () => {
   return (
-    <div className=" col-span-full px-3 text-sm md:col-span-12 md:col-start-0 md:row-start-2 md:row-end-3 md:px-0 lg:col-span-12 lg:col-start-1 lg:text-base ">
-      <div className="flex relative z-10 items-center overflow-hidden ">
+    <div className="grid-container col-span-full px-0 text-sm md:col-span-12 md:col-start-0 md:row-start-2 md:row-end-32 md:px-02 lg:col-span-12 lg:col-start-1 lg:text-base ">
+      <div className="flex relative z-10 items-center overflow-hidden2 ">
         <div className="flex justify-between w-full py-6 md:py-10">
           <Tabs>
             <Tab label="Overview">
               <div className="flex flex-col md:flex-row w-full py-4">
-                <div className="w-1/2 space-y-4 leading-snug [&amp;_h1:not(:last-child)]:mb-4 [&amp;_h1:not(:last-child)]:md:mb-6 [&amp;_h1]:border-b [&amp;_h1]:border-black [&amp;_h1]:text-base [&amp;_h1]:md:border-none [&amp;_h1]:md:text-3xl [&amp;_h1]:md:leading-[0.8] [&amp;_h2:not(:last-child)]:mb-4 [&amp;_h2:not(:last-child)]:md:mb-6 [&amp;_h2]:text-base [&amp;_h2]:md:text-3xl [&amp;_h3]:font-sans [&amp;_h3]:text-base [&amp;_h3]:font-bold [&amp;_h4]:font-sans [&amp;_h4]:text-base [&amp;_h4]:font-bold [&amp;_h5]:font-sans [&amp;_h5]:text-base [&amp;_h5]:font-bold [&amp;_h6]:font-sans [&amp;_h6]:text-base [&amp;_h6]:font-bold [&amp;_ol[type='a']]:list-[lower-alpha] [&amp;_ol]:ml-[24px] [&amp;_ol]:list-outside [&amp;_ol]:list-decimal [&amp;_ol]:leading-tight [&amp;_ol_li::marker]:ml-[-24px] [&amp;_p]:leading-tight [&amp;_table]:table-auto [&amp;_table_td]:border [&amp;_table_td]:border-black [&amp;_table_td]:px-4 [&amp;_table_td]:py-2 [&amp;_table_td]:text-sm [&amp;_table_td]:md:text-base [&amp;_table_th]:border [&amp;_table_th]:border-black [&amp;_table_th]:px-4 [&amp;_table_th]:py-2 [&amp;_table_th]:text-sm [&amp;_table_th]:md:text-base [&amp;_ul]:ml-[24px] [&amp;_ul]:list-outside [&amp;_ul]:list-disc [&amp;_ul]:leading-tight [&amp;_ul_li::marker]:ml-[-24px] my-4">
+                <div className="w-full md:w-1/2 space-y-4 leading-snug [&amp;_h1:not(:last-child)]:mb-4 [&amp;_h1:not(:last-child)]:md:mb-6 [&amp;_h1]:border-b [&amp;_h1]:border-black [&amp;_h1]:text-base [&amp;_h1]:md:border-none [&amp;_h1]:md:text-3xl [&amp;_h1]:md:leading-[0.8] [&amp;_h2:not(:last-child)]:mb-4 [&amp;_h2:not(:last-child)]:md:mb-6 [&amp;_h2]:text-base [&amp;_h2]:md:text-3xl [&amp;_h3]:font-sans [&amp;_h3]:text-base [&amp;_h3]:font-bold [&amp;_h4]:font-sans [&amp;_h4]:text-base [&amp;_h4]:font-bold [&amp;_h5]:font-sans [&amp;_h5]:text-base [&amp;_h5]:font-bold [&amp;_h6]:font-sans [&amp;_h6]:text-base [&amp;_h6]:font-bold [&amp;_ol[type='a']]:list-[lower-alpha] [&amp;_ol]:ml-[24px] [&amp;_ol]:list-outside [&amp;_ol]:list-decimal [&amp;_ol]:leading-tight [&amp;_ol_li::marker]:ml-[-24px] [&amp;_p]:leading-tight [&amp;_table]:table-auto [&amp;_table_td]:border [&amp;_table_td]:border-black [&amp;_table_td]:px-4 [&amp;_table_td]:py-2 [&amp;_table_td]:text-sm [&amp;_table_td]:md:text-base [&amp;_table_th]:border [&amp;_table_th]:border-black [&amp;_table_th]:px-4 [&amp;_table_th]:py-2 [&amp;_table_th]:text-sm [&amp;_table_th]:md:text-base [&amp;_ul]:ml-[24px] [&amp;_ul]:list-outside [&amp;_ul]:list-disc [&amp;_ul]:leading-tight [&amp;_ul_li::marker]:ml-[-24px] my-4">
                   <p className="text-gray-900 font-bold">Suitable for</p>
                   <p className=" text-gray-900">All Skin Types</p>
                   <p className="text-gray-900 font-bold">
@@ -45,7 +45,7 @@ const Ingredient = () => {
             </Tab>
             <Tab label="How To Use">
               <div className="py-4">
-                <div className="w-1/2">
+                <div className="w-full md:w-1/2">
                   <h3 className="text-lg md:text-2xl capitalize font-semibold">
                     usage
                   </h3>
@@ -74,7 +74,7 @@ const Ingredient = () => {
             </Tab>
             <Tab label="About the brand">
               <div className="flex py-4 w-full">
-                <div className="w-1/2">
+                <div className="w-full md:w-1/2">
                   <h3 className="text-lg md:text-2xl uppercase font-semibold">
                     OSEA
                   </h3>

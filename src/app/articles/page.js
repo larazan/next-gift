@@ -74,7 +74,7 @@ export default function Articles() {
               <div className="px-0 py-1 pb-4 flex flex-col space-y-3 leading-tight">
                 <span className="text-sm text-[#ee0028] font-semibold">Makeup</span>
                 <h3 className="font-bold text-base md:text-2xl text-[#333333] leading-tight hover:underline underline-offset-2">
-                  <Link href="/detail">
+                  <Link href="/articles/detail">
                     12 Eyebrow Growth Serums That Actually Work, According to
                     Experts
                   </Link>
@@ -94,7 +94,7 @@ export default function Articles() {
               <div className="px-0 py-1 pb-4 flex flex-col space-y-3 leading-tight">
                 <span className="text-sm text-[#ee0028] font-semibold">Wellness</span>
                 <h3 className="font-bold text-base md:text-2xl text-[#333333] leading-tight hover:underline underline-offset-2">
-                  <Link href="/detail">
+                  <Link href="/articles/detail">
                   The Daily Habit That Nutritionists Say Can Drastically Improve Your Health
                   </Link>
                 </h3>{" "}
@@ -115,7 +115,7 @@ export default function Articles() {
               <div className="px-0 py-1 pb-4 flex flex-col space-y-3 leading-tight">
                 <span className="text-sm text-[#ee0028] font-semibold">Celebrity Beauty</span>
                 <h3 className="font-bold text-base md:text-4xl text-[#333333] leading-tight hover:underline underline-offset-2">
-                  <Link href="/detail">
+                  <Link href="/articles/detail">
                   The Daily Habit That Nutritionists Say Can Drastically Improve Your Health
                   </Link>
                 </h3>{" "}
@@ -136,7 +136,7 @@ export default function Articles() {
               <div className="px-0 py-1 pb-4 flex flex-col space-y-3 leading-tight">
                 <span className="text-sm text-[#ee0028] font-semibold">New Ink</span>
                 <h3 className="font-bold text-base md:text-2xl text-[#333333] leading-tight hover:underline underline-offset-2">
-                  <Link href="/detail">
+                  <Link href="/articles/detail">
                   Tattoo Trends 2024: Which Designs Are In and Which Are Out?
                   </Link>
                 </h3>{" "}
@@ -155,7 +155,7 @@ export default function Articles() {
               <div className="px-0 py-1 pb-4 flex flex-col space-y-3 leading-tight">
                 <span className="text-sm text-[#ee0028] font-semibold">Nail it</span>
                 <h3 className="font-bold text-base md:text-2xl text-[#333333] leading-tight hover:underline underline-offset-2">
-                  <Link href="/detail">
+                  <Link href="/articles/detail">
                   Jennifer Lopez Just Debuted a Manicure That’s Going to Be Huge in 2024
                   </Link>
                 </h3>{" "}

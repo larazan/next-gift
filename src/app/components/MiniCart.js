@@ -63,7 +63,7 @@ const MiniCart = ({ isOpen, handleClose, setIsOpen }) => {
           >
             View Cart
           </Link> */}
-           <Link href={"/checkout"} className="w-full py-2 md:py-3 rounded-full uppercase bg-gray-900 text-white text-lg font-semibold transition-transform active:scale-95 mb-3 hover:opacity-80 flex items-center gap-2 justify-center">
+           <Link href={"/checkout"} className="w-full py-2 md:py-3 rounded-full uppercase bg-[#023e55] text-white text-lg font-semibold transition-transform active:scale-95 mb-3 hover:opacity-90 flex items-center gap-2 justify-center">
                 Checkout
                 
               </Link>

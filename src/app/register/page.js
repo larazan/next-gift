@@ -18,7 +18,7 @@ export default function Register() {
       <div className="flex h-max py-8 md:py-20 bg-white">
         <div className="flex flex-row w-full">
           <div className="flex flex-1 flex-col items-center justify-center px-0 md:px-0 relative">
-            <div className="flex flex-0 flex-col md:flex-row w-11/12 justify-center md:justify-between space-y-3 md:divide-x-2 md:space-y-5 max-w-3xl">
+            <div className="flex flex-0 flex-col md:flex-row w-11/12 justify-center md:justify-between space-y-3 md:divide-x-2 md:space-y-0 max-w-3xl">
               <div className="w-full md:w-1/2 flex flex-col space-y-1 px-4">
                 <div className="flex flex-col space-y-3">
                   <p className="text-red-600 capitalize text-sm font-medium tracking-tight">

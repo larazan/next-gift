@@ -64,7 +64,7 @@ export default function UserMenu() {
         </button>
 
         <Transition
-          className="origin-top-right z-30 absolute top-full shadow-menu2 right-0 -mr-2 md:-mr-2 sm:mr-0 min-w-52 w-48 bg-white border border-slate-400 py-1.5  shadow-lg overflow-hidden mt-1.5 md:mt-1.5"
+          className="origin-top-right z-30 absolute top-full shadow-menu2 right-0 -mr-2 md:-mr-2 sm:mr-0 min-w-52 w-48 bg-white rounded border border-slate-200 py-1.5  shadow-lg overflow-hidden mt-1.5 md:mt-1.5"
           show={dropdownOpen}
           enter="transition ease-out duration-200 transform"
           enterStart="opacity-0 -translate-y-2"
@@ -105,7 +105,7 @@ export default function UserMenu() {
                   onClick={() => setDropdownOpen(!dropdownOpen)}
                   href={""}
                 >
-                  <span className="block text-sm text-gray-900 font-semibold font-mabry mb-0">
+                  <span className="block text-sm text-gray-500 font-semibold font-mabry mb-0">
                     Akun Seting
                   </span>
                 </Link>
@@ -116,7 +116,7 @@ export default function UserMenu() {
                   onClick={() => setDropdownOpen(!dropdownOpen)}
                   href={""}
                 >
-                  <span className="block text-sm text-gray-900 font-semibold font-mabry mb-0">
+                  <span className="block text-sm text-gray-500 font-semibold font-mabry mb-0">
                     Service status
                   </span>
                 </Link>
@@ -127,7 +127,7 @@ export default function UserMenu() {
                   onClick={() => setDropdownOpen(!dropdownOpen)}
                   href={"/faqs"}
                 >
-                  <span className="block text-sm text-gray-900 font-semibold font-mabry mb-0">
+                  <span className="block text-sm text-gray-500 font-semibold font-mabry mb-0">
                     Help
                   </span>
                 </Link>
@@ -136,7 +136,7 @@ export default function UserMenu() {
                 <div className="flex w-full items-center space-x-2 py-1.5 px-4 ">
                   <button
                     onClick={() => setDropdownOpen(!dropdownOpen)}
-                    className="flex w-full shadow-menu items-center justify-center rounded border-2 border-gray-800 px-2 py-1.5 space-x-2 bg-[#e31c2d] opacity-90 hover:opacity-100"
+                    className="flex w-full shadow-menu items-center justify-center rounded border border-gray-100 px-2 py-1.5 space-x-2 bg-[#e31c2d] opacity-90 hover:opacity-100"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

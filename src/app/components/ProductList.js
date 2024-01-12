@@ -114,7 +114,7 @@ const ProductList = () => {
                 key={index}
               >
                 <Link
-                  href="/detail"
+                  href="/product"
                   className="group relative flex flex-col justify-start"
                 >
                   <div className="aspect-h-305 aspect-w-246 bg-grayish transform transition-transform  md:motion-safe:group-hover:scale-105">
