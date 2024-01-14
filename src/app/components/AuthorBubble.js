@@ -7,12 +7,12 @@ import ava from "@/assets/img/ava4.svg"
 const AuthorBubble = () => {
   return (
     <>
-      <div className="shrink-0 z-50 cursor-pointer group">
+      <div className="shrink-0 z-30 cursor-pointer group">
         
-        <div className="text-sm font-semibold text-[#757575] inset-0 w-full">
+        <div className="text-sm font-semibold text-[#757575] inset-0 w-max">
             By <span className="underline">Brigitt Earley</span>
         </div>
-        <div className="absolute member hidden group-hover:block w-56 md:w-64 shadow-xl rounded border border-gray-400 mt-2 md:mt-2 -ml-102">
+        <div className="absolute member hidden group-hover:block w-56 md:w-64 shadow-xl rounded border border-gray-300 mt-2 md:mt-2 -ml-102">
           
           <div className="flex justify-between items-center border-b-0.5 md:border-b p-3 bg-white rounded-t">
             <div className="flex justify-center w-12 h-12 md:w-14 md:h-14">
@@ -35,7 +35,7 @@ const AuthorBubble = () => {
           </div>
 
           <div className="flex flex-col bg-gray-100 py-1 px-2 md:p-3 text-sm rounded-b">
-            <span className="text-gray-900">Roderick Scott</span>
+            <span className="text-gray-900">Brigitt Earley</span>
             <span className="text-gray-500">Active: November 2023</span>
           </div>
         </div>

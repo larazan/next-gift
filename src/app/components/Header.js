@@ -93,22 +93,39 @@ const Header = () => {
                 className="flex items-center cursor-pointer"
                 onClick={handleClick}
               >
-                <svg
-                  className="fill-current text-gray-700 w-5 h-5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    className="heroicon-ui"
-                    d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
-                  />
-                </svg>
+                {show ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                    className="w-6 h-6 text-[#1d494e]"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    className="fill-current text-gray-700 w-5 h-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      className="heroicon-ui"
+                      d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
+                    />
+                  </svg>
+                )}
               </div>
               <button
-              className="relative flex items-center w-8 h-8 "
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              {/* <svg
+                className="relative flex items-center w-8 h-8 "
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -123,52 +140,52 @@ const Header = () => {
                 />
               </svg> */}
 
-              <div className="flex items-start justify-start">
-                <svg
-                  x="0px"
-                  y="0px"
-                  viewBox="0 0 511.808 511.808"
-                  className="w-5 h-6 icon icon-cart"
-                  id="icon-cart"
-                >
-                  <g>
+                <div className="flex items-start justify-start">
+                  <svg
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 511.808 511.808"
+                    className="w-5 h-6 icon icon-cart"
+                    id="icon-cart"
+                  >
                     <g>
-                      <path d="M477.511,491.424l-26.48-348.832c-0.624-8.336-7.584-14.784-15.952-14.784H76.391c-8.368,0-15.328,6.448-15.952,14.8                     l-26.704,352c-0.336,4.432,1.2,8.816,4.224,12.08c3.024,3.264,7.28,5.12,11.728,5.12h412.112c0.096,0,0.208,0,0.32,0                     c8.832,0,16-7.168,16-16.016C478.119,494.288,477.911,492.816,477.511,491.424z M66.935,479.808l24.288-320h329.024l24.288,320                     H66.935z"></path>
+                      <g>
+                        <path d="M477.511,491.424l-26.48-348.832c-0.624-8.336-7.584-14.784-15.952-14.784H76.391c-8.368,0-15.328,6.448-15.952,14.8                     l-26.704,352c-0.336,4.432,1.2,8.816,4.224,12.08c3.024,3.264,7.28,5.12,11.728,5.12h412.112c0.096,0,0.208,0,0.32,0                     c8.832,0,16-7.168,16-16.016C478.119,494.288,477.911,492.816,477.511,491.424z M66.935,479.808l24.288-320h329.024l24.288,320                     H66.935z"></path>
+                      </g>
                     </g>
-                  </g>
-                  <g>
                     <g>
-                      <path d="M255.735,0c-70.576,0-128,57.44-128,128.032v63.776c0,8.832,7.168,16,16,16c8.832,0,16-7.168,16-16v-63.776                     c0-52.96,43.056-96.032,96-96.032c52.944,0,96,43.072,96,96.032v63.776c0,8.832,7.168,16,16,16c8.832,0,16-7.168,16-16v-63.776                     C383.735,57.44,326.311,0,255.735,0z"></path>
+                      <g>
+                        <path d="M255.735,0c-70.576,0-128,57.44-128,128.032v63.776c0,8.832,7.168,16,16,16c8.832,0,16-7.168,16-16v-63.776                     c0-52.96,43.056-96.032,96-96.032c52.944,0,96,43.072,96,96.032v63.776c0,8.832,7.168,16,16,16c8.832,0,16-7.168,16-16v-63.776                     C383.735,57.44,326.311,0,255.735,0z"></path>
+                      </g>
                     </g>
-                  </g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                </svg>
-              </div>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg>
+                </div>
 
-              {/* <div className="absolute text-center top-2 right-[20%] w-4 h-4 text-[0.70rem] leading-tight tracking-tighter font-bold flex items-center justify-center cursor-pointer text-white ">
+                {/* <div className="absolute text-center top-2 right-[20%] w-4 h-4 text-[0.70rem] leading-tight tracking-tighter font-bold flex items-center justify-center cursor-pointer text-white ">
                 <span className="font-bold">{totalQTY}</span>
               </div> */}
 
-              <div class="absolute top-0 right-0 inset-2 object-right-top">
-                <span class="-mr-22 inline-flex items-center rounded-full  bg-[#ff9800] px-1 py-1 text-[0.6rem]  leading-none text-gray-900 lg:-mt-1 ">
-                  {totalQTY}
-                </span>
-              </div>
-            </button>
+                <div class="absolute top-0 right-0 inset-2 object-right-top">
+                  <span class="-mr-22 inline-flex items-center rounded-full  bg-[#ff9800] px-1 py-1 text-[0.6rem]  leading-none text-gray-900 lg:-mt-1 ">
+                    {totalQTY}
+                  </span>
+                </div>
+              </button>
 
               <UserMenu />
             </div>
@@ -254,18 +271,37 @@ const Header = () => {
 
       {show ? (
         <div
-          className="relative w-full md:hidden bg-white shadow-xl"
+          className="relative flex w-full md:hidden bg-white shadow-xl"
           id="search-content"
         >
-          <div className="container mx-auto py-2 px-2 text-black">
+          <div className="w-11/12 container  py-1 px-2  text-black">
             <input
               id="searchfield"
               type="search"
               placeholder="Search..."
               autofocus="autofocus"
-              className="w-full text-grey-800 transition focus:outline-none focus:border-transparent p-2 appearance-none leading-normal text-xl lg:text-2xl"
+              className="w-full text-grey-800 transition focus:outline-none focus:border-transparent p-2 appearance-none leading-normal text-md lg:text-2xl"
             />
           </div>
+          <button
+            className="absolute flex top-[15%] right-1  px-1 py-1 hover:rounded-full hover:bg-gray-100 cursor-pointer"
+            onClick={handleClick}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="currentColor"
+              className="w-6 h-6 text-[#1d494e]"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
         </div>
       ) : (
         <></>

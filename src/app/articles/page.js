@@ -48,11 +48,11 @@ export default function Articles() {
       <div className="bg-white">
         <div className="dark:bg-transparent">
           <div className="mx-auto flex flex-col items-center py-12 sm:py-12">
-            <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 sm:mb-10">
+            <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col mb-5 ">
               <h1 className="text-4xl md:text-4xl lg:text-4xl text-center text-gray-900 font-bold leading-10">
                 Beauty
               </h1>
-              <p className="mt-7  lg:w-10/12 text-gray-900  font-normal text-center text-[18px] ">
+              <p className="mt-3 md:mt-7 lg:w-10/12 text-gray-900 leading-tight font-normal text-center text-[18px] ">
                 Find celebrity beauty secrets, hairstyles, skin care tips, and
                 beauty trends. Find new ideas for your hair, makeup, nails and
                 more.
@@ -65,8 +65,8 @@ export default function Articles() {
       <CategoryNav />
 
       <div className="flex bg-white">
-        <div className="mx-auto flex w-11/12  items-center2 divide-x py-12 sm:py-12">
-          <div className="w-3/12 flex flex-col px-2 items-center space-y-4">
+        <div className="mx-auto flex flex-col md:flex-row space-y-2 md:space-y-0 w-11/12  items-center2 md:divide-x py-12 sm:py-12">
+          <div className="w-full md:w-3/12 flex flex-col px-2 items-center space-y-4">
             <div className="flex flex-col space-y-1 items-center">
               <div>
                 <Image src={article1} alt="" className="objcet-cover" />
@@ -107,7 +107,7 @@ export default function Articles() {
               </div>
             </div>
           </div>
-          <div className="w-6/12 px-2 items-center justify-center">
+          <div className="w-full md:w-6/12 px-2 items-center justify-center">
             <div className="flex flex-col space-y-1 items-center ">
               <div>
                 <Image src={article3} alt="" className="objcet-cover" />
@@ -128,7 +128,7 @@ export default function Articles() {
               </div>
             </div>
           </div>
-          <div className="w-3/12 flex flex-col px-2 items-center space-y-4">
+          <div className="w-full md:w-3/12 flex flex-col px-2 items-center space-y-4">
           <div className="flex flex-col space-y-1 items-center ">
               <div>
                 <Image src={article4} alt="" className="objcet-cover" />

@@ -30,9 +30,9 @@ export default function Detail() {
       <ShareIt />
 
       <div className="flex flex-col bg-white min-h-screen ">
-        <div className="flex flex-col py-4 mx-auto w-11/12">
+        <div className="flex flex-col py-2 md:py-4 mx-auto w-11/12">
           <BreadcrumbArticle />
-          <h1 className="text-4xl font-bold leading-snug">
+          <h1 className="text-4xl font-bold md:leading-snug">
             Keeping a Food Diary Can Improve Your Health—so Long as It&lsquo;s Not
             About Counting Calories
           </h1>
@@ -307,7 +307,7 @@ export default function Detail() {
         </div>
         <div className="flex flex-row w-full">
           <div className="flex flex-1 w-full items-center justify-center relative">
-            <div className="flex flex-1 pb-18  max-w-sm md:max-w-2xl ">
+            <div className="flex flex-1 pb-18 max-w-sm md:max-w-2xl ">
               <RelatedArticle />
             </div>
           </div>

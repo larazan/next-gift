@@ -15,16 +15,12 @@ const NavLinks = () => {
   const [subHeading, setSubHeading] = useState("");
 
   const menuData = [
-    "Moisturizers & Face Oils",
-    "Serums & Eye Creams",
-    "SPF & Skin Tint SPF",
-    "Cleansers",
-    "Essence, Mists & Toners",
-    "Masks & Treatments",
-    "Hair Care",
-    "Body Care",
-    "Skincare",
-    "Tools & Accessories",
+    "News",
+    "Reviews",
+    "Food",
+    "Travel",
+    "Gifts",
+
   ];
 
   return (

@@ -116,10 +116,10 @@ const RelatedArticle = () => {
 
   return (
     <>
-      <div className="flex w-full py-6 px-0 bg-white">
-        <div className="flex flex-col space-y-3 w-full">
+      <div className="flex w-full py-6 md:px-0 px-4 bg-white">
+        <div className="flex flex-col space-y-0 w-full">
           <div className="flex flex-row justify-between  items-center">
-            <p className=" text-lg font-bold md:text-xl lg:text-2xl text-black">
+            <p className=" text-2xl font-bold md:text-2xl lg:text-2xl text-black">
               Read More
             </p>
           </div>

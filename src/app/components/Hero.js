@@ -15,12 +15,12 @@ const Hero = () => {
         <div className="flex flex-col items-center justify-center mx-auto w-11/12 ">
           <div className="flex flex-col w-full">
             <Image src={product} alt="" className="w-full object-cover" />
-            <div className="flex flex-col space-y-2 items-center justify-center px-20 py-6 text-center bg-[#f7623b] ">
-              <span className="text-white text-4xl font-bold">
+            <div className="flex flex-col space-y-2 items-center justify-center px-6 md:px-20 py-6 text-center bg-[#f7623b] ">
+              <span className="text-white text-2xl md:text-4xl font-bold">
                 Why Do I Crave Sugar After Cutting Out Alcohol? The Science
                 Behind Your Hankering For Sweets
               </span>
-              <span className="text-lg text-white">
+              <span className="text-lg text-white leading-tight">
                 You’ll need to replace the dopamine hit you get from that glass
                 of wine.
               </span>

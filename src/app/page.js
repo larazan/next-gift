@@ -24,7 +24,7 @@ export default function Home() {
 
     <Header />
     <GoTop />
-    <AdsModal />
+    {/* <AdsModal /> */}
     <NewsFeed />
     <Hero />
     <TrendingHome />
